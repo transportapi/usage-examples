@@ -1,0 +1,16 @@
+a.example-box {
+  display: inline-block;
+  overflow: hidden;
+  width: 30em;
+  height: 150px;
+  padding: 10px;
+  background-color: lightgrey;
+  text-decoration: none;
+  color: #3c3c3c;
+  border-radius: 5px;
+}
+
+a.example-box h2 {
+  margin-top: 0.3em;
+  font-size: 1.5em;
+}

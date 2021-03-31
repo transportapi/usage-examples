@@ -1,0 +1,7 @@
+h2.source-title {
+  font-size: 1em;
+}
+
+pre[class*="language-"] {
+  width: 60em;
+}
