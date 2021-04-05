@@ -1,0 +1,18 @@
+version: 2.1
+
+orbs:
+  node: circleci/node@4.2.1
+
+jobs:
+  check:
+    docker:
+      - image: cimg/node:15.11.0
+    steps:
+      - checkout
+      - node/install-packages
+      - run: npx eslint .
+
+workflows:
+  check:
+    jobs:
+      - check
