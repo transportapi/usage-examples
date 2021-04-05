@@ -7,6 +7,12 @@ const examples = [
       'future',
     directory: 'bus-stop-timetable',
   },
+  {
+    title: 'Bus route geometry',
+    description: 'Retrieves the geometry of a bus route specified by operator, line and direction and draws it on a ' +
+      'map',
+    directory: 'bus-route-geometry',
+  },
 ]
 
 const urlParams = new URLSearchParams(window.location.search)
