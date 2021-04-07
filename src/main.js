@@ -23,6 +23,11 @@ const examples = [
     description: 'List bus services matching the search on operator code and line name',
     directory: 'bus-service-search',
   },
+  {
+    title: 'Bus journey timetable',
+    description: 'Show the scheduled timing point stops for a specific bus journey',
+    directory: 'bus-journey-timetable',
+  },
 ]
 
 const urlParams = new URLSearchParams(window.location.search)
