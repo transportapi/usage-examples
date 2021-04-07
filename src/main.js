@@ -13,6 +13,11 @@ const examples = [
       'map',
     directory: 'bus-route-geometry',
   },
+  {
+    title: 'Bus service description',
+    description: 'Show bus service metadata: the operator, linename, directions and destinations',
+    directory: 'bus-service-description',
+  },
 ]
 
 const urlParams = new URLSearchParams(window.location.search)

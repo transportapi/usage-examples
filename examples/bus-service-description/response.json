@@ -1,0 +1,26 @@
+{
+  "id": "http://transportapi.com/v3/uk/bus/services/FPOT:25.json",
+  "operator": {
+    "code": "FPOT",
+    "name": "First Potteries"
+  },
+  "line": "25",
+  "line_name": "25",
+  "directions": [{
+    "name": "inbound",
+    "destination": {
+      "description": "Keele, Staffordshire"
+    }
+  }, {
+    "name": "outbound",
+    "destination": {
+      "description": "Hanley, Stoke-on-Trent"
+    }
+  }],
+  "centroid": {
+    "type": "Point",
+    "coordinates": [-2.2308238, 53.01203]
+  },
+  "source": "tnds",
+  "acknowledgements": "Contains information from tnds."
+}
