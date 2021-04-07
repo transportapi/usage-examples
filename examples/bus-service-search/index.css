@@ -1,0 +1,9 @@
+h1 {
+  font-size: inherit;
+}
+
+hr {
+  max-width: 25em;
+  margin-left: 0;
+  border: 1px solid lightgray;
+}

@@ -18,6 +18,11 @@ const examples = [
     description: 'Show bus service metadata: the operator, linename, directions and destinations',
     directory: 'bus-service-description',
   },
+  {
+    title: 'Bus service search',
+    description: 'List bus services matching the search on operator code and line name',
+    directory: 'bus-service-search',
+  },
 ]
 
 const urlParams = new URLSearchParams(window.location.search)

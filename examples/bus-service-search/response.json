@@ -1,0 +1,347 @@
+{
+  "id": "http://transportapi.com/v3/uk/bus/services.json?line_name=1",
+  "request_time": "2021-04-07T14:24:21+01:00",
+  "source": "tnds",
+  "acknowledgements": "Contains information from tnds.",
+  "member": [{
+    "id": "http://transportapi.com/v3/uk/bus/services/FBRI:1--2.json",
+    "operator": {
+      "code": "FBRI",
+      "name": "First Bristol, Bath \u0026 the West"
+    },
+    "line": "1--2",
+    "line_name": "1",
+    "directions": [{
+      "name": "outbound",
+      "destination": {
+        "description": "Bath City Centre, Bath"
+      }
+    }],
+    "centroid": {
+      "type": "Point",
+      "coordinates": [-2.3783526, 51.37382]
+    }
+  }, {
+    "id": "http://transportapi.com/v3/uk/bus/services/FBRI:1.json",
+    "operator": {
+      "code": "FBRI",
+      "name": "First Bristol, Bath \u0026 the West"
+    },
+    "line": "1",
+    "line_name": "1",
+    "directions": [{
+      "name": "inbound",
+      "destination": {
+        "description": "Weston-super-Mare"
+      }
+    }, {
+      "name": "outbound",
+      "destination": {
+        "description": "Sandbay"
+      }
+    }],
+    "centroid": {
+      "type": "Point",
+      "coordinates": [-2.9747767, 51.36107]
+    }
+  }, {
+    "id": "http://transportapi.com/v3/uk/bus/services/FBRI:1--3.json",
+    "operator": {
+      "code": "FBRI",
+      "name": "First Bristol, Bath \u0026 the West"
+    },
+    "line": "1--3",
+    "line_name": "1",
+    "directions": [{
+      "name": "inbound",
+      "destination": {
+        "description": "Cribbs Causeway"
+      }
+    }, {
+      "name": "outbound",
+      "destination": {
+        "description": "Broom Hill, Brislington"
+      }
+    }],
+    "centroid": {
+      "type": "Point",
+      "coordinates": [-2.5816054, 51.48345]
+    }
+  }, {
+    "id": "http://transportapi.com/v3/uk/bus/services/FBRI:11.json",
+    "operator": {
+      "code": "FBRI",
+      "name": "First Bristol, Bath \u0026 the West"
+    },
+    "line": "11",
+    "line_name": "11",
+    "directions": [{
+      "name": "inbound",
+      "destination": {
+        "description": "Bath City Centre, Bath"
+      }
+    }, {
+      "name": "outbound",
+      "destination": {
+        "description": "Bathampton"
+      }
+    }],
+    "centroid": {
+      "type": "Point",
+      "coordinates": [-2.3400445, 51.386475]
+    }
+  }, {
+    "id": "http://transportapi.com/v3/uk/bus/services/FBRI:12.json",
+    "operator": {
+      "code": "FBRI",
+      "name": "First Bristol, Bath \u0026 the West"
+    },
+    "line": "12",
+    "line_name": "12",
+    "directions": [{
+      "name": "inbound",
+      "destination": {
+        "description": "Bath City Centre, Bath"
+      }
+    }, {
+      "name": "outbound",
+      "destination": {
+        "description": "Haycombe, Bath"
+      }
+    }],
+    "centroid": {
+      "type": "Point",
+      "coordinates": [-2.3789208, 51.374496]
+    }
+  }, {
+    "id": "http://transportapi.com/v3/uk/bus/services/FBRI:17.json",
+    "operator": {
+      "code": "FBRI",
+      "name": "First Bristol, Bath \u0026 the West"
+    },
+    "line": "17",
+    "line_name": "17",
+    "directions": [{
+      "name": "inbound",
+      "destination": {
+        "description": "Southmead, Bristol"
+      }
+    }, {
+      "name": "outbound",
+      "destination": {
+        "description": "Keynsham"
+      }
+    }],
+    "centroid": {
+      "type": "Point",
+      "coordinates": [-2.5367434, 51.450424]
+    }
+  }, {
+    "id": "http://transportapi.com/v3/uk/bus/services/FBRI:18.json",
+    "operator": {
+      "code": "FBRI",
+      "name": "First Bristol, Bath \u0026 the West"
+    },
+    "line": "18",
+    "line_name": "18",
+    "directions": [{
+      "name": "inbound",
+      "destination": {
+        "description": "Bath City Centre, Bath"
+      }
+    }, {
+      "name": "outbound",
+      "destination": {
+        "description": "Frenchay"
+      }
+    }],
+    "centroid": {
+      "type": "Point",
+      "coordinates": [-2.4524255, 51.440758]
+    }
+  }, {
+    "id": "http://transportapi.com/v3/uk/bus/services/FBRI:19.json",
+    "operator": {
+      "code": "FBRI",
+      "name": "First Bristol, Bath \u0026 the West"
+    },
+    "line": "19",
+    "line_name": "19",
+    "directions": [{
+      "name": "inbound",
+      "destination": {
+        "description": "Bath City Centre, Bath"
+      }
+    }, {
+      "name": "outbound",
+      "destination": {
+        "description": "Cribbs Causeway"
+      }
+    }],
+    "centroid": {
+      "type": "Point",
+      "coordinates": [-2.4773273, 51.45625]
+    }
+  }, {
+    "id": "http://transportapi.com/v3/uk/bus/services/FBRI:178.json",
+    "operator": {
+      "code": "FBRI",
+      "name": "First Bristol, Bath \u0026 the West"
+    },
+    "line": "178",
+    "line_name": "178",
+    "directions": [{
+      "name": "inbound",
+      "destination": {
+        "description": "Radstock, Norton-Radstock"
+      }
+    }, {
+      "name": "outbound",
+      "destination": {
+        "description": "Bristol"
+      }
+    }],
+    "centroid": {
+      "type": "Point",
+      "coordinates": [-2.5193682, 51.36892]
+    }
+  }, {
+    "id": "http://transportapi.com/v3/uk/bus/services/FBRI:172.json",
+    "operator": {
+      "code": "FBRI",
+      "name": "First Bristol, Bath \u0026 the West"
+    },
+    "line": "172",
+    "line_name": "172",
+    "directions": [{
+      "name": "inbound",
+      "destination": {
+        "description": "Paulton"
+      }
+    }, {
+      "name": "outbound",
+      "destination": {
+        "description": "Bath City Centre, Bath"
+      }
+    }],
+    "centroid": {
+      "type": "Point",
+      "coordinates": [-2.446313, 51.328148]
+    }
+  }, {
+    "id": "http://transportapi.com/v3/uk/bus/services/FBRI:171.json",
+    "operator": {
+      "code": "FBRI",
+      "name": "First Bristol, Bath \u0026 the West"
+    },
+    "line": "171",
+    "line_name": "171",
+    "directions": [{
+      "name": "inbound",
+      "destination": {
+        "description": "Paulton"
+      }
+    }, {
+      "name": "outbound",
+      "destination": {
+        "description": "Bath City Centre, Bath"
+      }
+    }],
+    "centroid": {
+      "type": "Point",
+      "coordinates": [-2.446535, 51.328148]
+    }
+  }, {
+    "id": "http://transportapi.com/v3/uk/bus/services/FBRI:126.json",
+    "operator": {
+      "code": "FBRI",
+      "name": "First Bristol, Bath \u0026 the West"
+    },
+    "line": "126",
+    "line_name": "126",
+    "directions": [{
+      "name": "inbound",
+      "destination": {
+        "description": "Weston-super-Mare"
+      }
+    }, {
+      "name": "outbound",
+      "destination": {
+        "description": "Wells"
+      }
+    }],
+    "centroid": {
+      "type": "Point",
+      "coordinates": [-2.8160167, 51.278816]
+    }
+  }, {
+    "id": "http://transportapi.com/v3/uk/bus/services/FBRI:173.json",
+    "operator": {
+      "code": "FBRI",
+      "name": "First Bristol, Bath \u0026 the West"
+    },
+    "line": "173",
+    "line_name": "173",
+    "directions": [{
+      "name": "inbound",
+      "destination": {
+        "description": "Wells"
+      }
+    }, {
+      "name": "outbound",
+      "destination": {
+        "description": "Bath City Centre, Bath"
+      }
+    }],
+    "centroid": {
+      "type": "Point",
+      "coordinates": [-2.5052981, 51.29262]
+    }
+  }, {
+    "id": "http://transportapi.com/v3/uk/bus/services/FBRI:174.json",
+    "operator": {
+      "code": "FBRI",
+      "name": "First Bristol, Bath \u0026 the West"
+    },
+    "line": "174",
+    "line_name": "174",
+    "directions": [{
+      "name": "inbound",
+      "destination": {
+        "description": "Wells"
+      }
+    }, {
+      "name": "outbound",
+      "destination": {
+        "description": "Bath City Centre, Bath"
+      }
+    }],
+    "centroid": {
+      "type": "Point",
+      "coordinates": [-2.5052981, 51.282898]
+    }
+  }, {
+    "id": "http://transportapi.com/v3/uk/bus/services/FBRI:175.json",
+    "operator": {
+      "code": "FBRI",
+      "name": "First Bristol, Bath \u0026 the West"
+    },
+    "line": "175",
+    "line_name": "175",
+    "directions": [{
+      "name": "inbound",
+      "destination": {
+        "description": "Wells"
+      }
+    }, {
+      "name": "outbound",
+      "destination": {
+        "description": "Prestleigh"
+      }
+    }],
+    "centroid": {
+      "type": "Point",
+      "coordinates": [-2.587121, 51.18468]
+    }
+  }]
+}
