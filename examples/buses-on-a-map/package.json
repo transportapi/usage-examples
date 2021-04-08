@@ -1,0 +1,13 @@
+{
+  "name": "buses-on-a-map",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "dependencies": {
+    "jquery": "3.6.0",
+    "leaflet": "1.7.1",
+    "leaflet-rotatedmarker": "0.2.0",
+    "parcel-bundler": "^1.6.1"
+  },
+  "keywords": []
+}

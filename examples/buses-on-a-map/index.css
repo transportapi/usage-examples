@@ -1,0 +1,12 @@
+#mapElement {
+  height: 475px;
+}
+
+.leaflet-tooltip dt {
+  font-weight: bold;
+  float: left;
+}
+
+.leaflet-tooltip dd {
+  padding-left: 5em;
+}

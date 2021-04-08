@@ -28,6 +28,11 @@ const examples = [
     description: 'Show the scheduled timing point stops for a specific bus journey',
     directory: 'bus-journey-timetable',
   },
+  {
+    title: 'Buses on a map',
+    description: 'Show the buses for a specific service on a map',
+    directory: 'buses-on-a-map',
+  },
 ]
 
 const urlParams = new URLSearchParams(window.location.search)
