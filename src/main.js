@@ -1,5 +1,7 @@
 /* global $ _ Prism Handlebars */
 
+const ROOT_URL = 'https://transportapi.github.io/usage-examples/src/'
+
 const examples = [
   {
     title: 'Stop timetable',
@@ -46,9 +48,10 @@ if (urlParams.has('example')) {
 }
 
 function loadTemplate (fileName, properties, onLoad) {
-  $.get(fileName, templateSource => {
+  $.get(ROOT_URL + fileName, templateSource => {
     const template = Handlebars.compile(templateSource)
 
+    properties.root_url = ROOT_URL
     const html = template(properties)
     $('#app').html(html)
     onLoad()
@@ -56,6 +59,7 @@ function loadTemplate (fileName, properties, onLoad) {
 }
 
 function showExample (exampleProperties) {
+  exampleProperties.root_url = ROOT_URL
   loadTemplate('example.hbs', exampleProperties, () => {
     loadCode(exampleProperties.directory, 'main.js', 'javascript')
     loadCode(exampleProperties.directory, 'index.html', 'html')
