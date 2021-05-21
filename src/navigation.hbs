@@ -1,8 +1,10 @@
 <link rel="stylesheet" href="{{root_url}}navigation.css" />
 
 {{#each examples}}
-  <a class="example-box" href="?example={{directory}}">
-    <h2>{{title}}</h2>
-    {{description}}
-  </a>
+  <div class="example-container">
+    <a class="example-box" href="?example={{directory}}">
+      <h2>{{title}}</h2>
+      {{description}}
+    </a>
+  </div>
 {{/each}}
