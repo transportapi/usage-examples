@@ -35,6 +35,11 @@ const examples = [
     description: 'Show the buses for a specific service on a map',
     directory: 'buses-on-a-map',
   },
+  {
+    title: 'Bus full timetable',
+    description: 'Show the full timetable for a given service on a given date',
+    directory: 'bus-full-timetable',
+  },
 ]
 
 const urlParams = new URLSearchParams(window.location.search)
