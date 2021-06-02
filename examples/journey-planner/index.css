@@ -1,0 +1,46 @@
+#wrapper {
+  width: 1200px;
+}
+
+#app {
+  float: left;
+  margin-right: 2em;
+}
+
+#mapElement {
+  height: 500px;
+}
+
+.legs {
+  margin-top: 1em;
+}
+
+.leg-details {
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  border-color: #f0f0f0;
+  margin: 1em 0em 1em 2em;
+  padding-top: 0.5em;
+}
+
+.duration-from-to {
+  float: right;
+  font-size: small;
+}
+
+.mode {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.mode-foot:before {
+  content: "walk";
+}
+
+.mode-bus:before {
+  content: "bus";
+}
+
+.mode-train:before {
+  content: "train";
+}

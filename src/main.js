@@ -40,6 +40,11 @@ const examples = [
     description: 'Show the full timetable for a given service on a given date',
     directory: 'bus-full-timetable',
   },
+  {
+    title: 'Journey planner',
+    description: 'Shows a journey plan between two points',
+    directory: 'journey-planner',
+  },
 ]
 
 const urlParams = new URLSearchParams(window.location.search)
