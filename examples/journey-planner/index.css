@@ -5,10 +5,12 @@
 #app {
   float: left;
   margin-right: 2em;
+  font-size: small;
 }
 
 #mapElement {
-  height: 500px;
+  width: 400px;
+  height: 400px;
 }
 
 .legs {
