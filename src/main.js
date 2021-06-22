@@ -68,25 +68,22 @@ function loadTemplate (fileName, properties, onLoad) {
   })
 }
 
+const fileHtml = `
+  <h2 class="source-title">{{name}}</h2>
+  <pre class="line-numbers"
+       data-download-link
+       data-src="https://raw.githubusercontent.com/transportapi/usage-examples/master/examples/{{directory}}/{{name}}"
+  ><code id="{{name}}" {{#if language}}class="language-{{language}}{{/if}}"></code></pre>
+`
+Handlebars.registerPartial('file', fileHtml)
+
 function showExample (exampleProperties) {
   exampleProperties.root_url = ROOT_URL
   loadTemplate('example.hbs', exampleProperties, () => {
-    loadCode(exampleProperties.directory, 'main.js', 'javascript')
-    loadCode(exampleProperties.directory, 'index.html', 'html')
-    loadCode(exampleProperties.directory, 'index.css', 'css')
-    loadCode(exampleProperties.directory, 'response.json', 'json')
+    // This can't simply be put in the CSS file because Prism.js seemingly redraws the element
+    $('pre.line-numbers').css('max-height', '45em')
+    // Using Prism.highlight(contents) would be sufficient to get syntax highlighting but the line-numbers plugin
+    // doesn't work without this approach
+    setTimeout(() => Prism.highlightAll(), 0)
   })
-}
-
-function loadCode (directory, fileName, language) {
-  $.get(`https://raw.githubusercontent.com/transportapi/usage-examples/master/examples/${directory}/${fileName}`,
-    contents => {
-      const selector = '#' + fileName.replace('.', '\\.')
-      $(selector).html(`
-        <pre class="line-numbers"><code class="language-${language}">${_.escape(contents)}</code></pre>
-      `)
-      // Using Prism.highlight(contents) would be sufficient to get syntax highlighting but the line-numbers plugin
-      // doesn't work without this approach
-      setTimeout(() => Prism.highlightAll(), 0)
-    })
 }

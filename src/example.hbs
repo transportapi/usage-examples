@@ -8,15 +8,8 @@
           sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts">
   </iframe>
 
-  <h2 class="source-title">main.js</h2>
-  <span id="main.js"></span>
-
-  <h2 class="source-title">index.html</h2>
-  <span id="index.html"></span>
-
-  <h2 class="source-title">index.css</h2>
-  <span id="index.css"></span>
-
-  <h2 class="source-title">response.json</h2>
-  <span id="response.json"></span>
+  {{>file director=directory name="main.js" language="javascript"}}
+  {{>file director=directory name="index.html" language="html"}}
+  {{>file director=directory name="index.css" language="css"}}
+  {{>file director=directory name="response.json" language="json"}}
 </div>
