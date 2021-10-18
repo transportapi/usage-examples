@@ -54,8 +54,6 @@ const examples = [
 
 const urlParams = new URLSearchParams(window.location.search)
 
-console.log(window.location)
-
 if (urlParams.has('example')) {
   const directory = urlParams.get('example')
   const properties = _.find(examples, { directory })

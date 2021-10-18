@@ -9,6 +9,8 @@ const url = (appId === '' || appKey === '')
   ? 'response.json'
   : `https://transportapi.com/v3/uk/train/service/train_uid:C83947/2021-10-15/timetable.json?app_id=${appId}&app_key=${appKey}`
 
+console.log(window.location)
+
 $.getJSON(url, data => {
   const origin = data.origin_name
   const destination = data.destination_name
