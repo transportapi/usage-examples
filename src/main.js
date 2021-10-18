@@ -45,6 +45,11 @@ const examples = [
     description: 'Shows a journey plan between two points',
     directory: 'journey-planner',
   },
+  {
+    title: 'Train station timetable',
+    description: 'Create a departure board for a train station, based on scheduled departure times',
+    directory: 'train-station-timetable',
+  },
 ]
 
 const urlParams = new URLSearchParams(window.location.search)
