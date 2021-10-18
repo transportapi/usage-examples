@@ -18,7 +18,7 @@ $.getJSON(url, data => {
     stops.map(stop => {
       return `
         <tr>
-          <td>${stop.departure_time}</td>
+          <td>${stop.aimed_departure_time}</td>
           <td>${origin}</td>
           <td>${destination}</td>
           <td>${stop.platform}</td>
