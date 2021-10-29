@@ -2,7 +2,7 @@
 
 const urlParams = new URLSearchParams(window.location.search)
 const showExperimental =
-  urlParams.has('showExperimental') ? JSON.parse(urlParams.get('showExperimentalExamples')) : false
+  urlParams.has('showExperimental') ? JSON.parse(urlParams.get('showExperimental')) : false
 
 const BRANCH = urlParams.has('branch') ? urlParams.get('branch') : 'master'
 const GITHUB_PAGES_URL = 'https://transportapi.github.io/usage-examples/src/'
