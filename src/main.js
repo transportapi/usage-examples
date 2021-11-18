@@ -1,12 +1,16 @@
 /* global $ _ Prism Handlebars */
 
+const GITHUB_PAGES_URL = 'https://transportapi.github.io/usage-examples/src/'
+const RAW_GITHUB_CONTENT_URL = 'https://raw.githubusercontent.com/transportapi/usage-examples/master/'
+
 const urlParams = new URLSearchParams(window.location.search)
 const showExperimental =
   urlParams.has('showExperimental') ? JSON.parse(urlParams.get('showExperimental')) : false
+const gitBranch = urlParams.has('branch') ? urlParams.get('branch') : 'master'
 
-const BRANCH = urlParams.has('branch') ? urlParams.get('branch') : 'master'
-const GITHUB_PAGES_URL = 'https://transportapi.github.io/usage-examples/src/'
-const RAW_GITHUB_CONTENT_ROOT = `https://raw.githubusercontent.com/transportapi/usage-examples/${BRANCH}/`
+// For local development load the files from a relative path
+const examplesRootUrl = urlParams.has('localDevelopment') ? '../' : RAW_GITHUB_CONTENT_URL
+const pageTemplatesRootUrl = urlParams.has('localDevelopment') ? '' : GITHUB_PAGES_URL
 
 const examples = [
   {
@@ -72,17 +76,17 @@ if (urlParams.has('example')) {
 }
 
 function loadTemplate (fileName, properties, onLoad) {
-  $.get(RAW_GITHUB_CONTENT_ROOT + 'src/' + fileName, templateSource => {
+  $.get(pageTemplatesRootUrl + fileName, templateSource => {
     const template = Handlebars.compile(templateSource)
 
-    properties.root_url = GITHUB_PAGES_URL
+    properties.root_url = pageTemplatesRootUrl
     const html = template(properties)
     $('#app').html(html)
     onLoad()
   })
 }
 
-const exampleFile = RAW_GITHUB_CONTENT_ROOT + 'examples/{{directory}}/{{name}}'
+const exampleFile = examplesRootUrl + 'examples/{{directory}}/{{name}}'
 const fileHtml = `
   <h2 class="source-title">{{name}}</h2>
   <pre class="line-numbers"
@@ -93,8 +97,8 @@ const fileHtml = `
 Handlebars.registerPartial('file', fileHtml)
 
 function showExample (exampleProperties) {
-  exampleProperties.root_url = GITHUB_PAGES_URL
-  exampleProperties.branch = BRANCH
+  exampleProperties.root_url = pageTemplatesRootUrl
+  exampleProperties.branch = gitBranch
 
   loadTemplate('example.hbs', exampleProperties, () => {
     // This can't simply be put in the CSS file because Prism.js seemingly redraws the element
