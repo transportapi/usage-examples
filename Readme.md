@@ -5,9 +5,8 @@ They are intended for a technical audience, to provide inspiration for
 what can be built, and tutorials to get started, with code that can be
 reused in applications.
 The examples are mini web applications, written in HTML and javascript.
-They focus on processing data from the API,
-rather than style: we don't want functional code getting lost in
-a sea of styling.
+They focus on processing data from the API, rather than style:
+we don't want functional code getting lost in a sea of styling.
 
 ## Development
 
@@ -29,7 +28,7 @@ push your development branch and add its name as request parameter `branch`.
 
 Example:
 
-`http://localhost:8080/?example=bus-stop-timetable&branch=<YOUR DEVELOPMENT BRANCH>`
+`http://localhost:8080/?example=bus-stop-timetable&localDevelopment=true&branch=<YOUR DEVELOPMENT BRANCH>`
 
 ## Reviewing examples
 ### By using the local setup
@@ -37,16 +36,18 @@ Example:
 1. Run the usage examples locally (See [Development](#development))
 2. Open `http://localhost:8080/src?localDevelopment=true&branch=<REVIEWED BRANCH>`
 Please note that you have to manually add the
-`localDevelopment=true&branch=<REVIEWED BRANCH>`query parameters on each page.
+`localDevelopment=true&branch=<REVIEWED BRANCH>`query parameters to the url of
+each page.
 
 ### By using experimental examples in production
 
 The usage examples navigation page supports experimental usage examples
 to perform production quality inspection without affecting the user experience.
-The examples that are marked as experimental won't be shown unless an additional
-request parameter `showExperimental=true` is provided.
+The examples that are marked as experimental won't be shown unless an
+additional request parameter `showExperimental=true` is provided.
 
 Example:
 https://developer.transportapi.com/examples?showExperimental=true
 
-To mark example as experimental add `experimental: true` to the listed `examples` in `main.js`
+To mark example as experimental add `experimental: true` to the listed
+`examples` in `main.js`
