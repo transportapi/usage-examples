@@ -17,7 +17,7 @@ $.getJSON(url, data => {
       const service = departures[line][0]
       return `
         <tr>
-          // <td>${service.aimed_departure_time}</td>
+          <td>${service.aimed_departure_time}</td>
           <td>${service.line_name}</td>
           <td>${service.direction}</td>
         </tr>
@@ -27,7 +27,7 @@ $.getJSON(url, data => {
   const html = `
     <table>
       <tr>
-<!--        <th>Time</th>-->
+        <th>Time</th>
         <th>Line</th>
         <th>Destination</th>
       </tr>
