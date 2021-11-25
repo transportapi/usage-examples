@@ -71,7 +71,11 @@ if (urlParams.has('example')) {
   showExample(properties)
 } else {
   const examplesToList = showExperimental ? examples : examples.filter(example => !example.experimental)
-  const properties = { examples: examplesToList, showExample: showExample }
+  const properties = {
+    examples: examplesToList,
+    additionalUrlParameters: urlParams.has('localDevelopment') ? '&localDevelopment=true' : '',
+    showExample: showExample
+  }
   loadTemplate('navigation.hbs', properties, () => null)
 }
 
