@@ -15,30 +15,26 @@ To serve the page content on `localhost` execute:
 ruby -run -e httpd . -p 8080
 ```
 in the project root directory and open
-`http://localhost:8080/src?localDevelopment=true`
+`http://localhost:8080/src?localDevelopment=true&branch=<YOUR DEVELOPMENT BRANCH>`
 
 Please note that to see your local files you have to add query parameter
 `localDevelopment=true`, otherwise the template `.hbs` files will be loaded
 from GitHub pages and examples sources from raw.githubusercontent.com
 
-The pages of each  usage example use[CodeSandbox](https://codesandbox.io/)
-for the embedded example playground.
+The page of usage examples use [CodeSandbox](https://codesandbox.io/)
+for the embedded source playground.
 It is online and to load it with your local changes reflected you need to
-push your development branch and add its name as request parameter `branch`.
+push your development git branch and add its name as request parameter `branch`.
 
 Example:
 
-`http://localhost:8080/?example=bus-stop-timetable&localDevelopment=true&branch=<YOUR DEVELOPMENT BRANCH>`
+`http://localhost:8080/src?example=bus-stop-timetable&localDevelopment=true&branch=<YOUR DEVELOPMENT BRANCH>`
 
 ## Reviewing examples
 ### By using the local setup
 
 1. Run the usage examples locally (See [Development](#development))
 2. Open `http://localhost:8080/src?localDevelopment=true&branch=<REVIEWED BRANCH>`
-To load the Codesandbox playground for on usage example pages you have to
-3. manually add `branch=<REVIEWED BRANCH>` to the url.
-Example:
-`http://localhost:8080/src/?example=train-station-timetable&localDevelopment=true&branch=add-train-station-timetable-example`
 
 ### By using experimental examples in production
 

@@ -2,15 +2,18 @@
 
 const GITHUB_PAGES_URL = 'https://transportapi.github.io/usage-examples/src/'
 const RAW_GITHUB_CONTENT_URL = 'https://raw.githubusercontent.com/transportapi/usage-examples/master/'
+const LOCAL_DEVELOPMENT_QUERY_PARAM = 'localDevelopment'
+const BRANCH_QUERY_PARAM = 'branch'
+const SHOW_EXPERIMENTAL_QUERY_PARAM = 'showExperimental'
 
 const urlParams = new URLSearchParams(window.location.search)
 const showExperimental =
-  urlParams.has('showExperimental') ? JSON.parse(urlParams.get('showExperimental')) : false
-const gitBranch = urlParams.has('branch') ? urlParams.get('branch') : 'master'
+  urlParams.has(SHOW_EXPERIMENTAL_QUERY_PARAM) ? JSON.parse(urlParams.get(SHOW_EXPERIMENTAL_QUERY_PARAM)) : false
+const gitBranch = urlParams.has(BRANCH_QUERY_PARAM) ? urlParams.get(BRANCH_QUERY_PARAM) : 'master'
 
 // For local development load the files from a relative path
-const examplesRootUrl = urlParams.has('localDevelopment') ? '../' : RAW_GITHUB_CONTENT_URL
-const pageTemplatesRootUrl = urlParams.has('localDevelopment') ? '' : GITHUB_PAGES_URL
+const examplesRootUrl = urlParams.has(LOCAL_DEVELOPMENT_QUERY_PARAM) ? '../' : RAW_GITHUB_CONTENT_URL
+const pageTemplatesRootUrl = urlParams.has(LOCAL_DEVELOPMENT_QUERY_PARAM) ? '' : GITHUB_PAGES_URL
 
 const examples = [
   {
@@ -73,7 +76,7 @@ if (urlParams.has('example')) {
   const examplesToList = showExperimental ? examples : examples.filter(example => !example.experimental)
   const properties = {
     examples: examplesToList,
-    additionalUrlParameters: urlParams.has('localDevelopment') ? '&localDevelopment=true' : '',
+    additionalUrlQueryParams: exampleViewUrlQueryParameters(),
     showExample: showExample
   }
   loadTemplate('navigation.hbs', properties, () => null)
@@ -111,4 +114,20 @@ function showExample (exampleProperties) {
     // doesn't work without this approach
     setTimeout(() => Prism.highlightAll(), 0)
   })
+}
+
+function exampleViewUrlQueryParameters () {
+  const parameters = {};
+  // Parameter from the current view that if present should propagate to the example views
+  [LOCAL_DEVELOPMENT_QUERY_PARAM, BRANCH_QUERY_PARAM]
+    .filter(param => urlParams.has(param))
+    .forEach(param => {
+      parameters[param] = urlParams.get(param)
+    })
+  return toAdditionalQueryParametersString(parameters)
+}
+
+function toAdditionalQueryParametersString (parameters) {
+  const params = `${Object.entries(parameters).map(entry => `${entry[0]}=${entry[1]}`).join('&')}`
+  return params ? `&${params}` : ''
 }
