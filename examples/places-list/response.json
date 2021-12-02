@@ -1,0 +1,232 @@
+{
+  "request_time": "2021-12-02T14:24:02+00:00",
+  "source": "Network Rail, OpenStreetMap, NaPTAN, ",
+  "acknowledgements": "Contains information of Network Rail Infrastructure Limited. License http://www.networkrail.co.uk/data-feeds/terms-and-conditions/, OpenStreetMap data licensed ODbL http://opendatacommons.org/licenses/odbl/, Contains DfT NaPTAN bus stops data, , Contains DfT NaPTAN tube station data",
+  "member": [
+    {
+      "type": "train_station",
+      "name": "London Waterloo",
+      "latitude": 51.503297,
+      "longitude": -0.113109,
+      "accuracy": 100,
+      "station_code": "WAT",
+      "tiploc_code": "WATRLOO"
+    },
+    {
+      "type": "train_station",
+      "name": "Waterloo (Merseyside)",
+      "latitude": 53.474952,
+      "longitude": -3.025536,
+      "accuracy": 100,
+      "station_code": "WLO",
+      "tiploc_code": "WLOO"
+    },
+    {
+      "type": "train_station",
+      "name": "London Waterloo East",
+      "latitude": 51.504074,
+      "longitude": -0.108898,
+      "accuracy": 100,
+      "station_code": "WAE",
+      "tiploc_code": "WLOE"
+    },
+    {
+      "type": "settlement",
+      "name": "Waterloo",
+      "latitude": 51.5868946,
+      "longitude": -3.1625022,
+      "accuracy": 718,
+      "osm_id": "node:3746052742",
+      "description": "Trethomas, Caerphilly, Cymru / Wales, CF83 8NL"
+    },
+    {
+      "type": "settlement",
+      "name": "Waterloo",
+      "latitude": 53.4737037,
+      "longitude": -3.0290822,
+      "accuracy": 718,
+      "osm_id": "node:30644333",
+      "description": "Sefton, North West England, L22 5NU"
+    },
+    {
+      "type": "settlement",
+      "name": "Waterloo",
+      "latitude": 53.6450501,
+      "longitude": -1.7359102,
+      "accuracy": 718,
+      "osm_id": "node:3790776682",
+      "description": "Huddersfield, West Yorkshire, Yorkshire and the Humber, HD5 8QT"
+    },
+    {
+      "type": "settlement",
+      "name": "Waterloo",
+      "latitude": 50.7474252,
+      "longitude": -1.9885419,
+      "accuracy": 359,
+      "osm_id": "node:3397318809",
+      "description": "Poole, Bournemouth, Christchurch and Poole, South West England, BH17 7HB"
+    },
+    {
+      "type": "settlement",
+      "name": "Waterloo",
+      "latitude": 50.5242999,
+      "longitude": -4.6717744,
+      "accuracy": 718,
+      "osm_id": "node:1585710770",
+      "description": "Blisland, Cornwall, South West England, PL30 4JX"
+    },
+    {
+      "type": "settlement",
+      "name": "Waterloo",
+      "latitude": 53.5003096,
+      "longitude": -2.1092586,
+      "accuracy": 718,
+      "osm_id": "node:30009200",
+      "description": "Tameside, Greater Manchester, North West England, OL7 9LT"
+    },
+    {
+      "type": "settlement",
+      "name": "Waterloo",
+      "latitude": 52.892574,
+      "longitude": -2.7485215,
+      "accuracy": 718,
+      "osm_id": "node:336618823",
+      "description": "Whixall, Shropshire, West Midlands, SY13 2PX"
+    },
+    {
+      "type": "settlement",
+      "name": "Waterloo",
+      "latitude": 53.2579324,
+      "longitude": -2.6943093,
+      "accuracy": 718,
+      "osm_id": "node:52134025",
+      "description": "Kingsley, Cheshire West and Chester, North West England, WA6 6JW"
+    },
+    {
+      "type": "settlement",
+      "name": "Waterloo",
+      "latitude": 53.645376,
+      "longitude": -1.7362883,
+      "accuracy": 718,
+      "osm_id": "node:3043295748",
+      "description": "Kirklees, West Yorkshire, Yorkshire and the Humber, HD5 0AQ"
+    },
+    {
+      "type": "bus_stop",
+      "name": "Waterloo Rise (stop E) - S-bound",
+      "latitude": 53.64472,
+      "longitude": -1.73679,
+      "accuracy": 20,
+      "description": "Waterloo, Huddersfield",
+      "atcocode": "450023524"
+    },
+    {
+      "type": "bus_stop",
+      "name": "Waterloo Rise (stop F) - NE-bound",
+      "latitude": 53.64451,
+      "longitude": -1.73715,
+      "accuracy": 20,
+      "description": "Waterloo, Huddersfield",
+      "atcocode": "450025590"
+    },
+    {
+      "type": "bus_stop",
+      "name": "WATERLOO CENTRE - NW-bound",
+      "latitude": 53.35818,
+      "longitude": -2.7346,
+      "accuracy": 20,
+      "description": "Waterloo, Widnes",
+      "atcocode": "068000000466"
+    },
+    {
+      "type": "bus_stop",
+      "name": "WATERLOO CENTRE - SE-bound",
+      "latitude": 53.35612,
+      "longitude": -2.73443,
+      "accuracy": 20,
+      "description": "Waterloo, Widnes",
+      "atcocode": "068000000467"
+    },
+    {
+      "type": "bus_stop",
+      "name": "Pudsey Waterloo - NW-bound",
+      "latitude": 53.7958,
+      "longitude": -1.68341,
+      "accuracy": 20,
+      "description": "Pudsey",
+      "atcocode": "450012282"
+    },
+    {
+      "type": "bus_stop",
+      "name": "Gillhead - NW-bound",
+      "latitude": 55.7614,
+      "longitude": -3.89037,
+      "accuracy": 20,
+      "description": "Waterloo, Wishaw",
+      "atcocode": "6160672"
+    },
+    {
+      "type": "bus_stop",
+      "name": "Waterloo Station (Stop T) - E-bound",
+      "latitude": 51.50495,
+      "longitude": -0.11497,
+      "accuracy": 20,
+      "description": "Waterloo, London",
+      "atcocode": "490000254T"
+    },
+    {
+      "type": "bus_stop",
+      "name": "Waterloo Station (Stop V) - N-bound",
+      "latitude": 51.50365,
+      "longitude": -0.11543,
+      "accuracy": 20,
+      "description": "Waterloo, London",
+      "atcocode": "490000254Z"
+    },
+    {
+      "type": "bus_stop",
+      "name": "Waterloo Port - SW-bound",
+      "latitude": 53.15105,
+      "longitude": -4.26322,
+      "accuracy": 20,
+      "description": "Waterloo Port, Caernarfon",
+      "atcocode": "5400AWD71857"
+    },
+    {
+      "type": "bus_stop",
+      "name": "Post Box - NW-bound",
+      "latitude": 56.51366,
+      "longitude": -3.52951,
+      "accuracy": 20,
+      "description": "Waterloo",
+      "atcocode": "64801283"
+    },
+    {
+      "type": "tram_stop",
+      "name": "Waterloo Road (Blackpool Tramway)",
+      "latitude": 53.79904,
+      "longitude": -3.05584,
+      "accuracy": 20,
+      "description": "Bloomfield, Blackpool",
+      "atcocode": "9400ZZBPWTL1"
+    },
+    {
+      "type": "tram_stop",
+      "name": "Waterloo Road (Blackpool Tramway)",
+      "latitude": 53.79904,
+      "longitude": -3.05593,
+      "accuracy": 20,
+      "description": "Bloomfield, Blackpool",
+      "atcocode": "9400ZZBPWTL2"
+    },
+    {
+      "type": "tube_station",
+      "name": "Waterloo Underground Station",
+      "latitude": 51.5031,
+      "longitude": -0.11512,
+      "accuracy": 20,
+      "description": "Waterloo, London",
+      "atcocode": "9400ZZLUWLO"
+    }
+  ]
+}

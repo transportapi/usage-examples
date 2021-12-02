@@ -71,6 +71,12 @@ const examples = [
     description: 'Create a departure board for a train station, based on scheduled departure times',
     directory: 'train-station-timetable',
     experimental: false
+  },
+  {
+    title: 'Places',
+    description: 'Shows a result of places search',
+    directory: 'places-list',
+    experimental: false
   }
 ]
 
