@@ -13,7 +13,7 @@ const url = (appId === '' || appKey === '')
 console.log(window.location)
 
 $.getJSON(url, data => {
-  const departures = data.all
+  const departures = data.departures.all
   const rows =
     departures.map(departure => {
       return `
