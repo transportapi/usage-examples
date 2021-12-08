@@ -73,8 +73,8 @@ const examples = [
     experimental: false
   },
   {
-    title: 'Places',
-    description: 'Shows a result of places search',
+    title: 'Places text search',
+    description: 'Perform a text search on the Places endpoint, and show matching places as a list',
     directory: 'places-list',
     experimental: false
   }
