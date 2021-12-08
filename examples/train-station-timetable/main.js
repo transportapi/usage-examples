@@ -4,27 +4,25 @@ import $ from 'jquery'
 // and filling them here
 const appId = ''
 const appKey = ''
+const trainStation = 'HBD'
 
 const url = (appId === '' || appKey === '')
   ? 'response.json'
-  : `https://transportapi.com/v3/uk/train/service/train_uid:C83947/2021-10-15/timetable.json?app_id=${appId}&app_key=${appKey}`
+  : `https://transportapi.com/v3/uk/train/station/${trainStation}/timetable.json?app_id=${appId}&app_key=${appKey}&train_status=passenger`
 
 console.log(window.location)
 
 $.getJSON(url, data => {
-  const origin = data.origin_name
-  const destination = data.destination_name
-  const trainUid = data.train_uid
-  const stops = data.stops
+  const departures = data.all
   const rows =
-    stops.map(stop => {
+    departures.map(departure => {
       return `
         <tr>
-          <td>${stop.aimed_departure_time}</td>
-          <td>${origin}</td>
-          <td>${destination}</td>
-          <td>${stop.platform}</td>
-          <td>${trainUid}</td>
+          <td>${departure.aimed_departure_time}</td>
+          <td>${departure.origin_name}</td>
+          <td>${departure.destination_name}</td>
+          <td>${departure.platform}</td>
+          <td>${departure.train_uid}</td>
         </tr>
       `
     }).join('\n')
