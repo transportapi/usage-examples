@@ -65,6 +65,12 @@ const examples = [
     description: 'Shows a journey plan between two points',
     directory: 'journey-planner',
     experimental: false
+  },
+  {
+    title: 'Train station timetable',
+    description: 'Create a departure board for a train station, based on scheduled departure times',
+    directory: 'train-station-timetable',
+    experimental: false
   }
 ]
 

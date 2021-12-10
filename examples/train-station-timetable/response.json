@@ -1,0 +1,299 @@
+{
+  "date": "2021-12-08",
+  "time_of_day": "10:39",
+  "request_time": "2021-12-08T10:39:35+00:00",
+  "station_name": "Hebden Bridge",
+  "station_code": "HBD",
+  "departures": {
+    "all": [
+      {
+        "mode": "train",
+        "service": "11837920",
+        "train_uid": "C83943",
+        "platform": "1",
+        "operator": "NT",
+        "operator_name": "Northern",
+        "aimed_departure_time": "10:39",
+        "aimed_arrival_time": "10:38",
+        "aimed_pass_time": null,
+        "origin_name": "York",
+        "destination_name": "Blackpool North",
+        "source": "ATOC",
+        "category": "XX",
+        "service_timetable": {
+          "id": "https://transportapi.com/v3/uk/train/service/train_uid:C83943/2021-12-08/timetable.json?app_id=f26c9613&app_key=2020-05-15-dave-bypass-key"
+        }
+      },
+      {
+        "mode": "train",
+        "service": "21737000",
+        "train_uid": "C83947",
+        "platform": "2",
+        "operator": "NT",
+        "operator_name": "Northern",
+        "aimed_departure_time": "10:42",
+        "aimed_arrival_time": "10:41",
+        "aimed_pass_time": null,
+        "origin_name": "Blackpool North",
+        "destination_name": "York",
+        "source": "ATOC",
+        "category": "XX",
+        "service_timetable": {
+          "id": "https://transportapi.com/v3/uk/train/service/train_uid:C83947/2021-12-08/timetable.json?app_id=f26c9613&app_key=2020-05-15-dave-bypass-key"
+        }
+      },
+      {
+        "mode": "train",
+        "service": "12366110",
+        "train_uid": "L06297",
+        "platform": "2",
+        "operator": "NT",
+        "operator_name": "Northern",
+        "aimed_departure_time": "10:50",
+        "aimed_arrival_time": "10:48",
+        "aimed_pass_time": null,
+        "origin_name": "Chester",
+        "destination_name": "Leeds",
+        "source": "ATOC",
+        "category": "XX",
+        "service_timetable": {
+          "id": "https://transportapi.com/v3/uk/train/service/train_uid:L06297/2021-12-08/timetable.json?app_id=f26c9613&app_key=2020-05-15-dave-bypass-key"
+        }
+      },
+      {
+        "mode": "train",
+        "service": "11871821",
+        "train_uid": "L06489",
+        "platform": "1",
+        "operator": "NT",
+        "operator_name": "Northern",
+        "aimed_departure_time": "10:56",
+        "aimed_arrival_time": "10:54",
+        "aimed_pass_time": null,
+        "origin_name": "Leeds",
+        "destination_name": "Manchester Victoria",
+        "source": "ATOC",
+        "category": "XX",
+        "service_timetable": {
+          "id": "https://transportapi.com/v3/uk/train/service/train_uid:L06489/2021-12-08/timetable.json?app_id=f26c9613&app_key=2020-05-15-dave-bypass-key"
+        }
+      },
+      {
+        "mode": "train",
+        "service": "11874020",
+        "train_uid": "G80431",
+        "platform": "1",
+        "operator": "NT",
+        "operator_name": "Northern",
+        "aimed_departure_time": "11:10",
+        "aimed_arrival_time": "11:08",
+        "aimed_pass_time": null,
+        "origin_name": "Leeds",
+        "destination_name": "Wigan North Western",
+        "source": "ATOC",
+        "category": "OO",
+        "service_timetable": {
+          "id": "https://transportapi.com/v3/uk/train/service/train_uid:G80431/2021-12-08/timetable.json?app_id=f26c9613&app_key=2020-05-15-dave-bypass-key"
+        }
+      },
+      {
+        "mode": "train",
+        "service": "11874020",
+        "train_uid": "G56229",
+        "platform": "2",
+        "operator": "NT",
+        "operator_name": "Northern",
+        "aimed_departure_time": "11:14",
+        "aimed_arrival_time": "11:14",
+        "aimed_pass_time": null,
+        "origin_name": "Manchester Victoria",
+        "destination_name": "Leeds",
+        "source": "ATOC",
+        "category": "OO",
+        "service_timetable": {
+          "id": "https://transportapi.com/v3/uk/train/service/train_uid:G56229/2021-12-08/timetable.json?app_id=f26c9613&app_key=2020-05-15-dave-bypass-key"
+        }
+      },
+      {
+        "mode": "train",
+        "service": "11871821",
+        "train_uid": "L06478",
+        "platform": "2",
+        "operator": "NT",
+        "operator_name": "Northern",
+        "aimed_departure_time": "11:31",
+        "aimed_arrival_time": "11:30",
+        "aimed_pass_time": null,
+        "origin_name": "Manchester Victoria",
+        "destination_name": "Leeds",
+        "source": "ATOC",
+        "category": "XX",
+        "service_timetable": {
+          "id": "https://transportapi.com/v3/uk/train/service/train_uid:L06478/2021-12-08/timetable.json?app_id=f26c9613&app_key=2020-05-15-dave-bypass-key"
+        }
+      },
+      {
+        "mode": "train",
+        "service": "11871821",
+        "train_uid": "L06277",
+        "platform": "1",
+        "operator": "NT",
+        "operator_name": "Northern",
+        "aimed_departure_time": "11:33",
+        "aimed_arrival_time": "11:31",
+        "aimed_pass_time": null,
+        "origin_name": "Leeds",
+        "destination_name": "Chester",
+        "source": "ATOC",
+        "category": "XX",
+        "service_timetable": {
+          "id": "https://transportapi.com/v3/uk/train/service/train_uid:L06277/2021-12-08/timetable.json?app_id=f26c9613&app_key=2020-05-15-dave-bypass-key"
+        }
+      },
+      {
+        "mode": "train",
+        "service": "11837920",
+        "train_uid": "G55283",
+        "platform": "1",
+        "operator": "NT",
+        "operator_name": "Northern",
+        "aimed_departure_time": "11:42",
+        "aimed_arrival_time": "11:42",
+        "aimed_pass_time": null,
+        "origin_name": "York",
+        "destination_name": "Blackpool North",
+        "source": "ATOC",
+        "category": "XX",
+        "service_timetable": {
+          "id": "https://transportapi.com/v3/uk/train/service/train_uid:G55283/2021-12-08/timetable.json?app_id=f26c9613&app_key=2020-05-15-dave-bypass-key"
+        }
+      },
+      {
+        "mode": "train",
+        "service": "21737000",
+        "train_uid": "C83949",
+        "platform": "2",
+        "operator": "NT",
+        "operator_name": "Northern",
+        "aimed_departure_time": "11:42",
+        "aimed_arrival_time": "11:41",
+        "aimed_pass_time": null,
+        "origin_name": "Blackpool North",
+        "destination_name": "York",
+        "source": "ATOC",
+        "category": "XX",
+        "service_timetable": {
+          "id": "https://transportapi.com/v3/uk/train/service/train_uid:C83949/2021-12-08/timetable.json?app_id=f26c9613&app_key=2020-05-15-dave-bypass-key"
+        }
+      },
+      {
+        "mode": "train",
+        "service": "12366110",
+        "train_uid": "L06299",
+        "platform": "2",
+        "operator": "NT",
+        "operator_name": "Northern",
+        "aimed_departure_time": "11:50",
+        "aimed_arrival_time": "11:48",
+        "aimed_pass_time": null,
+        "origin_name": "Chester",
+        "destination_name": "Leeds",
+        "source": "ATOC",
+        "category": "XX",
+        "service_timetable": {
+          "id": "https://transportapi.com/v3/uk/train/service/train_uid:L06299/2021-12-08/timetable.json?app_id=f26c9613&app_key=2020-05-15-dave-bypass-key"
+        }
+      },
+      {
+        "mode": "train",
+        "service": "11871821",
+        "train_uid": "L06497",
+        "platform": "1",
+        "operator": "NT",
+        "operator_name": "Northern",
+        "aimed_departure_time": "11:58",
+        "aimed_arrival_time": "11:54",
+        "aimed_pass_time": null,
+        "origin_name": "Leeds",
+        "destination_name": "Manchester Victoria",
+        "source": "ATOC",
+        "category": "XX",
+        "service_timetable": {
+          "id": "https://transportapi.com/v3/uk/train/service/train_uid:L06497/2021-12-08/timetable.json?app_id=f26c9613&app_key=2020-05-15-dave-bypass-key"
+        }
+      },
+      {
+        "mode": "train",
+        "service": "11874020",
+        "train_uid": "G82110",
+        "platform": "1",
+        "operator": "NT",
+        "operator_name": "Northern",
+        "aimed_departure_time": "12:10",
+        "aimed_arrival_time": "12:10",
+        "aimed_pass_time": null,
+        "origin_name": "Leeds",
+        "destination_name": "Wigan North Western",
+        "source": "ATOC",
+        "category": "OO",
+        "service_timetable": {
+          "id": "https://transportapi.com/v3/uk/train/service/train_uid:G82110/2021-12-08/timetable.json?app_id=f26c9613&app_key=2020-05-15-dave-bypass-key"
+        }
+      },
+      {
+        "mode": "train",
+        "service": "12225110",
+        "train_uid": "G82045",
+        "platform": "2",
+        "operator": "NT",
+        "operator_name": "Northern",
+        "aimed_departure_time": "12:14",
+        "aimed_arrival_time": "12:14",
+        "aimed_pass_time": null,
+        "origin_name": "Wigan North Western",
+        "destination_name": "Leeds",
+        "source": "ATOC",
+        "category": "OO",
+        "service_timetable": {
+          "id": "https://transportapi.com/v3/uk/train/service/train_uid:G82045/2021-12-08/timetable.json?app_id=f26c9613&app_key=2020-05-15-dave-bypass-key"
+        }
+      },
+      {
+        "mode": "train",
+        "service": "11871821",
+        "train_uid": "L06486",
+        "platform": "2",
+        "operator": "NT",
+        "operator_name": "Northern",
+        "aimed_departure_time": "12:30",
+        "aimed_arrival_time": "12:29",
+        "aimed_pass_time": null,
+        "origin_name": "Manchester Victoria",
+        "destination_name": "Leeds",
+        "source": "ATOC",
+        "category": "XX",
+        "service_timetable": {
+          "id": "https://transportapi.com/v3/uk/train/service/train_uid:L06486/2021-12-08/timetable.json?app_id=f26c9613&app_key=2020-05-15-dave-bypass-key"
+        }
+      },
+      {
+        "mode": "train",
+        "service": "11871821",
+        "train_uid": "L06279",
+        "platform": "1",
+        "operator": "NT",
+        "operator_name": "Northern",
+        "aimed_departure_time": "12:33",
+        "aimed_arrival_time": "12:31",
+        "aimed_pass_time": null,
+        "origin_name": "Leeds",
+        "destination_name": "Chester",
+        "source": "ATOC",
+        "category": "XX",
+        "service_timetable": {
+          "id": "https://transportapi.com/v3/uk/train/service/train_uid:L06279/2021-12-08/timetable.json?app_id=f26c9613&app_key=2020-05-15-dave-bypass-key"
+        }
+      }
+    ]
+  }
+}
