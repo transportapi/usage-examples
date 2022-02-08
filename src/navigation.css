@@ -1,23 +1,32 @@
-.example-container {
-  display: inline-block;
-  margin: 0.65em 15px;
+.product-logo {
+  min-width: 3.5rem;
+}
+
+.tapi-cta-btn {
+  min-width: 15rem;
+}
+
+.browse-btn {
+  max-width: 70%;
+}
+
+a.example-box.btn-secondary {
+  border-radius: 1rem;
+}
+
+a.btn-secondary.nav-link:hover {
+  color: #FFFFFF;
 }
 
 a.example-box {
-  display: inline-block;
+  display: block;
   overflow: hidden;
-  width: 30em;
-  height: 150px;
-  padding: 10px;
-  color: rgba(0, 0, 0, 0.6);
-  background-color: rgba(204, 204, 204, 0.4);
+  width: 24em;
+  height: 8.6em;
+  padding: 0.5em 1em 0.5em;
   text-decoration: none;
-  border-radius: 5px;
-}
-
-a.example-box:hover {
-  background-color: rgba(204, 204, 204, 0.8);
-  color: rgb(42, 100, 150);
+  border: 1px solid;
+  text-align: left;
 }
 
 a.example-box h2 {

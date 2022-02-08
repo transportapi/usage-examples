@@ -15,68 +15,111 @@ const gitBranch = urlParams.has(BRANCH_QUERY_PARAM) ? urlParams.get(BRANCH_QUERY
 const examplesRootUrl = urlParams.has(LOCAL_DEVELOPMENT_QUERY_PARAM) ? '../' : RAW_GITHUB_CONTENT_URL
 const pageTemplatesRootUrl = urlParams.has(LOCAL_DEVELOPMENT_QUERY_PARAM) ? '' : GITHUB_PAGES_URL
 
+const products = [
+  {
+    id: 'tapi-journey-planner',
+    label: 'TAPI Journey Planner',
+    logo: 'media/logo-tapi-journey-planner.svg'
+  },
+  {
+    id: 'tapi-bus-information',
+    label: 'TAPI Bus Information',
+    logo: 'media/logo-tapi-bus-information.svg'
+  },
+  {
+    id: 'tapi-bus-performance',
+    label: 'TAPI Bus Performance',
+    logo: 'media/logo-tapi-bus-performance.svg'
+  },
+  {
+    id: 'tapi-bus-fares',
+    label: 'TAPI Bus Fares',
+    logo: 'media/tapi-bus-fares.svg'
+  },
+  {
+    id: 'tapi-rail-information',
+    label: 'TAPI Rail Information',
+    logo: 'media/logo-tapi-rail-information.svg'
+  },
+  {
+    id: 'tapi-places',
+    label: 'TAPI Places',
+    logo: 'media/logo-tapi-places.svg'
+  }
+]
+
 const examples = [
   {
     title: 'Stop timetable',
     description: 'Retrieves information about all buses departing from a stop with a given ATCOCode in the near ' +
       'future',
     directory: 'bus-stop-timetable',
-    experimental: false
+    experimental: false,
+    product_ids: ['tapi-bus-information']
   },
   {
     title: 'Bus route geometry',
     description: 'Retrieves the geometry of a bus route specified by operator, line and direction and draws it on a ' +
       'map',
     directory: 'bus-route-geometry',
-    experimental: false
+    experimental: false,
+    product_ids: ['tapi-bus-information']
   },
   {
     title: 'Bus service description',
     description: 'Show bus service metadata: the operator, linename, directions and destinations',
     directory: 'bus-service-description',
-    experimental: false
+    experimental: false,
+    product_ids: ['tapi-bus-information']
   },
   {
     title: 'Bus service search',
     description: 'List bus services matching the search on operator code and line name',
     directory: 'bus-service-search',
-    experimental: false
+    experimental: false,
+    product_ids: ['tapi-bus-information']
   },
   {
     title: 'Bus journey timetable',
     description: 'Show the scheduled timing point stops for a specific bus journey',
     directory: 'bus-journey-timetable',
-    experimental: false
+    experimental: false,
+    product_ids: ['tapi-bus-information']
   },
   {
     title: 'Buses on a map',
     description: 'Show the buses for a specific service on a map',
     directory: 'buses-on-a-map',
-    experimental: false
+    experimental: false,
+    product_ids: ['tapi-bus-information']
   },
   {
     title: 'Bus full timetable',
     description: 'Show the full timetable for a given service on a given date',
     directory: 'bus-full-timetable',
-    experimental: false
+    experimental: false,
+    product_ids: ['tapi-bus-information']
   },
   {
     title: 'Journey planner',
     description: 'Shows a journey plan between two points',
     directory: 'journey-planner',
-    experimental: false
+    experimental: false,
+    product_ids: ['tapi-journey-planner']
   },
   {
     title: 'Train station timetable',
     description: 'Create a departure board for a train station, based on scheduled departure times',
     directory: 'train-station-timetable',
-    experimental: false
+    experimental: false,
+    product_ids: ['tapi-rail-information']
   },
   {
     title: 'Places text search',
     description: 'Perform a text search on the Places endpoint, and show matching places as a list',
     directory: 'places-text-search',
-    experimental: false
+    experimental: false,
+    product_ids: ['tapi-places']
   }
 ]
 
@@ -86,9 +129,12 @@ if (urlParams.has('example')) {
   showExample(properties)
 } else {
   const examplesToList = showExperimental ? examples : examples.filter(example => !example.experimental)
+  const productExamples = organizeByProduct(examplesToList)
   const properties = {
-    examples: examplesToList,
+    productExamples: productExamples,
     additionalUrlQueryParams: exampleViewUrlQueryParameters(),
+    // eslint-disable-next-line no-undef
+    userLoggedIn: userLoggedIn,
     showExample: showExample
   }
   loadTemplate('navigation.hbs', properties, () => null)
@@ -126,6 +172,15 @@ function showExample (exampleProperties) {
     // doesn't work without this approach
     setTimeout(() => Prism.highlightAll(), 0)
   })
+}
+
+function organizeByProduct (examples) {
+  return products.map(product => ({
+    label: product.label,
+    logo: product.logo,
+    examples: examples.filter(example => example.product_ids.includes(product.id))
+  }))
+    .filter(product => product.examples.length !== 0)
 }
 
 function exampleViewUrlQueryParameters () {

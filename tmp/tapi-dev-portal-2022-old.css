@@ -1,0 +1,386 @@
+body {
+    font-family: "Avenir Next Cyr W00 Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+body.offset-primary-navbar {
+    padding-top: 56px;
+}
+
+body.offset-secondary-navbar {
+    padding-top: 110px;
+}
+
+html {
+    scroll-padding-top: 109px;
+}
+
+.tapi-header {
+    background: #14B1ED;
+}
+
+.tapi-primary,
+.tapi-primary .nav-link,
+.tapi-primary a {
+    background: #14B1ED;
+    color: #FFFFFF;
+}
+
+.tapi-primary .nav-link:hover {
+    color: #0062b2;
+}
+
+.tapi-secondary,
+.tapi-secondary .nav-link,
+.tapi-secondary a {
+    background: #8AD8F6;
+    color: #575756;
+}
+
+.tapi-secondary .nav-link:hover {
+    font-weight: bold;
+}
+
+.tapi-secondary .nav-link.active {
+    background: #8AD8F6;
+    color: #575756;
+    box-shadow: inset 0 -2px 0 #575756;
+    border-radius: 0;
+}
+
+.tapi-paragraph {
+    color: #575756;
+}
+
+.tapi-paragraph p {
+    color: #999999;
+}
+
+.tapi-section-alternate {
+    background: #F7F7F7;
+}
+
+.tapi-logo {
+    height: 2.375rem;
+    padding-right: 1rem;
+}
+
+.tapi-primary .dropdown-menu {
+    background-color: #14B1ED;
+}
+
+.tapi-primary .navbar-toggler {
+    color: rgba(255, 255, 255, .55);
+    border-color: rgba(255, 255, 255, .1)
+}
+
+.tapi-primary .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
+}
+
+/*
+https://forum.bootstrapstudio.io/t/carousel-indicators-colour/7090/10
+*/
+.carousel .carousel-control-next-icon, .carousel-control-prev-icon {
+    background-image: none;
+}
+
+.tapi-navbar-primary a.signup {
+    border: 1px solid #fff;
+    /*padding: 8px 20px 10px;*/
+    /*-webkit-border-radius: 3px;*/
+    border-radius: 3px;
+    background-clip: padding-box;
+    text-decoration: none;
+}
+
+.tapi-navbar-primary .navbar-toggler
+{
+    color: rgba(255, 255, 255, .55);
+    border-color: rgba(255, 255, 255, .7)
+}
+
+.tapi-navbar-secondary .navbar-toggler
+{
+    color: #575756;
+}
+
+.tapi-navbar-secondary .navbar-toggler:focus
+{
+    color: #575756;
+    box-shadow: none;
+}
+
+.tapi-navbar-secondary .navbar-toggler.collapsed .icon-collapse {
+    display: none;
+}
+
+.tapi-navbar-secondary .navbar-toggler:not(.collapsed) .icon-open {
+    display: none;
+}
+
+.tapi-navbar-primary .navbar-toggler-icon,
+.tapi-navbar-secondary .navbar-toggler-icon
+{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.8%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
+}
+
+.tapi-hero-carousel .carousel-control-next,
+.tapi-hero-carousel .carousel-control-prev {
+    align-items: center;
+    opacity: 0.8;
+    transition: opacity .15s ease
+}
+
+.tapi-hero-carousel .carousel-control-next:focus,
+.tapi-hero-carousel .carousel-control-next:hover,
+.tapi-hero-carousel .carousel-control-prev:focus,
+.tapi-hero-carousel .carousel-control-prev:hover {
+    opacity: 1;
+}
+
+
+.tapi-hero-carousel .carousel-indicators [data-bs-target] {
+    box-sizing: content-box;
+    flex: 0 1 auto;
+    width: unset;
+    height: unset;
+    padding-top: 0;
+    padding-bottom: 0;;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: unset;
+    cursor: pointer;
+    background-color: unset;
+    background-clip: padding-box;
+    border-width: 0;
+    opacity: unset;
+    transition: opacity .6s ease;
+
+    /*  equivalent to px-1 */
+    padding-right: .25rem !important;
+    padding-left: .25rem !important
+}
+
+.tapi-hero-carousel .carousel-indicators [data-bs-target] i {
+    opacity: 0.4;
+    color: #ffffff;
+}
+
+.tapi-hero-carousel .carousel-indicators .active[data-bs-target] i {
+    opacity: 0.8;
+}
+
+.tapi-hero-carousel .carousel-indicators [data-bs-target] i:focus,
+.tapi-hero-carousel .carousel-indicators [data-bs-target] i:hover {
+    opacity: 1;
+}
+
+.fw-bold {
+    font-family: "Avenir Next Cyr W00 Bold";
+}
+
+.tapi-bottom-call-to-action {
+    background: #8AD8F6;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    -webkit-box-shadow: 0 -0.5rem 1rem rgb(0 0 0 / 15%) !important;
+    -moz-box-shadow: 0 -0.5rem 1rem rgb(0 0 0 / 15%) !important;
+    box-shadow: 0 -0.5rem 1rem rgb(0 0 0 / 15%) !important;
+}
+
+
+.tapi-bottom-call-to-action a {
+    width: 90%;
+    max-width: 200px;
+}
+
+.tapi-img-fluid-half {
+    max-width: 50%;
+    height: auto;
+    float: left;
+}
+
+.tapi-text-over-image {
+    color: #FFFFFF;
+    float: none;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0;
+    height: auto;
+    padding: 1rem .75rem 1rem .75rem;
+    background-color: rgba(20, 177, 237, 0.8);
+}
+
+.tapi-img-thumbnail {
+    border: 1px solid #dee2e6;
+    border-radius: 1rem;
+}
+
+#jp-hero-3-message-xs {
+    background-color: #0195ED;
+}
+
+#jp-hero-3-message-sm-plus {
+    color: #FFFFFF;
+}
+
+#places-hero-1-message-md-plus, #bus-fares-hero-1-message-md-plus, #bus-fares-hero-3-message {
+    background-color: rgba(20, 177, 237, 0.8);
+    border-radius: 1rem;
+    top: 10%;
+    left: 5%;
+    width: 30%;
+}
+
+#places-hero-2-message-xs-md {
+    color: #FFFFFF;
+    background-color: #00ABD0;
+}
+
+#places-hero-2-message-lg-plus {
+    color: #FFFFFF;
+}
+
+#bus-fares-hero-2-message-md-plus {
+    background-color: rgba(20, 177, 237, 0.8);
+    border-radius: 1rem;
+    top: 10%;
+    right: 5%;
+    width: 30%;
+}
+
+#bus-performance-hero-1-message-md-plus,
+#digital-agencies-hero-2-message-md-plus,
+#digital-agencies-hero-3-message-md-plus {
+    background-color: rgba(20, 177, 237, 0.8);
+    border-radius: 1rem;
+    top: 10%;
+    right: 5%;
+    width: 30%;
+}
+
+#digital-agencies-hero-1-message-md-plus {
+    background-color: rgba(20, 177, 237, 0.8);
+    border-radius: 1rem;
+    top: 0;
+    width: 80%;
+}
+
+.blockquote p {
+    font-style: italic;
+}
+
+.home-hero:after {
+    content:'';
+    position:absolute;
+    left:0; top:0;
+    width:100%; height:100%;
+    display:inline-block;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.home-hero-message {
+    color: #FFFFFF;
+    position: absolute;
+    left: 10%;
+    width: 80%;
+    z-index: 1;
+}
+
+@media (max-width: 991px) {
+    footer nav {
+        margin-bottom: 59px;
+    }
+}
+
+#trusted-by-case-studies {
+    margin-bottom: 30px;
+}
+
+#trusted-by-case-studies .nav-tabs .nav-item .nav-link {
+    height: 80px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-origin: content-box;
+    padding: 10px;
+}
+
+#trusted-by-case-studies .card {
+    border: none;
+}
+
+#trusted-by-case-studies .tab-pane {
+    border-top: none;
+    border-bottom: 1px solid rgba(0,0,0,.125);
+    border-left: 1px solid rgba(0,0,0,.125);
+    border-right: 1px solid rgba(0,0,0,.125);
+    background-color: #FFFFFF;
+}
+
+#trusted-by .customer-logo {
+    height: 50px;
+}
+
+.hero-video {
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+}
+
+.dropdown-header {
+    color: #575756;
+    font-family: "Avenir Next Cyr W00 Bold";
+}
+
+/* Developer Portal specific stuff */
+
+.tapi-rounded-1 {
+    border-radius: 1rem!important;
+}
+
+a.btn-primary, .tapi-dark-blue, a.tapi-dark-blue {
+    background-color: #0062B2;
+    border-color: #0062B2;
+    color: #FFFFFF;
+    border-radius: 0.3rem;
+    font-weight: 700;
+    font-family: avenir next cyr w00 bold;
+}
+
+a.btn-secondary {
+    color: #0062B2;
+    background: #dddddd;
+    border: solid 1px #0062B2;
+    font-weight: 700;
+    font-family: avenir next cyr w00 bold;
+}
+
+a.btn-secondary {
+    color: #0062B2;
+    background: #dddddd;
+    border: solid 1px #0062B2;
+    font-weight: 700;
+    font-family: avenir next cyr w00 bold;
+}
+
+a.btn-tertiary {
+    color: #FFFFFF;
+    background: #14B1ED;
+    border: solid 1px #14B1ED;
+    font-weight: 700;
+    font-family: avenir next cyr w00 bold;
+    border-radius: 0.3rem;
+}
+
+a.btn-light {
+    color: #FFFFFF;
+    background: #8ad8f6;
+    border: solid 1px #8ad8f6;
+    font-weight: 700;
+    font-family: avenir next cyr w00 bold;
+    border-radius: 0.3rem;
+}
