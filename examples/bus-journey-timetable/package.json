@@ -1,11 +1,17 @@
 {
   "name": "bus-journey-timetable",
   "version": "1.0.0",
+  "source": "index.html",
   "description": "",
-  "main": "index.html",
+  "scripts": {
+    "serve": "parcel index.html response.json",
+    "build": "parcel build index.html response.json"
+  },
   "dependencies": {
-    "jquery": "3.6.0",
-    "parcel-bundler": "^1.6.1"
+    "jquery": "3.6.0"
+  },
+  "devDependencies": {
+    "parcel": "^2.2.1"
   },
   "keywords": []
 }
