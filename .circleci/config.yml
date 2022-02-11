@@ -39,6 +39,13 @@ jobs:
       - attach_workspace: 
           at: .
       - run: ls -lah dist
+  publish-to-production:
+    docker:
+      - image: cimg/node:lts
+    steps:
+      - attach_workspace: 
+          at: .
+      - run: ls -lah dist
 
 workflows:
   publish:
@@ -53,4 +60,10 @@ workflows:
       - publish-to-staging:
           requires:
             - build
+      - publish-to-production:
+          requires:
+            - build
+          filters: 
+            branches:
+              only: master
 
