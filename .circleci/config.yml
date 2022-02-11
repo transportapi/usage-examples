@@ -28,15 +28,23 @@ jobs:
       - checkout
       - node/install-packages
       - run: npm run build
+  publish-to-staging:
+    docker:
+      - image: cimg/node:lts
+    steps:
+      - run: ls -lah
 
 workflows:
-  lint:
+  publish:
     jobs:
       - prepare
       - lint:
           requires: 
             - prepare
-#      - build:
-#          requires:
-#            - prepare
+      - build:
+          requires:
+            - prepare
+      - publish-to-staging:
+          requires:
+            - build
 
