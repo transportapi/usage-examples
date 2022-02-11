@@ -28,10 +28,16 @@ jobs:
       - checkout
       - node/install-packages
       - run: npm run build
+      - persist_to_workspace: 
+          root: .
+          paths:
+            - dist
   publish-to-staging:
     docker:
       - image: cimg/node:lts
     steps:
+      - attach_workspace: 
+          at: .
       - run: ls -lah
 
 workflows:
