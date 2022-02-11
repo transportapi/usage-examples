@@ -2,11 +2,19 @@
   "name": "usage-examples",
   "version": "1.0.0",
   "description": "",
+  "scripts": {
+    "serve": "parcel src/index.html examples/**/*.html examples/**/response.json examples/**/*.svg",
+    "build": "parcel build src/index.html examples/**/*.html examples/**/response.json examples/**/*.svg"
+  },
   "devDependencies": {
     "eslint": "^7.23.0",
     "eslint-config-standard": "^16.0.2",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-promise": "^4.3.1"
+    "eslint-plugin-promise": "^4.3.1",
+    "jquery": "3.6.0",
+    "parcel": "^2.2.1",
+    "leaflet": "1.7.1",
+    "leaflet-rotatedmarker": "0.2.0"
   }
 }
