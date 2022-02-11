@@ -1,18 +1,42 @@
 version: 2.1
 
 orbs:
-  node: circleci/node@4.2.1
+  node: circleci/node@5.0.0
 
 jobs:
-  check:
+  prepare:
     docker:
-      - image: cimg/node:15.11.0
+      - image: cimg/node:lts
     steps:
       - checkout
       - node/install-packages
+      - persist_to_workspace: 
+          root: .
+          paths:
+            - .
+  lint:
+    docker:
+      - image: cimg/node:lts
+    steps:
+      - attach_workspace: 
+          at: .
       - run: npx eslint .
+  build:
+    docker:
+      - image: cimg/node:lts
+    steps:
+      - checkout
+      - node/install-packages
+      - run: npm run build
 
 workflows:
-  check:
+  lint:
     jobs:
-      - check
+      - prepare
+      - lint:
+          requires: 
+            - prepare
+#      - build:
+#          requires:
+#            - prepare
+
