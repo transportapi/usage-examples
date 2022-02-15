@@ -2,6 +2,7 @@ version: 2.1
 
 orbs:
   node: circleci/node@5.0.0
+  aws-s3: circleci/aws-s3@3.0.0
 
 jobs:
   prepare:
@@ -34,18 +35,28 @@ jobs:
             - dist
   publish-to-staging:
     docker:
-      - image: cimg/node:lts
+      - image: cimg/python:3.6
     steps:
       - attach_workspace: 
           at: .
-      - run: ls -lah dist
+      - aws-s3/sync:
+          from: dist
+          to: "s3://$AWS_STAGING_S3_BUCKET_NAME"
+          arguments: |
+            --acl public-read \
+            --cache-control "max-age=86400"
   publish-to-production:
     docker:
-      - image: cimg/node:lts
+      - image: cimg/python:3.6
     steps:
       - attach_workspace: 
           at: .
-      - run: ls -lah dist
+      - aws-s3/sync:
+          from: dist
+          to: "s3://$AWS_PRODUCTION_S3_BUCKET_NAME"
+          arguments: |
+            --acl public-read \
+            --cache-control "max-age=86400"
 
 workflows:
   publish:
