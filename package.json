@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "serve": "parcel src/index.html examples/**/*.html examples/**/response.json examples/**/*.svg",
-    "build": "parcel build src/index.html examples/**/*.html examples/**/response.json examples/**/*.svg"
+    "serve": "parcel src/**/*.html src/examples/**/response.json src/examples/**/*.svg",
+    "build": "parcel build src/**/*.html src/examples/**/response.json src/examples/**/*.svg"
   },
   "devDependencies": {
     "eslint": "^7.23.0",
