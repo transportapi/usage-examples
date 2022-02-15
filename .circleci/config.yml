@@ -59,7 +59,7 @@ jobs:
             --cache-control "max-age=86400"
 
 workflows:
-  publish:
+  build-and-publish:
     jobs:
       - prepare
       - lint:
