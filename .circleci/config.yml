@@ -70,9 +70,11 @@ workflows:
             - prepare
       - publish-to-staging:
           requires:
+            - lint
             - build
       - publish-to-production:
           requires:
+            - lint
             - build
           filters: 
             branches:
