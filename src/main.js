@@ -105,7 +105,7 @@ function loadTemplate (fileName, properties, onLoad) {
   })
 }
 
-const exampleFile = examplesRootUrl + 'examples/{{directory}}/{{name}}'
+const exampleFile = examplesRootUrl + 'src/examples/{{directory}}/{{name}}'
 const fileHtml = `
   <h2 class="source-title">{{name}}</h2>
   <pre class="line-numbers"
