@@ -1,0 +1,21 @@
+{{#unless userLoggedIn}}
+    <div class="container py-4 tapi-paragraph tapi-section-alternate">
+        <div class="row">
+            <div class="col-lg-6 text-center">
+                <h2 class="fw-bold mb-4">Don't have an account yet?</h2>
+
+                <a class="btn btn-primary tapi-dark-blue" href="/signup" data-section="Sign up" data-target-title="Sign up">
+                    Sign up
+                </a>
+
+            </div>
+
+            <div class="col-lg-6 text-center">
+                <h2 class="fw-bold mb-4">Already have an account?</h2>
+                <a class="btn btn-secondary" href="/login" data-section="Sign in" data-target-title="Sign in">
+                    Sign in
+                </a>
+            </div>
+        </div>
+    </div>
+{{/unless}}

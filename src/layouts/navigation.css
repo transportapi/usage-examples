@@ -1,21 +1,5 @@
-.product-logo {
-  min-width: 3.5rem;
-}
-
-.tapi-cta-btn {
-  min-width: 15rem;
-}
-
-.browse-btn {
-  max-width: 70%;
-}
-
 a.example-box.btn-secondary {
   border-radius: 1rem;
-}
-
-a.btn-secondary.nav-link:hover {
-  color: #FFFFFF;
 }
 
 a.example-box {
@@ -32,4 +16,9 @@ a.example-box {
 a.example-box h2 {
   margin-top: 0.3em;
   font-size: 1.5em;
+}
+
+.example-description {
+  font-family: 'Avenir Next Cyr W00 Regular';
+  font-weight: normal;
 }

@@ -1,0 +1,19 @@
+.tapi-sources-btn {
+  min-width: 8em;
+}
+
+h2.source-title {
+  font-size: 1em;
+  font-weight: normal;
+  color: #575756;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+a.crosslink {
+  color: #575756
+}
+
+.render-box {
+  border: 1px solid #dee2e6;
+  border-radius: 1rem;
+}
