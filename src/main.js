@@ -1,4 +1,9 @@
 /* global $ _ Prism Handlebars */
+import filex from './partials/filex.hbs'
+Handlebars.registerPartial('filex', filex)
+
+import navigation from './navigation.hbs'
+import example from './example.hbs'
 
 const GITHUB_PAGES_URL = 'https://transportapi.github.io/usage-examples/src/'
 const RAW_GITHUB_CONTENT_URL = 'https://raw.githubusercontent.com/transportapi/usage-examples/master/'
@@ -14,6 +19,8 @@ const gitBranch = urlParams.has(BRANCH_QUERY_PARAM) ? urlParams.get(BRANCH_QUERY
 // For local development load the files from a relative path
 const examplesRootUrl = urlParams.has(LOCAL_DEVELOPMENT_QUERY_PARAM) ? '../' : RAW_GITHUB_CONTENT_URL
 const pageTemplatesRootUrl = urlParams.has(LOCAL_DEVELOPMENT_QUERY_PARAM) ? '' : GITHUB_PAGES_URL
+
+// Handlebars.partials = Handlebars.templates
 
 const products = [
   {
@@ -137,18 +144,14 @@ if (urlParams.has('example')) {
     userLoggedIn: userLoggedIn,
     showExample: showExample
   }
-  loadTemplate('navigation.hbs', properties, () => null)
+  loadTemplate(navigation, properties, () => null)
 }
 
-function loadTemplate (fileName, properties, onLoad) {
-  $.get(pageTemplatesRootUrl + fileName, templateSource => {
-    const template = Handlebars.compile(templateSource)
-
-    properties.root_url = pageTemplatesRootUrl
-    const html = template(properties)
-    $('#app').html(html)
-    onLoad()
-  })
+function loadTemplate (templateFunction, properties, onLoad) {
+  properties.root_url = pageTemplatesRootUrl
+  const html = example(properties)
+  $('#app').html(html)
+  onLoad()
 }
 
 const exampleFile = examplesRootUrl + 'src/examples/{{directory}}/{{name}}'
@@ -165,7 +168,7 @@ function showExample (exampleProperties) {
   exampleProperties.root_url = pageTemplatesRootUrl
   exampleProperties.branch = gitBranch
 
-  loadTemplate('example.hbs', exampleProperties, () => {
+  loadTemplate(example, exampleProperties, () => {
     // This can't simply be put in the CSS file because Prism.js seemingly redraws the element
     $('pre.line-numbers').css('max-height', '45em')
     // Using Prism.highlight(contents) would be sufficient to get syntax highlighting but the line-numbers plugin
