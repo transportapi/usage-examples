@@ -1,4 +1,5 @@
 <link rel="stylesheet" href="{{rootUrl}}layouts/example.css" />
+<link rel="stylesheet" href="https://developer.transportapi.com/tapi-dev-portal-2022.css"/>
 
 <div class="container">
   <h1>{{title}}</h1>
@@ -13,3 +14,5 @@
   {{>(lookup . 'filePartial') rootUrl=sourceFilesRootUrl directory=directory name="index.css" language="css"}}
   {{>(lookup . 'filePartial') rootUrl=sourceFilesRootUrl directory=directory name="response.json" language="json"}}
 </div>
+
+{{>(lookup . 'ctaSectionPartial') loggedIn=loggedIn}}

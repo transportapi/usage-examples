@@ -1,5 +1,6 @@
 /* global $ _ Prism Handlebars */
 import filePartial from './partials/file.hbs'
+import ctaSectionPartial from './partials/cta_section.hbs'
 import navigation from './layouts/navigation.hbs'
 import example from './layouts/example.hbs'
 
@@ -145,6 +146,8 @@ if (urlParams.has('example')) {
 
 function loadTemplate (templateFunction, properties, onLoad) {
   properties.rootUrl = staticContentRootUrl
+  properties.ctaSectionPartial = ctaSectionPartial
+  properties.userLoggedIn = userLoggedIn
 
   const html = templateFunction(properties)
   $('#app').html(html)
