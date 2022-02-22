@@ -1,9 +1,7 @@
 /* global $ _ Prism Handlebars */
-import file from './partials/file.hbs'
+import filePartial from './partials/file.hbs'
 import navigation from './layouts/navigation.hbs'
 import example from './layouts/example.hbs'
-
-Handlebars.registerPartial('file', file)
 
 const STATIC_CONTENT_URL = 'https://examples.staging.transportapi.com/examples/bus-stop-timetable/index.html'
 const RAW_GITHUB_CONTENT_URL = 'https://raw.githubusercontent.com/transportapi/usage-examples/master/src/'
@@ -146,7 +144,6 @@ if (urlParams.has('example')) {
 }
 
 function loadTemplate (templateFunction, properties, onLoad) {
-  properties.file = file
   properties.rootUrl = staticContentRootUrl
 
   const html = templateFunction(properties)
@@ -157,6 +154,7 @@ function loadTemplate (templateFunction, properties, onLoad) {
 function showExample (exampleProperties) {
   exampleProperties.branch = gitBranch
   exampleProperties.sourceFilesRootUrl = examplesSourceFilesRootUrl
+  exampleProperties.filePartial = filePartial
 
   loadTemplate(example, exampleProperties, () => {
     // This can't simply be put in the CSS file because Prism.js seemingly redraws the element
