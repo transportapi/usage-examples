@@ -1,9 +1,10 @@
 /* global $ _ Prism Handlebars */
-import filex from './partials/filex.hbs'
-Handlebars.registerPartial('filex', filex)
+import filex from './markup/partials/filex.hbs'
+import navigation from './markup/layouts/navigation.hbs'
+import example from './markup/layouts/example.hbs'
 
-import navigation from './navigation.hbs'
-import example from './example.hbs'
+// Handlebars.partials = Handlebars.templates
+Handlebars.registerPartial({ filex: filex })
 
 const GITHUB_PAGES_URL = 'https://transportapi.github.io/usage-examples/src/'
 const RAW_GITHUB_CONTENT_URL = 'https://raw.githubusercontent.com/transportapi/usage-examples/master/'
@@ -19,8 +20,6 @@ const gitBranch = urlParams.has(BRANCH_QUERY_PARAM) ? urlParams.get(BRANCH_QUERY
 // For local development load the files from a relative path
 const examplesRootUrl = urlParams.has(LOCAL_DEVELOPMENT_QUERY_PARAM) ? '../' : RAW_GITHUB_CONTENT_URL
 const pageTemplatesRootUrl = urlParams.has(LOCAL_DEVELOPMENT_QUERY_PARAM) ? '' : GITHUB_PAGES_URL
-
-// Handlebars.partials = Handlebars.templates
 
 const products = [
   {
@@ -133,7 +132,8 @@ const examples = [
 if (urlParams.has('example')) {
   const directory = urlParams.get('example')
   const properties = _.find(examples, { directory })
-  showExample(properties)
+  setTimeout(function () { showExample(properties) }, 1000)
+  // showExample(properties)
 } else {
   const examplesToList = showExperimental ? examples : examples.filter(example => !example.experimental)
   const productExamples = organizeByProduct(examplesToList)
@@ -149,6 +149,9 @@ if (urlParams.has('example')) {
 
 function loadTemplate (templateFunction, properties, onLoad) {
   properties.root_url = pageTemplatesRootUrl
+  properties.filex = filex
+  console.log(Handlebars.partials)
+
   const html = example(properties)
   $('#app').html(html)
   onLoad()
@@ -162,7 +165,6 @@ const fileHtml = `
        data-src="${exampleFile}"
   ><code id="{{name}}" {{#if language}}class="language-{{language}}{{/if}}"></code></pre>
 `
-Handlebars.registerPartial('file', fileHtml)
 
 function showExample (exampleProperties) {
   exampleProperties.root_url = pageTemplatesRootUrl
