@@ -1,4 +1,4 @@
-<link rel="stylesheet" href="{{root_url}}navigation.css"/>
+<link rel="stylesheet" href="{{rootUrl}}layouts/navigation.css"/>
 <link rel="stylesheet" href="https://developer.transportapi.com/tapi-dev-portal-2022.css"/>
 
 <div class="container-md pt-3 tapi-paragraph">
@@ -19,7 +19,7 @@
             </div>
         </div>
         <div class="col-md-7 order-1 order-md-2">
-            <img class="img-fluid" src="{{root_url}}media/code-image.png">
+            <img class="img-fluid" src="{{rootUrl}}media/code-image.png">
         </div>
     </div>
 </div>
@@ -44,7 +44,7 @@
             <div class="container">
                 <div class="row p-1 align-items-center">
                     <div class="col-md-1 order-1">
-                        <img class="img-fluid" src="{{../root_url}}{{logo}}">
+                        <img class="img-fluid" src="{{../rootUrl}}{{logo}}">
                     </div>
                     <div class="col-md-11 order-2">
                         <h2 class="fw-bold d-flex align-items-center">{{label}}</h2>
@@ -55,7 +55,7 @@
                 <div class="row p-2">
                     {{#each examples}}
                         <div class="col p-2">
-                            <a class="btn btn-secondary example-box tapi-rounded-1" href="?example={{directory}}{{../additionalUrlQueryParams}}">
+                            <a class="btn btn-secondary example-box tapi-rounded-1" href="?example={{directory}}{{../../additionalUrlQueryParams}}">
                             <h2 class="fw-bold">{{title}}</h2>
                             {{description}}
                             </a>

@@ -1,0 +1,15 @@
+<link rel="stylesheet" href="{{rootUrl}}layouts/example.css" />
+
+<div class="container">
+  <h1>{{title}}</h1>
+  <p>{{description}}</p>
+  <iframe src="https://examples.staging.transportapi.com/examples/{{directory}}/index.html"
+          style="width:70em; height:500px; border:0; overflow:hidden;"
+          sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts">
+  </iframe>
+
+  {{>(lookup . 'file') rootUrl=sourceFilesRootUrl directory=directory name="main.js" language="javascript"}}
+  {{>(lookup . 'file') rootUrl=sourceFilesRootUrl directory=directory name="index.html" language="html"}}
+  {{>(lookup . 'file') rootUrl=sourceFilesRootUrl directory=directory name="index.css" language="css"}}
+  {{>(lookup . 'file') rootUrl=sourceFilesRootUrl directory=directory name="response.json" language="json"}}
+</div>

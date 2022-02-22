@@ -1,13 +1,12 @@
 /* global $ _ Prism Handlebars */
-import filex from './markup/partials/filex.hbs'
-import navigation from './markup/layouts/navigation.hbs'
-import example from './markup/layouts/example.hbs'
+import file from './partials/file.hbs'
+import navigation from './layouts/navigation.hbs'
+import example from './layouts/example.hbs'
 
-// Handlebars.partials = Handlebars.templates
-Handlebars.registerPartial({ filex: filex })
+Handlebars.registerPartial('file', file)
 
-const GITHUB_PAGES_URL = 'https://transportapi.github.io/usage-examples/src/'
-const RAW_GITHUB_CONTENT_URL = 'https://raw.githubusercontent.com/transportapi/usage-examples/master/'
+const STATIC_CONTENT_URL = 'https://examples.staging.transportapi.com/examples/bus-stop-timetable/index.html'
+const RAW_GITHUB_CONTENT_URL = 'https://raw.githubusercontent.com/transportapi/usage-examples/master/src/'
 const LOCAL_DEVELOPMENT_QUERY_PARAM = 'localDevelopment'
 const BRANCH_QUERY_PARAM = 'branch'
 const SHOW_EXPERIMENTAL_QUERY_PARAM = 'showExperimental'
@@ -18,8 +17,8 @@ const showExperimental =
 const gitBranch = urlParams.has(BRANCH_QUERY_PARAM) ? urlParams.get(BRANCH_QUERY_PARAM) : 'master'
 
 // For local development load the files from a relative path
-const examplesRootUrl = urlParams.has(LOCAL_DEVELOPMENT_QUERY_PARAM) ? '../' : RAW_GITHUB_CONTENT_URL
-const pageTemplatesRootUrl = urlParams.has(LOCAL_DEVELOPMENT_QUERY_PARAM) ? '' : GITHUB_PAGES_URL
+const examplesSourceFilesRootUrl = urlParams.has(LOCAL_DEVELOPMENT_QUERY_PARAM) ? './' : RAW_GITHUB_CONTENT_URL
+const staticContentRootUrl = urlParams.has(LOCAL_DEVELOPMENT_QUERY_PARAM) ? '' : STATIC_CONTENT_URL
 
 const products = [
   {
@@ -132,8 +131,7 @@ const examples = [
 if (urlParams.has('example')) {
   const directory = urlParams.get('example')
   const properties = _.find(examples, { directory })
-  setTimeout(function () { showExample(properties) }, 1000)
-  // showExample(properties)
+  showExample(properties)
 } else {
   const examplesToList = showExperimental ? examples : examples.filter(example => !example.experimental)
   const productExamples = organizeByProduct(examplesToList)
@@ -148,27 +146,17 @@ if (urlParams.has('example')) {
 }
 
 function loadTemplate (templateFunction, properties, onLoad) {
-  properties.root_url = pageTemplatesRootUrl
-  properties.filex = filex
-  console.log(Handlebars.partials)
+  properties.file = file
+  properties.rootUrl = staticContentRootUrl
 
-  const html = example(properties)
+  const html = templateFunction(properties)
   $('#app').html(html)
   onLoad()
 }
 
-const exampleFile = examplesRootUrl + 'src/examples/{{directory}}/{{name}}'
-const fileHtml = `
-  <h2 class="source-title">{{name}}</h2>
-  <pre class="line-numbers"
-       data-download-link
-       data-src="${exampleFile}"
-  ><code id="{{name}}" {{#if language}}class="language-{{language}}{{/if}}"></code></pre>
-`
-
 function showExample (exampleProperties) {
-  exampleProperties.root_url = pageTemplatesRootUrl
   exampleProperties.branch = gitBranch
+  exampleProperties.sourceFilesRootUrl = examplesSourceFilesRootUrl
 
   loadTemplate(example, exampleProperties, () => {
     // This can't simply be put in the CSS file because Prism.js seemingly redraws the element
