@@ -6,6 +6,8 @@ import example from './layouts/example.hbs'
 
 const STATIC_CONTENT_URL = 'https://examples.staging.transportapi.com/examples/bus-stop-timetable/index.html'
 const RAW_GITHUB_CONTENT_URL = 'https://raw.githubusercontent.com/transportapi/usage-examples/master/src/'
+const EXAMPLES_SOURCE_GITHUB_URL = 'https://github.com/transportapi/usage-examples/tree/master/src/examples'
+const CODESANDBOX_URL = 'https://codesandbox.io/embed/github/transportapi/usage-examples/tree/{{branch}}/src/examples/{{directory}}?hidenavigation=1&hidedevtools=1&view=preview&module=%2Fmain.js'
 const LOCAL_DEVELOPMENT_QUERY_PARAM = 'localDevelopment'
 const BRANCH_QUERY_PARAM = 'branch'
 const SHOW_EXPERIMENTAL_QUERY_PARAM = 'showExperimental'
@@ -23,32 +25,38 @@ const products = [
   {
     id: 'tapi-journey-planner',
     label: 'TAPI Journey Planner',
-    logo: 'static/logo-tapi-journey-planner.svg'
+    logo: 'static/logo-tapi-journey-planner.svg',
+    page: '/managed-services/journey-planner'
   },
   {
     id: 'tapi-bus-information',
     label: 'TAPI Bus Information',
-    logo: 'static/logo-tapi-bus-information.svg'
+    logo: 'static/logo-tapi-bus-information.svg',
+    page: 'managed-services/bus-information'
   },
   {
     id: 'tapi-bus-performance',
     label: 'TAPI Bus Performance',
-    logo: 'static/logo-tapi-bus-performance.svg'
+    logo: 'static/logo-tapi-bus-performance.svg',
+    page: '/managed-services/bus-performance'
   },
   {
     id: 'tapi-bus-fares',
     label: 'TAPI Bus Fares',
-    logo: 'static/tapi-bus-fares.svg'
+    logo: 'static/tapi-bus-fares.svg',
+    page: '/managed-services/bus-fares/'
   },
   {
     id: 'tapi-rail-information',
     label: 'TAPI Rail Information',
-    logo: 'static/logo-tapi-rail-information.svg'
+    logo: 'static/logo-tapi-rail-information.svg',
+    page: 'managed-services/rail-information/'
   },
   {
     id: 'tapi-places',
     label: 'TAPI Places',
-    logo: 'static/logo-tapi-places.svg'
+    logo: 'static/logo-tapi-places.svg',
+    page: 'managed-services/places/'
   }
 ]
 
@@ -172,7 +180,9 @@ if (urlParams.has('example')) {
   const properties = _.find(examples, { directory })
   const exampleProductId = properties.product_ids[0]
   const product = _.find(products, { id: exampleProductId })
-  properties.product = { label: product.label, logo: product.logo }
+  properties.product = product
+  properties.sourceUrl = `${EXAMPLES_SOURCE_GITHUB_URL}/${directory}`
+  properties.playgroundUrl = `https://codesandbox.io/embed/github/transportapi/usage-examples/tree/${gitBranch}/src/examples/${directory}`
   showExample(properties)
 } else {
   const examplesToList = showExperimental ? examples : examples.filter(example => !example.experimental)

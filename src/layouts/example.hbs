@@ -8,14 +8,14 @@
             <h2 class="fw-bold">{{title}}</h2>
         </div>
         <div class="col-md-2 text-center">
-            <a class="btn btn-secondary fs-5 tapi-sources-btn" href="/signup" data-section="Edit"
+            <a class="btn btn-secondary fs-5 tapi-sources-btn" href={{playgroundUrl}} data-section="Edit"
                data-target-title="Edit">
                 <i class="fa fa-lg fa-wrench" aria-hidden="true"></i> Edit
             </a>
         </div>
 
         <div class="col-md-2 text-center">
-            <a class="btn btn-secondary fs-5 tapi-sources-btn" href="/login" data-section="View code"
+            <a class="btn btn-secondary fs-5 tapi-sources-btn" href={{sourceUrl}} data-section="View code"
                data-target-title="View code">
                 <i class="fa fa-lg fa-github"></i> View code
             </a>
@@ -31,9 +31,13 @@
             </p>
 
             <div class="d-flex flex-row align-items-center">
-                <p>Product:</p>
-                <div><img class="img-fluid" src="{{rootUrl}}{{product.logo}}"></div>
-                <p>{{product.label}}</p>
+                Product:
+                <a href="{{product.page}}" class="crosslink text-center" style="width:50%">
+                    <img class="img-fluid" src="{{rootUrl}}{{product.logo}}">
+                </a>
+                <a href="{{product.page}}" class="crosslink">
+                    {{product.label}}
+                </a>
             </div>
         </div>
     </div>
@@ -41,7 +45,7 @@
 
 <div class="container">
     <row class="row p-3">
-        <div class="col-md-12">
+        <div class="col-md-12 text-center">
             <iframe src="https://examples.staging.transportapi.com/examples/{{directory}}/index.html"
                     style="width:50em; height:400px; border:0; overflow:hidden;"
                     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts">
