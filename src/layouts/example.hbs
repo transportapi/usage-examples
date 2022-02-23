@@ -22,17 +22,16 @@
         </div>
     </row>
 
-    <div class="row p-1">
+    <div class="row pt-1">
         <div class="col-md-12">
-            <p>API Endpoint:
-                <a href="{{endpoint.documentationUrl}}" class="crosslink">
-                    {{endpoint.path}}
-                </a>
-            </p>
+            API Endpoint:
+            <a href="{{endpoint.documentationUrl}}" class="crosslink">
+                {{endpoint.path}}
+            </a>
 
             <div class="d-flex flex-row align-items-center">
                 Product:
-                <a href="{{product.page}}" class="crosslink text-center" style="width:50%">
+                <a href="{{product.page}}" class="crosslink text-center" style="width:3rem">
                     <img class="img-fluid" src="{{rootUrl}}{{product.logo}}">
                 </a>
                 <a href="{{product.page}}" class="crosslink">
@@ -46,8 +45,7 @@
 <div class="container">
     <row class="row p-3">
         <div class="col-md-12 text-center">
-            <iframe src="https://examples.staging.transportapi.com/examples/{{directory}}/index.html"
-                    style="width:50em; height:400px; border:0; overflow:hidden;"
+            <iframe id="iFrame1" src="https://examples.staging.transportapi.com/examples/{{directory}}/index.html"
                     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts">
             </iframe>
         </div>
