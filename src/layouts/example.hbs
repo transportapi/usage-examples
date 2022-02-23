@@ -1,10 +1,29 @@
-<link rel="stylesheet" href="{{rootUrl}}layouts/example.css" />
+<link rel="stylesheet" href="{{rootUrl}}layouts/example.css"/>
 <link rel="stylesheet" href="https://developer.transportapi.com/tapi-dev-portal-2022.css"/>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
-<div class="container tapi-paragraph">
-    <row class="row p-3">
-        <div class="col-md-12">
+<div class="container pt-3 tapi-paragraph">
+    <row class="row p-1">
+        <div class="col-md-8">
             <h2 class="fw-bold">{{title}}</h2>
+        </div>
+        <div class="col-md-2 text-center">
+            <a class="btn btn-secondary fs-5 tapi-sources-btn" href="/signup" data-section="Edit"
+               data-target-title="Edit">
+                <i class="fa fa-lg fa-wrench" aria-hidden="true"></i> Edit
+            </a>
+        </div>
+
+        <div class="col-md-2 text-center">
+            <a class="btn btn-secondary fs-5 tapi-sources-btn" href="/login" data-section="View code"
+               data-target-title="View code">
+                <i class="fa fa-lg fa-github"></i> View code
+            </a>
+        </div>
+    </row>
+
+    <div class="row p-1">
+        <div class="col-md-12">
             <p>API Endpoint:
                 <a href="{{endpoint.documentationUrl}}" class="crosslink">
                     {{endpoint.path}}
@@ -17,8 +36,9 @@
                 <p>{{product.label}}</p>
             </div>
         </div>
-    </row>
+    </div>
 </div>
+
 <div class="container">
     <row class="row p-3">
         <div class="col-md-12">
