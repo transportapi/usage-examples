@@ -159,13 +159,7 @@ function showExample (exampleProperties) {
   exampleProperties.sourceFilesRootUrl = examplesSourceFilesRootUrl
   exampleProperties.filePartial = filePartial
 
-  loadTemplate(example, exampleProperties, () => {
-    // This can't simply be put in the CSS file because Prism.js seemingly redraws the element
-    $('pre.line-numbers').css('max-height', '45em')
-    // Using Prism.highlight(contents) would be sufficient to get syntax highlighting but the line-numbers plugin
-    // doesn't work without this approach
-    setTimeout(() => Prism.highlightAll(), 0)
-  })
+  loadTemplate(example, exampleProperties)
 }
 
 function organizeByProduct (examples) {
