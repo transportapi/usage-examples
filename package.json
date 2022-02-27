@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "serve": "parcel src/**/*.html src/examples/**/response.json src/examples/**/*.svg",
+    "serve": "parcel src/**/*.html src/examples/**/index.html src/examples/**/response.json src/examples/**/*.svg",
     "build": "parcel build --no-source-maps src/**/*.html src/**/*.css src/examples/**/response.json src/examples/**/*.svg src/static/*"
   },
   "devDependencies": {
@@ -12,12 +12,10 @@
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.3.1",
-    "handlebars": "^4.7.7",
     "jquery": "3.6.0",
     "leaflet": "1.7.1",
     "leaflet-rotatedmarker": "0.2.0",
     "parcel": "^2.2.1",
-    "parcel-plugin-handlebars-precompile": "^1.0.2",
-    "parcel-transformer-hbs": "^1.0.4"
+    "parcel-plugin-handlebars-precompile": "^1.0.2"
   }
 }
