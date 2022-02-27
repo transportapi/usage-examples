@@ -16,6 +16,7 @@
     "leaflet": "1.7.1",
     "leaflet-rotatedmarker": "0.2.0",
     "parcel": "^2.2.1",
-    "parcel-plugin-handlebars-precompile": "^1.0.2"
+    "parcel-plugin-handlebars-precompile": "^1.0.2",
+    "parcel-transformer-hbs": "^1.0.4"
   }
 }
