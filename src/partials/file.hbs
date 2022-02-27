@@ -3,22 +3,13 @@
         <div class="col-md-10">
             <h2 class="source-title">{{name}}</h2>
         </div>
-        <div class="col-md-2">
-            <a class="btn btn-secondary fs-5 tapi-sources-btn " href={{sourceUrl}} data-section="Copy"
-               data-target-title="Copy">
-                <i class="fas fa-copy"></i> Copy
-            </a>
-        </div>
     </div>
 </div>
 
-<div class="container">
+<div>
     <div class="row">
         <div class="col-md-12">
-            <pre class="line-numbers"
-                 data-download-link
-                 data-src="{{rootUrl}}examples/{{directory}}/{{name}}"
-            ><code id="{{name}}" {{#if language}}class="language-{{language}}{{/if}}"></code>
+            <pre class="line-numbers" data-src="{{rootUrl}}examples/{{directory}}/{{name}}" data-prismjs-copy="Copy" {{#if language}}class="language-{{language}}"{{/if}}>
             </pre>
         </div>
     </div>
