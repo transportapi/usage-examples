@@ -7,15 +7,15 @@
         <div class="col-md-8">
             <h2 class="fw-bold">{{title}}</h2>
         </div>
-        <div class="col-md-2 text-center">
-            <a class="btn btn-secondary fs-5 tapi-sources-btn" href={{playgroundUrl}} data-section="Edit"
+        <div class="col-md-2">
+            <a class="btn btn-secondary fs-6 tapi-sources-btn" href={{playgroundUrl}} data-section="Edit"
                data-target-title="Edit">
                 <i class="fa fa-lg fa-wrench" aria-hidden="true"></i> Edit
             </a>
         </div>
 
-        <div class="col-md-2 text-center">
-            <a class="btn btn-secondary fs-5 tapi-sources-btn" href={{sourceUrl}} data-section="View code"
+        <div class="col-md-2">
+            <a class="btn btn-secondary fs-6 tapi-sources-btn" href={{sourceUrl}} data-section="View code"
                data-target-title="View code">
                 <i class="fa fa-lg fa-github"></i> View code
             </a>
@@ -31,9 +31,9 @@
 
             <div class="d-flex flex-row align-items-center">
                 Product:
-                <a href="{{product.page}}" class="crosslink text-center" style="width:3rem">
-                    <img class="img-fluid" src="{{rootUrl}}{{product.logo}}">
-                </a>
+                    <a href="{{product.page}}" class="crosslink text-center" style="width:3rem">
+                        <img class="img-fluid p-1" src="{{rootUrl}}{{product.logo}}">
+                    </a>
                 <a href="{{product.page}}" class="crosslink">
                     {{product.label}}
                 </a>
@@ -44,8 +44,8 @@
 
 <div class="container">
     <row class="row p-3">
-        <div class="col-md-12 text-center">
-            <iframe id="iFrame1" src="https://examples.staging.transportapi.com/examples/{{directory}}/index.html"
+        <div class="col-md-12 col-sm-12 text-center">
+            <iframe src="https://examples.staging.transportapi.com/examples/{{directory}}/index.html"
                     style="width:70em; height:500px; border:0; overflow:hidden;"
                     sandbox="allow-forms allow-modals allow-popups allow-presentation allow-same-origin allow-scripts">
             </iframe>
