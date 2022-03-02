@@ -4,7 +4,9 @@ import ctaSectionPartial from './partials/cta_section.hbs'
 import navigationLayout from './layouts/navigation.hbs'
 import exampleLayout from './layouts/example.hbs'
 
-const STATIC_CONTENT_URL = 'https://examples.staging.transportapi.com/'
+// production should be set in index.html
+// eslint-disable-next-line no-undef
+const STATIC_CONTENT_URL = production ? 'https://examples.transportapi.com/' : 'https://examples.staging.transportapi.com/'
 const RAW_GITHUB_CONTENT_URL = 'https://raw.githubusercontent.com/transportapi/usage-examples/master/src/'
 const EXAMPLES_SOURCE_GITHUB_URL = 'https://github.com/transportapi/usage-examples/tree/master/src/examples/'
 const PRODUCT_PAGES_ROOT = 'https://www.transportapi.com/managed-services/'
