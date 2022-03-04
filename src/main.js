@@ -10,7 +10,7 @@ const STATIC_CONTENT_URL = production ? 'https://examples.transportapi.com/' : '
 const RAW_GITHUB_CONTENT_URL = 'https://raw.githubusercontent.com/transportapi/usage-examples/master/src/'
 const EXAMPLES_SOURCE_GITHUB_URL = 'https://github.com/transportapi/usage-examples/tree/master/src/examples/'
 const PRODUCT_PAGES_ROOT = 'https://www.transportapi.com/managed-services/'
-const LEGACY_DOCS_URL = 'https://developer.transportapi.com/docs?raml=https://docs.transportapi.com/raml/transportapi.raml'
+const LEGACY_DOCS_URL = 'https://developer.transportapi.com/docs-legacy?raml=https://docs.transportapi.com/raml/transportapi.raml'
 
 const LOCAL_DEVELOPMENT_QUERY_PARAM = 'localDevelopment'
 const BRANCH_QUERY_PARAM = 'branch'
