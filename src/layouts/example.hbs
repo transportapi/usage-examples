@@ -1,0 +1,81 @@
+<link rel="stylesheet" href="{{rootUrl}}layouts/example.css"/>
+<link rel="stylesheet" href="https://developer.transportapi.com/tapi-dev-portal-2022.css"/>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
+<div class="container tapi-paragraph">
+    <div class="row">
+        <div class="col-md-6 pt-3">
+            <h2 class="fw-bold">{{title}}</h2>
+        </div>
+
+        <div class="col-md-6 pt-3">
+            <div class="d-flex flex-row justify-content-md-end">
+                <div class="pe-2">
+                    <a class="btn btn-secondary fs-6 tapi-sources-btn" href={{playgroundUrl}} data-section="Edit"
+                       data-target-title="Edit">
+                        <i class="fa fa-lg fa-wrench" aria-hidden="true"></i> Edit
+                    </a>
+                </div>
+
+                <div class="ps-2">
+                    <a class="btn btn-secondary fs-6 tapi-sources-btn" href={{sourceCodeUrl}} data-section="View code"
+                       data-target-title="View code">
+                        <i class="fa fa-lg fa-github"></i> View code
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12 pt-3">
+            <div class="d-flex flex-row align-items-start">
+                <div class="pe-2">
+                    API Endpoint:
+                </div>
+                <a href="{{endpoint.docsUrl}}" class="crosslink ps-1">
+                    {{endpoint.path}}
+                </a>
+            </div>
+
+            <div class="d-flex flex-row align-items-center">
+                <div class="pe-2">
+                    Product:
+                </div>
+                <a href="{{product.page}}" class="crosslink text-center pe-1" style="width:3rem">
+                    <img class="img-fluid px-1" src="{{rootUrl}}{{product.logo}}">
+                </a>
+                <a href="{{product.page}}" class="crosslink">
+                    {{product.label}}
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container pt-3">
+    <div class="row py-3 mx-1 render-box">
+        <div class="col-md-12 col-sm-12 text-center">
+            <iframe src="{{render.indexPageUrl}}"
+                    style="width:{{render.width}}px; height:{{render.height}}px; border:0; overflow:hidden;"
+                    class="render-box">
+            </iframe>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row py-3">
+        <div class="col-md-12 col-sm-12 text-center">
+            <p> {{description}}</p>
+            <hr>
+        </div>
+    </div>
+</div>
+
+{{>(lookup . 'filePartial') rootUrl=sourceFilesRootUrl directory=directory name="main.js" language="javascript"}}
+{{>(lookup . 'filePartial') rootUrl=sourceFilesRootUrl directory=directory name="index.html" language="html"}}
+{{>(lookup . 'filePartial') rootUrl=sourceFilesRootUrl directory=directory name="index.css" language="css"}}
+{{>(lookup . 'filePartial') rootUrl=sourceFilesRootUrl directory=directory name="response.json" language="json"}}
+
+{{>(lookup . 'ctaSectionPartial') loggedIn=loggedIn}}

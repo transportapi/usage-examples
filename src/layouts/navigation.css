@@ -1,0 +1,24 @@
+a.example-box.btn-secondary {
+  border-radius: 1rem;
+}
+
+a.example-box {
+  display: block;
+  overflow: hidden;
+  width: 24em;
+  height: 8.6em;
+  padding: 0.5em 1em 0.5em;
+  text-decoration: none;
+  border: 1px solid;
+  text-align: left;
+}
+
+a.example-box h2 {
+  margin-top: 0.3em;
+  font-size: 1.5em;
+}
+
+.example-description {
+  font-family: 'Avenir Next Cyr W00 Regular';
+  font-weight: normal;
+}

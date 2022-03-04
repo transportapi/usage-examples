@@ -1,0 +1,72 @@
+<link rel="stylesheet" href="{{rootUrl}}layouts/navigation.css"/>
+<link rel="stylesheet" href="https://developer.transportapi.com/tapi-dev-portal-2022.css"/>
+
+<div class="container-md pt-3 tapi-paragraph">
+    <div class="row p-3 d-flex align-items-center">
+        <div class="col-lg-5 order-2 order-lg-1">
+            <h1 class="my-3">You can build great stuff with our APIs</h1>
+
+            <p>We've got a great collection of simple visual examples built with CodeSandbox in JS + HTML + CSS.</p>
+            <p>Draw inspiration and jump start your coding project below &#128640;</p>
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-md-12">
+                        <a class="btn btn-secondary" href="#examples" data-section="Browse examples"
+                           data-target-title="Browse examples - TransportAPI">
+                            Browse examples
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-7 order-1 order-lg-2">
+            <img class="img-fluid" src="{{rootUrl}}static/code-image.png">
+        </div>
+    </div>
+</div>
+
+<div class="container tapi-paragraph">
+    <div class="row p-4">
+        <div class="col">
+            <hr>
+        </div>
+        <div class="col-auto text-center">
+            <h2 class="fw-bold">Browse examples by managed service</h2>
+        </div>
+        <div class="col">
+            <hr>
+        </div>
+    </div>
+</div>
+
+<div class="container tapi-paragraph" id="examples">
+    <div class="row p-2">
+        {{#each productExamples}}
+            <div class="container">
+                <div class="row p-1 align-items-center">
+                    <div class="col-md-1 order-1">
+                        <img class="img-fluid" src="{{../rootUrl}}{{logo}}">
+                    </div>
+                    <div class="col-md-11 order-2">
+                        <h3 class="my-3 d-flex align-items-center">{{label}}</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row p-2">
+                    {{#each examples}}
+                        <div class="col p-2 example-box">
+                            <a class="btn btn-secondary example-box tapi-rounded-1"
+                               href="?example={{directory}}{{../../additionalUrlQueryParams}}">
+                                <h2 class="fw-bold">{{title}}</h2>
+                                <div class="example-description">{{description}}</div>
+                            </a>
+                        </div>
+                    {{/each}}
+                </div>
+            </div>
+        {{/each}}
+    </div>
+</div>
+
+{{>(lookup . 'ctaSectionPartial') loggedIn=loggedIn}}
