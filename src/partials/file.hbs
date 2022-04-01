@@ -1,6 +1,6 @@
 <div class="container tapi-paragraph">
     <div class="row">
-        <div class="col-md-10">
+        <div class="col-md-2">
             <h2 class="source-title">{{name}}</h2>
         </div>
     </div>
@@ -9,10 +9,9 @@
 <div class="container">
     <div class="row pb-3">
         <div class="col-md-12">
-            <pre class="line-numbers"
-                 data-prismjs-copy="Copy"
-                 data-src="{{rootUrl}}examples/{{directory}}/{{name}}"
-            ><code id="{{name}}" {{#if language}}class="language-{{language}}{{/if}}"></code></pre>
+            <pre class="code-snippet line-numbers language-{{language}}"
+                 data-prismjs-copy="Copy">
+<code id="{{name}}"></code></pre>
         </div>
     </div>
 </div>

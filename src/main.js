@@ -1,4 +1,4 @@
-/* global $ _ Prism */
+/* global _ Prism */
 import filePartial from './partials/file.hbs'
 import ctaSectionPartial from './partials/cta_section.hbs'
 import navigationLayout from './layouts/navigation.hbs'
@@ -7,7 +7,7 @@ import exampleLayout from './layouts/example.hbs'
 // production should be set in index.html
 // eslint-disable-next-line no-undef
 const STATIC_CONTENT_URL = production ? 'https://examples.transportapi.com/' : 'https://examples.staging.transportapi.com/'
-const RAW_GITHUB_CONTENT_URL = 'https://raw.githubusercontent.com/transportapi/usage-examples/master/src/'
+const RAW_GITHUB_CONTENT_URL = 'https://raw.githubusercontent.com/transportapi/usage-examples/master/src/examples/'
 const EXAMPLES_SOURCE_GITHUB_URL = 'https://github.com/transportapi/usage-examples/tree/master/src/examples/'
 const PRODUCT_PAGES_ROOT = 'https://www.transportapi.com/managed-services/'
 const LEGACY_DOCS_URL = 'https://developer.transportapi.com/docs-legacy?raml=https://docs.transportapi.com/raml/transportapi.raml'
@@ -22,7 +22,7 @@ const showExperimental =
 const gitBranch = urlParams.has(BRANCH_QUERY_PARAM) ? urlParams.get(BRANCH_QUERY_PARAM) : 'master'
 
 // For local development load the files from a relative path
-const examplesSourceFilesRootUrl = urlParams.has(LOCAL_DEVELOPMENT_QUERY_PARAM) ? './' : RAW_GITHUB_CONTENT_URL
+const examplesSourceFilesRootUrl = urlParams.has(LOCAL_DEVELOPMENT_QUERY_PARAM) ? './examples/' : RAW_GITHUB_CONTENT_URL
 const staticContentRootUrl = urlParams.has(LOCAL_DEVELOPMENT_QUERY_PARAM) ? '' : STATIC_CONTENT_URL
 
 const products = [
@@ -219,6 +219,25 @@ const examples = [
   }
 ]
 
+const exampleSourceFiles = [
+  {
+    name: 'main.js',
+    language: 'javascript'
+  },
+  {
+    name: 'index.html',
+    language: 'html'
+  },
+  {
+    name: 'index.css',
+    language: 'css'
+  },
+  {
+    name: 'response.json',
+    language: 'json'
+  },
+]
+
 if (urlParams.has('example')) {
   const exampleName = urlParams.get('example')
   showExample(exampleName)
@@ -244,7 +263,7 @@ function loadTemplate (templateFunction, properties, onLoad) {
   properties.ctaSectionPartial = ctaSectionPartial
 
   const html = templateFunction(properties)
-  $('#app').html(html)
+  document.getElementById('app').innerHTML = html
   onLoad()
 }
 
@@ -259,15 +278,29 @@ function showExample (exampleName) {
     render: {
       indexPageUrl: `${staticContentRootUrl}examples/${exampleName}/index.html`
     },
-    playgroundUrl: `https://codesandbox.io/s/github/transportapi/usage-examples/tree/${gitBranch}/src/examples/${exampleName}`,
+    playgroundUrl:
+        `https://codesandbox.io/s/github/transportapi/usage-examples/tree/${gitBranch}/src/examples/${exampleName}`,
     branch: gitBranch,
-    sourceFilesRootUrl: examplesSourceFilesRootUrl
+    sourceFiles: exampleSourceFiles,
+    sourceFilesRootUrl: examplesSourceFilesRootUrl,
   }
+  exampleSourceFiles.forEach(sourceFile => {
+    fetch(`${examplesSourceFilesRootUrl}${exampleName}/${sourceFile.name}`)
+      .then(response => response.text())
+      .then(sourceCode => {
+        const exampleSourcePlaceholder = document.getElementById(sourceFile.name)
+        exampleSourcePlaceholder.textContent = sourceCode
+        Prism.highlightElement(exampleSourcePlaceholder)
+      })
+  })
   const properties = _.merge(exampleSpecificProperties, commonProperties)
 
   loadTemplate(exampleLayout, properties, () => {
     // This can't simply be put in the CSS file because Prism.js seemingly redraws the element
-    $('pre.line-numbers').css('max-height', '45em')
+    const codeSnippets = document.getElementsByClassName('code-snippet')
+    for (const codeSnippetElement of codeSnippets) {
+      codeSnippetElement.attributeStyleMap.set('max-height', '45em')
+    }
     // Using Prism.highlight(contents) would be sufficient to get syntax highlighting but the line-numbers plugin
     // doesn't work without this approach
     setTimeout(() => Prism.highlightAll(), 0)
