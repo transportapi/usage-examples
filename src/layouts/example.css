@@ -17,3 +17,39 @@ a.crosslink {
   border: 1px solid #dee2e6;
   border-radius: 1rem;
 }
+
+div.code-toolbar > .toolbar {
+  opacity: 1;
+  top: -2.4em;
+}
+
+div.code-toolbar > .toolbar > .toolbar-item button:before {
+  margin-right: 0.184em;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  content: "\f0c5";
+  font-size: 1.33333333em;
+  line-height: .75em;
+  vertical-align: middle;
+}
+
+/* Keep in sync with .tapi-secondary button style in the main website. */
+div.code-toolbar > .toolbar > .toolbar-item > button {
+  color: #0062B2;
+  background: #dddddd;
+  border: solid 1px #0062B2;
+  width: 7em;
+  height: 2em;
+  box-shadow: none;
+  font-weight: 700;
+  font-family: avenir next cyr w00 bold;
+  border-radius: 0.3rem;
+}
+
+div.code-toolbar > .toolbar > .toolbar-item > button:hover {
+  color: #fff;
+  background-color: #5c636a;
+  border-color: #565e64;
+}
