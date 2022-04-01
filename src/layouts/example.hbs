@@ -73,9 +73,8 @@
     </div>
 </div>
 
-{{>(lookup . 'filePartial') rootUrl=sourceFilesRootUrl directory=directory name="main.js" language="javascript"}}
-{{>(lookup . 'filePartial') rootUrl=sourceFilesRootUrl directory=directory name="index.html" language="html"}}
-{{>(lookup . 'filePartial') rootUrl=sourceFilesRootUrl directory=directory name="index.css" language="css"}}
-{{>(lookup . 'filePartial') rootUrl=sourceFilesRootUrl directory=directory name="response.json" language="json"}}
+{{#each sourceFiles}}
+{{>(lookup .. 'filePartial') rootUrl=sourceFilesRootUrl name=name language=language}}
+{{/each}}
 
 {{>(lookup . 'ctaSectionPartial') loggedIn=loggedIn}}
