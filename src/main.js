@@ -11,6 +11,7 @@ const RAW_GITHUB_CONTENT_URL = 'https://raw.githubusercontent.com/transportapi/u
 const EXAMPLES_SOURCE_GITHUB_URL = 'https://github.com/transportapi/usage-examples/tree/master/src/examples/'
 const PRODUCT_PAGES_ROOT = 'https://www.transportapi.com/managed-services/'
 const LEGACY_DOCS_URL = 'https://developer.transportapi.com/docs-legacy?raml=https://docs.transportapi.com/raml/transportapi.raml'
+const DOCS_URL = 'https://developer.transportapi.com/docs'
 
 const LOCAL_DEVELOPMENT_QUERY_PARAM = 'localDevelopment'
 const BRANCH_QUERY_PARAM = 'branch'
@@ -177,8 +178,8 @@ const examples = [
     description: 'Shows a journey plan between two points',
     directory: 'journey-planner',
     endpoint: {
-      path: 'public/journey/from/{from}/to/{to}',
-      docsUrl: LEGACY_DOCS_URL
+      path: 'public_journey',
+      docsUrl: `${DOCS_URL}#get-/v3/uk/public_journey.json`
     },
     experimental: false,
     product_ids: ['tapi-journey-planner'],
