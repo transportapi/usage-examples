@@ -310,6 +310,7 @@ function showExample (exampleName) {
 
 function organizeByProduct (examples) {
   return products.map(product => ({
+    id: product.id,
     label: product.label,
     logo: product.logo,
     examples: examples.filter(example => example.product_ids.includes(product.id))
