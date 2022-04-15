@@ -40,16 +40,18 @@ const products = [
     page: `${PRODUCT_PAGES_ROOT}bus-information`
   },
   {
-    id: 'tapi-bus-performance',
-    label: 'TAPI Bus Performance',
-    logo: 'static/logo-tapi-bus-performance.svg',
-    page: `${PRODUCT_PAGES_ROOT}bus-performance`
-  },
-  {
     id: 'tapi-bus-fares',
     label: 'TAPI Bus Fares',
     logo: 'static/tapi-bus-fares.svg',
-    page: `${PRODUCT_PAGES_ROOT}bus-fares`
+    page: `${PRODUCT_PAGES_ROOT}bus-fares`,
+    comingSoon: true
+  },
+  {
+    id: 'tapi-bus-performance',
+    label: 'TAPI Bus Performance',
+    logo: 'static/logo-tapi-bus-performance.svg',
+    page: `${PRODUCT_PAGES_ROOT}bus-performance`,
+    comingSoon: true
   },
   {
     id: 'tapi-rail-information',
@@ -310,12 +312,9 @@ function showExample (exampleName) {
 
 function organizeByProduct (examples) {
   return products.map(product => ({
-    id: product.id,
-    label: product.label,
-    logo: product.logo,
+    ...product,
     examples: examples.filter(example => example.product_ids.includes(product.id))
   }))
-    .filter(product => product.examples.length !== 0)
 }
 
 function exampleViewUrlQueryParameters () {
