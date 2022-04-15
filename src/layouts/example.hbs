@@ -42,10 +42,10 @@
                 <div class="pe-2">
                     Product:
                 </div>
-                <a href="{{product.page}}" class="crosslink text-center pe-1" style="width:3rem">
+                <a href="{{productPagesRootUrl}}{{product.page}}" class="crosslink text-center pe-1" style="width:3rem">
                     <img class="img-fluid px-1" src="{{rootUrl}}{{product.logo}}">
                 </a>
-                <a href="{{product.page}}" class="crosslink">
+                <a href="{{productPagesRootUrl}}{{product.page}}" class="crosslink">
                     {{product.label}}
                 </a>
             </div>
@@ -73,8 +73,8 @@
     </div>
 </div>
 
-{{#each sourceFiles}}
-{{>(lookup .. 'filePartial') rootUrl=sourceFilesRootUrl name=name language=language}}
+{{#each sourceFiles as |sourceFile|}}
+{{>(lookup .. 'filePartial') name=sourceFile.name language=sourceFile.language}}
 {{/each}}
 
 {{>(lookup . 'ctaSectionPartial') loggedIn=loggedIn}}

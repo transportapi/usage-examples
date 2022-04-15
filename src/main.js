@@ -31,39 +31,39 @@ const products = [
     id: 'tapi-journey-planner',
     label: 'TAPI Journey Planner',
     logo: 'static/logo-tapi-journey-planner.svg',
-    page: `${PRODUCT_PAGES_ROOT}journey-planner`
+    page: 'journey-planner'
   },
   {
     id: 'tapi-bus-information',
     label: 'TAPI Bus Information',
     logo: 'static/logo-tapi-bus-information.svg',
-    page: `${PRODUCT_PAGES_ROOT}bus-information`
+    page: 'bus-information'
   },
   {
     id: 'tapi-bus-fares',
     label: 'TAPI Bus Fares',
-    logo: 'static/tapi-bus-fares.svg',
-    page: `${PRODUCT_PAGES_ROOT}bus-fares`,
+    logo: 'static/logo-tapi-bus-fares.svg',
+    page: 'bus-fares',
     comingSoon: true
   },
   {
     id: 'tapi-bus-performance',
     label: 'TAPI Bus Performance',
     logo: 'static/logo-tapi-bus-performance.svg',
-    page: `${PRODUCT_PAGES_ROOT}bus-performance`,
+    page: 'bus-performance',
     comingSoon: true
   },
   {
     id: 'tapi-rail-information',
     label: 'TAPI Rail Information',
     logo: 'static/logo-tapi-rail-information.svg',
-    page: `${PRODUCT_PAGES_ROOT}rail-information`
+    page: 'rail-information'
   },
   {
     id: 'tapi-places',
     label: 'TAPI Places',
     logo: 'static/logo-tapi-places.svg',
-    page: `${PRODUCT_PAGES_ROOT}places`
+    page: 'places'
   }
 ]
 
@@ -246,9 +246,9 @@ if (urlParams.has('example')) {
   showExample(exampleName)
 } else {
   const examplesToList = showExperimental ? examples : examples.filter(example => !example.experimental)
-  const productExamples = organizeByProduct(examplesToList)
+  const productShowcases = organizeByProduct(examplesToList)
   const properties = {
-    productExamples: productExamples,
+    productShowcases: productShowcases,
     additionalUrlQueryParams: exampleViewUrlQueryParameters(),
     showExample: showExample
   }
@@ -285,17 +285,9 @@ function showExample (exampleName) {
         `https://codesandbox.io/s/github/transportapi/usage-examples/tree/${gitBranch}/src/examples/${exampleName}`,
     branch: gitBranch,
     sourceFiles: exampleSourceFiles,
+    productPagesRootUrl: PRODUCT_PAGES_ROOT,
     sourceFilesRootUrl: examplesSourceFilesRootUrl,
   }
-  exampleSourceFiles.forEach(sourceFile => {
-    fetch(`${examplesSourceFilesRootUrl}${exampleName}/${sourceFile.name}`)
-      .then(response => response.text())
-      .then(sourceCode => {
-        const exampleSourcePlaceholder = document.getElementById(sourceFile.name)
-        exampleSourcePlaceholder.textContent = sourceCode
-        Prism.highlightElement(exampleSourcePlaceholder)
-      })
-  })
   const properties = _.merge(exampleSpecificProperties, commonProperties)
 
   loadTemplate(exampleLayout, properties, () => {
@@ -307,6 +299,19 @@ function showExample (exampleName) {
     // Using Prism.highlight(contents) would be sufficient to get syntax highlighting but the line-numbers plugin
     // doesn't work without this approach
     setTimeout(() => Prism.highlightAll(), 0)
+  })
+  loadCodeSnippets(exampleName)
+}
+
+function loadCodeSnippets (exampleName) {
+  exampleSourceFiles.forEach(sourceFile => {
+    fetch(`${examplesSourceFilesRootUrl}${exampleName}/${sourceFile.name}`)
+      .then(response => response.text())
+      .then(sourceCode => {
+        const exampleSourcePlaceholder = document.getElementById(sourceFile.name)
+        exampleSourcePlaceholder.textContent = sourceCode
+        Prism.highlightElement(exampleSourcePlaceholder)
+      })
   })
 }
 
