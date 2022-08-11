@@ -101,6 +101,21 @@ const examples = [
     }
   },
   {
+    title: 'Bus service geometry',
+    description: 'Retrieves the geometry of bus services specified by bounding box and draws it on a map',
+    directory: 'bus-service-geometry',
+    endpoint: {
+      path: 'bus/services',
+      docsUrl: LEGACY_DOCS_URL
+    },
+    experimental: false,
+    product_ids: ['tapi-bus-information'],
+    render: {
+      width: 800,
+      height: 491
+    }
+  },
+  {
     title: 'Bus service description',
     description: 'Show bus service metadata: the operator, linename, directions and destinations',
     directory: 'bus-service-description',
