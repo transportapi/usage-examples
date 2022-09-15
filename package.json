@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
+    "lint": "npx eslint src/**/*.js",
     "serve": "parcel src/**/*.html src/examples/**/index.html src/examples/**/response.json src/examples/**/*.svg",
     "build": "parcel build --no-source-maps src/**/*.html src/**/*.css src/examples/**/response.json src/examples/**/*.svg src/static/*"
   },

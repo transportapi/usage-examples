@@ -43,14 +43,13 @@ function drawGeometry (services, map) {
   const edgesLayerGroup = L.layerGroup()
   map.addLayer(edgesLayerGroup)
   // The coordinates are returned as [longitude, latitude] so they need to be swapped before they're passed to Leaflet
-  const polyLines = services
+  const polylines = services
     .flatMap(service => service.directions)
     .map(direction => direction.edges)
-    .flatMap(edge => edge.member)
-    .map(edge => edge.geometry.geometry.coordinates.map(a => [a[1], a[0]]))
-  polyLines.forEach(polyLine => {
-    edgesLayerGroup.addLayer(L.polyline(polyLine))
+    .map(edge => edge.member.map(edge => edge.geometry.geometry.coordinates.map(a => [a[1], a[0]])))
+  polylines.forEach(polyline => {
+    edgesLayerGroup.addLayer(L.polyline(polyline))
   })
 
-  map.fitBounds(polyLines.flat(1))
+  map.fitBounds(polylines.flat(1))
 }
