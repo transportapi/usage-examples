@@ -21,7 +21,7 @@ jobs:
     steps:
       - attach_workspace: 
           at: .
-      - run: npm run lint
+      - run: npx eslint ./src
   build:
     docker:
       - image: cimg/node:lts

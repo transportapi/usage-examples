@@ -46,7 +46,7 @@ function drawGeometry (services, map) {
   const polylines = services
     .flatMap(service => service.directions)
     .map(direction => direction.edges)
-    .map(edge => edge.member.map(edge => edge.geometry.geometry.coordinates.map(a => [a[1], a[0]])))
+    .map(edge => edge.member.map(line => line.geometry.geometry.coordinates.map(a => [a[1], a[0]])))
   polylines.forEach(polyline => {
     edgesLayerGroup.addLayer(L.polyline(polyline))
   })
