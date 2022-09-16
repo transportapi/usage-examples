@@ -7,8 +7,6 @@ import exampleLayout from './layouts/example.hbs'
 // production should be set in index.html
 // eslint-disable-next-line no-undef
 const STATIC_CONTENT_URL = production ? 'https://examples.transportapi.com/' : 'https://examples.staging.transportapi.com/'
-const RAW_GITHUB_CONTENT_URL = 'https://raw.githubusercontent.com/transportapi/usage-examples/master/src/examples/'
-const EXAMPLES_SOURCE_GITHUB_URL = 'https://github.com/transportapi/usage-examples/tree/master/src/examples/'
 const PRODUCT_PAGES_ROOT = 'https://www.transportapi.com/managed-services/'
 const LEGACY_DOCS_URL = 'https://developer.transportapi.com/docs-legacy?raml=https://docs.transportapi.com/raml/transportapi.raml'
 const DOCS_URL = 'https://developer.transportapi.com/docs'
@@ -21,9 +19,11 @@ const urlParams = new URLSearchParams(window.location.search)
 const showExperimental =
   urlParams.has(SHOW_EXPERIMENTAL_QUERY_PARAM) ? JSON.parse(urlParams.get(SHOW_EXPERIMENTAL_QUERY_PARAM)) : false
 const gitBranch = urlParams.has(BRANCH_QUERY_PARAM) ? urlParams.get(BRANCH_QUERY_PARAM) : 'master'
+const rawGithubContentUrl = `https://raw.githubusercontent.com/transportapi/usage-examples/${gitBranch}/src/examples/`
+const exampleSourceGithubUrl = `https://github.com/transportapi/usage-examples/tree/${gitBranch}/src/examples/`
 
 // For local development load the files from a relative path
-const examplesSourceFilesRootUrl = urlParams.has(LOCAL_DEVELOPMENT_QUERY_PARAM) ? './examples/' : RAW_GITHUB_CONTENT_URL
+const examplesSourceFilesRootUrl = urlParams.has(LOCAL_DEVELOPMENT_QUERY_PARAM) ? './examples/' : rawGithubContentUrl
 const staticContentRootUrl = urlParams.has(LOCAL_DEVELOPMENT_QUERY_PARAM) ? '' : STATIC_CONTENT_URL
 
 const products = [
@@ -91,6 +91,21 @@ const examples = [
     directory: 'bus-route-geometry',
     endpoint: {
       path: 'bus/route/.../timetable',
+      docsUrl: LEGACY_DOCS_URL
+    },
+    experimental: false,
+    product_ids: ['tapi-bus-information'],
+    render: {
+      width: 800,
+      height: 491
+    }
+  },
+  {
+    title: 'Bus service geometry',
+    description: 'Retrieves the geometry of bus services specified by bounding box and draws it on a map',
+    directory: 'bus-service-geometry',
+    endpoint: {
+      path: 'bus/services',
       docsUrl: LEGACY_DOCS_URL
     },
     experimental: false,
@@ -277,7 +292,7 @@ function showExample (exampleName) {
   const exampleProductId = exampleSpecificProperties.product_ids[0]
   const commonProperties = {
     product: _.find(products, { id: exampleProductId }),
-    sourceCodeUrl: `${EXAMPLES_SOURCE_GITHUB_URL}${exampleName}`,
+    sourceCodeUrl: `${exampleSourceGithubUrl}${exampleName}`,
     render: {
       indexPageUrl: `${staticContentRootUrl}examples/${exampleName}/index.html`
     },

@@ -1,0 +1,12 @@
+{
+  "name": "bus-route-geometry",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "dependencies": {
+    "jquery": "3.6.0",
+    "leaflet": "1.7.1",
+    "parcel-bundler": "^1.6.1"
+  },
+  "keywords": []
+}
