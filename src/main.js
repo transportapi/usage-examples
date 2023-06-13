@@ -60,6 +60,13 @@ const products = [
     page: 'rail-information'
   },
   {
+    id: 'tapi-rail-performance',
+    label: 'TAPI Rail Performance',
+    logo: 'static/logo-tapi-rail-performance.svg',
+    page: 'rail-information',
+    comingSoon: true
+  },
+  {
     id: 'tapi-places',
     label: 'TAPI Places',
     logo: 'static/logo-tapi-places.svg',
