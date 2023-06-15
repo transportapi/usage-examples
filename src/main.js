@@ -81,8 +81,8 @@ const examples = [
       'future',
     directory: 'bus-stop-timetable',
     endpoint: {
-      path: 'bus/stops',
-      docsUrl: `${DOCS_URL}#get-/v3/uk/bus/stops.json`
+      path: 'bus/stop_timetables',
+      docsUrl: `${DOCS_URL}#get-/v3/uk/bus/stop_timetables/-id-.json`
     },
     experimental: false,
     product_ids: ['tapi-bus-information'],
