@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="100"
+   height="100"
+   viewBox="0 0 100 100"
+   fill="none"
+   version="1.1"
+   id="svg30"
+   sodipodi:docname="logo-tapi-rail-performance.svg"
+   inkscape:version="1.2.2 (732a01da63, 2022-12-09, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs34" />
+  <sodipodi:namedview
+     id="namedview32"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     showgrid="false"
+     inkscape:zoom="7.2054181"
+     inkscape:cx="49.615441"
+     inkscape:cy="50.239971"
+     inkscape:window-width="2560"
+     inkscape:window-height="1403"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg30" />
+  <path
+     d="M50 100L73 77L66.5 70.5L50 87L33.5 70.5L27 77L50 100Z"
+     fill="#99D7F1"
+     id="path18" />
+  <path
+     d="M50 0L27 23L33.5 29.5L50 13L66.5 29.5L73 23L50 0Z"
+     fill="#99D7F1"
+     id="path20" />
+  <path
+     d="M27 23L0 50L27 77L33.5 70.5L13 50L33.5 29.5L27 23Z"
+     fill="#14B1ED"
+     id="path22" />
+  <path
+     d="M73 23L100 50L73 77L66.5 70.5L87 50L66.5 29.5L73 23Z"
+     fill="#14B1ED"
+     id="path24" />
+  <path
+     d="M13 50L50 87L87 50L50 13L13 50Z"
+     fill="#F2F2F2"
+     id="path26" />
+  <path
+     fill-rule="evenodd"
+     clip-rule="evenodd"
+     d="M36.667 33.7895V58.6316L37.1114 60.4444L38.3512 62H40.4565V64.1053L36.667 70H41.2986L42.5617 68.3158H56.8775L57.7196 70H62.7723L58.5617 64.1053V62H60.667L62.0003 60.4444L62.7723 58.6316V33.7895L62.2225 32.6667L61.5091 31.6842L60.2225 30.6667L58.5617 30H41.2986L39.5559 30.6667L38.3512 31.6842L37.3337 32.6667L36.667 33.7895ZM55.1933 56.1053L56.0354 55.2632H58.5617L59.4038 56.1053V58.6316L58.5617 59.4737H56.0354L55.1933 58.6316V56.1053ZM40.8775 55.2632L40.0003 56.2222V58.6316L40.8775 59.4737H43.4038L44.2459 58.6316V56.1053L43.4038 55.2632H40.8775ZM45.088 64.5263L46.2503 62.9167H53.3337L54.3512 64.5263H45.088ZM40.0354 35.8947V41.7895L40.8775 42.6316H58.5617L59.4038 41.7895V35.8947L59.1114 34.8889L58.5617 34.2105L57.7781 33.7778L56.8775 33.3684H42.5617L41.5559 33.7778L40.8775 34.2105L40.4448 34.8889L40.0354 35.8947Z"
+     fill="#0062B2"
+     id="path28"
+     style="fill:#eb5757;fill-opacity:1" />
+</svg>

@@ -7,7 +7,7 @@ const appKey = ''
 
 const url = (appId === '' || appKey === '')
   ? 'response.json'
-  : `https://transportapi.com/v3/uk/bus/stop/450024834/timetable.json?app_id=${appId}&app_key=${appKey}`
+  : `https://transportapi.com/v3/uk/bus/stop_timetables/450024834.json?app_id=${appId}&app_key=${appKey}`
 
 $.getJSON(url, data => {
   const departures = data.departures
