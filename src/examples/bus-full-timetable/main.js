@@ -31,7 +31,7 @@ $.getJSON(url, data => {
     })
     .join('\n')
   $('#app').html(`
-    <h1>First Potteries 25 outbound (01 Jun 2021)</h1>
+    <h2>First Potteries 25 outbound (01 Jun 2021)</h2>
     <table>${tableHtml}</table>
   `)
 })

@@ -17,7 +17,7 @@ $.getJSON(url, data => {
           `<li>${direction.name}: to ${direction.destination.description}</li>`)
         .join('\n')
       return `
-        <h1>${service.operator.name}: ${service.line_name}</h1>
+        <h4><b>${service.operator.name}: ${service.line_name}</b></h4>
         <ul>
           ${directions}
         </ul>
