@@ -1,5 +1,5 @@
 {
-  "id": "https://transportapi.com/v3/uk/bus/services/FPOT:25.json?app_id=<app_id>&app_key=<app_key>\u0026journey_patterns=true\u0026stop_geometry=true",
+  "id": "https://transportapi.com/v3/uk/bus/services/FPOT:25.json?app_id=<app_id>&app_key=<app_key>&journey_patterns=true&stop_geometry=true",
   "operator": {
     "code": "FPOT",
     "name": "First Potteries"

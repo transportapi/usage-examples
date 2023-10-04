@@ -22,7 +22,7 @@ $.getJSON(url, service => {
     const journeyPatternsHeadersHtml = journeyPatterns.map(jp => tableHeadersHtml(jp)).join('')
     const journeyPatternsTableHtml = `<table><tr>${journeyPatternsHeadersHtml}</tr>${tableContent}</table>`
     return `<h2>To ${direction.destination.description} (${direction.name})</h2>${journeyPatternsTableHtml}`
-  }).join('')
+  }).join('<br>')
 
   const html = `<h1>${service.operator.name}: ${service.line_name}</h1>${directionsHtml}`
 
