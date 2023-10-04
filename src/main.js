@@ -88,7 +88,22 @@ const examples = [
     product_ids: ['tapi-bus-information'],
     render: {
       width: 248,
-      height: 164
+      height: 190
+    }
+  },
+  {
+    title: 'Bus journey patterns',
+    description: 'List all distinct journey patterns for this service. The longest in each direction can be used to populate a "ladder view"',
+    directory: 'bus-journey-patterns',
+    endpoint: {
+      path: 'bus/journey-patterns',
+      docsUrl: `${DOCS_URL}#get-/v3/uk/bus/services/-id-.json`
+    },
+    experimental: false,
+    product_ids: ['tapi-bus-information'],
+    render: {
+      width: 800,
+      height: 500
     }
   },
   {
@@ -148,7 +163,7 @@ const examples = [
     experimental: false,
     product_ids: ['tapi-bus-information'],
     render: {
-      width: 400,
+      width: 440,
       height: 500
     }
   },
@@ -163,7 +178,7 @@ const examples = [
     experimental: false,
     product_ids: ['tapi-bus-information'],
     render: {
-      width: 400,
+      width: 440,
       height: 450
     }
   },

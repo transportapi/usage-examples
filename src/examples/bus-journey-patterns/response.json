@@ -1,0 +1,2487 @@
+{
+  "id": "https://transportapi.com/v3/uk/bus/services/FPOT:25.json?app_id=<app_id>&app_key=<app_key>\u0026journey_patterns=true\u0026stop_geometry=true",
+  "operator": {
+    "code": "FPOT",
+    "name": "First Potteries"
+  },
+  "line": "25",
+  "line_name": "25",
+  "directions": [
+    {
+      "name": "inbound",
+      "destination": {
+        "description": "Hanley, Stoke-on-Trent"
+      },
+      "stops": {
+        "member": [
+          {
+            "atcocode": "3800C501601",
+            "smscode": "stadpwgp",
+            "name": "Drayton Street",
+            "stop_name": "Drayton Street",
+            "bearing": "E",
+            "indicator": "opp",
+            "locality": "Poolfields, Newcastle Under Lyme",
+            "location": {
+              "type": "Point",
+              "coordinates": [
+                -2.23408,
+                53.00936
+              ]
+            }
+          },
+          {
+            "atcocode": "3800C502703",
+            "smscode": "stagtgmw",
+            "name": "Sneyd Arms PH",
+            "stop_name": "Sneyd Arms PH",
+            "bearing": "NW",
+            "indicator": "nr",
+            "locality": "Keele",
+            "location": {
+              "type": "Point",
+              "coordinates": [
+                -2.28723,
+                53.00366
+              ]
+            }
+          },
+          {
+            "atcocode": "3800C502800",
+            "smscode": "stadtawm",
+            "name": "Barnes Hall",
+            "stop_name": "Barnes Hall",
+            "bearing": "NE",
+            "indicator": "adj",
+            "locality": "Keele",
+            "location": {
+              "type": "Point",
+              "coordinates": [
+                -2.26911,
+                53.00524
+              ]
+            }
+          },
+          {
+            "atcocode": "3800C510108",
+            "smscode": "stadagpt",
+            "name": "Bus Station (Stand 8)",
+            "stop_name": "Bus Station",
+            "bearing": null,
+            "indicator": "Stand 8",
+            "locality": "Newcastle Town Centre, Newcastle Under Lyme",
+            "location": {
+              "type": "Point",
+              "coordinates": [
+                -2.22474,
+                53.01045
+              ]
+            }
+          },
+          {
+            "atcocode": "3800C511500",
+            "smscode": "stadtdmj",
+            "name": "St Mary's Drive",
+            "stop_name": "St Mary's Drive",
+            "bearing": "SE",
+            "indicator": "opp",
+            "locality": "Poolfields, Newcastle Under Lyme",
+            "location": {
+              "type": "Point",
+              "coordinates": [
+                -2.23844,
+                53.01058
+              ]
+            }
+          },
+          {
+            "atcocode": "3800C514402",
+            "smscode": "stadtgjd",
+            "name": "Cherry Tree PH",
+            "stop_name": "Cherry Tree PH",
+            "bearing": "SE",
+            "indicator": "adj",
+            "locality": "Newcastle Under Lyme",
+            "location": {
+              "type": "Point",
+              "coordinates": [
+                -2.22226,
+                53.00712
+              ]
+            }
+          },
+          {
+            "atcocode": "3800C536701",
+            "smscode": "stagpwjd",
+            "name": "Home Farm Drive",
+            "stop_name": "Home Farm Drive",
+            "bearing": "W",
+            "indicator": "adj",
+            "locality": "Keele",
+            "location": {
+              "type": "Point",
+              "coordinates": [
+                -2.26468,
+                53.00532
+              ]
+            }
+          },
+          {
+            "atcocode": "3800C542202",
+            "smscode": "stadwdpd",
+            "name": "Darwin Building",
+            "stop_name": "Darwin Building",
+            "bearing": "NW",
+            "indicator": "opp",
+            "locality": "Keele",
+            "location": {
+              "type": "Point",
+              "coordinates": [
+                -2.27063,
+                53.00276
+              ]
+            }
+          },
+          {
+            "atcocode": "3800C542302",
+            "smscode": "stadwdpj",
+            "name": "Horwood Hall",
+            "stop_name": "Horwood Hall",
+            "bearing": "NE",
+            "indicator": "opp",
+            "locality": "Keele",
+            "location": {
+              "type": "Point",
+              "coordinates": [
+                -2.27041,
+                53.00121
+              ]
+            }
+          },
+          {
+            "atcocode": "3800C542402",
+            "smscode": "stadwdpt",
+            "name": "Lindsay Hall",
+            "stop_name": "Lindsay Hall",
+            "bearing": "SE",
+            "indicator": "opp",
+            "locality": "Keele",
+            "location": {
+              "type": "Point",
+              "coordinates": [
+                -2.27624,
+                53.00174
+              ]
+            }
+          },
+          {
+            "atcocode": "3800C542502",
+            "smscode": "stadwdpw",
+            "name": "Holly Cross Hall",
+            "stop_name": "Holly Cross Hall",
+            "bearing": "E",
+            "indicator": "opp",
+            "locality": "Keele",
+            "location": {
+              "type": "Point",
+              "coordinates": [
+                -2.28014,
+                53.00216
+              ]
+            }
+          },
+          {
+            "atcocode": "3800C590901",
+            "smscode": "stadwdwt",
+            "name": "Gallowstree Lane",
+            "stop_name": "Gallowstree Lane",
+            "bearing": "NE",
+            "indicator": "opp",
+            "locality": "Thistleberry, Newcastle Under Lyme",
+            "location": {
+              "type": "Point",
+              "coordinates": [
+                -2.25086,
+                53.00711
+              ]
+            }
+          },
+          {
+            "atcocode": "3800C591101",
+            "smscode": "stadwgag",
+            "name": "House No. 224",
+            "stop_name": "House No. 224",
+            "bearing": "NE",
+            "indicator": "adj",
+            "locality": "Poolfields, Newcastle Under Lyme",
+            "location": {
+              "type": "Point",
+              "coordinates": [
+                -2.24393,
+                53.0098
+              ]
+            }
+          },
+          {
+            "atcocode": "3800C591202",
+            "smscode": "stadwgap",
+            "name": "Rotterdam Road",
+            "stop_name": "Rotterdam Road",
+            "bearing": "NE",
+            "indicator": "adj",
+            "locality": "Poolfields, Newcastle Under Lyme",
+            "location": {
+              "type": "Point",
+              "coordinates": [
+                -2.24284,
+                53.01144
+              ]
+            }
+          },
+          {
+            "atcocode": "3800C591301",
+            "smscode": "stadwgat",
+            "name": "Queen Elizabeth Park",
+            "stop_name": "Queen Elizabeth Park",
+            "bearing": "N",
+            "indicator": "adj",
+            "locality": "Newcastle Town Centre, Newcastle Under Lyme",
+            "location": {
+              "type": "Point",
+              "coordinates": [
+                -2.231,
+                53.00946
+              ]
+            }
+          },
+          {
+            "atcocode": "3800C593401",
+            "smscode": "stadwgtd",
+            "name": "Wain Avenue",
+            "stop_name": "Wain Avenue",
+            "bearing": "NE",
+            "indicator": "opp",
+            "locality": "Poolfields, Newcastle Under Lyme",
+            "location": {
+              "type": "Point",
+              "coordinates": [
+                -2.2451,
+                53.00842
+              ]
+            }
+          },
+          {
+            "atcocode": "3800C598702",
+            "smscode": "stadwjwt",
+            "name": "The Avenue",
+            "stop_name": "The Avenue",
+            "bearing": "SE",
+            "indicator": "adj",
+            "locality": "Newcastle Under Lyme",
+            "location": {
+              "type": "Point",
+              "coordinates": [
+                -2.21866,
+                53.00447
+              ]
+            }
+          },
+          {
+            "atcocode": "3890D000100",
+            "smscode": "stoadada",
+            "name": "Bus Station",
+            "stop_name": "Bus Station",
+            "bearing": null,
+            "indicator": "arrival st",
+            "locality": "Hanley, Stoke-on-Trent",
+            "location": {
+              "type": "Point",
+              "coordinates": [
+                -2.17461,
+                53.02254
+              ]
+            }
+          },
+          {
+            "atcocode": "3890D000901",
+            "smscode": "stoadapt",
+            "name": "stop J1",
+            "stop_name": "stop J1",
+            "bearing": "NE",
+            "indicator": "adj",
+            "locality": "Hanley, Stoke-on-Trent",
+            "location": {
+              "type": "Point",
+              "coordinates": [
+                -2.1758,
+                53.0229
+              ]
+            }
+          },
+          {
+            "atcocode": "3890D001502",
+            "smscode": "stoadjdm",
+            "name": "Stoke-on-Trent Railway Station",
+            "stop_name": "Stoke-on-Trent Railway Station",
+            "bearing": "NW",
+            "indicator": "adj",
+            "locality": "Stoke-upon-Trent, Stoke-on-Trent",
+            "location": {
+              "type": "Point",
+              "coordinates": [
+                -2.18123,
+                53.00856
+              ]
+            }
+          },
+          {
+            "atcocode": "3890D001605",
+            "smscode": "stoadgag",
+            "name": "stop N",
+            "stop_name": "stop N",
+            "bearing": "SE",
+            "indicator": "adj",
+            "locality": "Stoke-upon-Trent, Stoke-on-Trent",
+            "location": {
+              "type": "Point",
+              "coordinates": [
+                -2.18379,
+                53.00357
+              ]
+            }
+          },
+          {
+            "atcocode": "3890D001803",
+            "smscode": "stoapwag",
+            "name": "stop I",
+            "stop_name": "stop I",
+            "bearing": "SE",
+            "indicator": "adj",
+            "locality": "Stoke-upon-Trent, Stoke-on-Trent",
+            "location": {
+              "type": "Point",
+              "coordinates": [
+                -2.1874,
+                53.00566
+              ]
+            }
+          },
+          {
+            "atcocode": "3890D030802",
+            "smscode": "stoagpgj",
+            "name": "Regent Centre",
+            "stop_name": "Regent Centre",
+            "bearing": "NE",
+            "indicator": "adj",
+            "locality": "Hanley, Stoke-on-Trent",
+            "location": {
+              "type": "Point",
+              "coordinates": [
+                -2.17659,
+                53.01863
+              ]
+            }
+          },
+          {
+            "atcocode": "3890D030902",
+            "smscode": "stoagpwm",
+            "name": "Wellesley Street",
+            "stop_name": "Wellesley Street",
+            "bearing": "N",
+            "indicator": "adj",
+            "locality": "Shelton, Stoke-on-Trent",
+            "location": {
+              "type": "Point",
+              "coordinates": [
+                -2.17868,
+                53.01684
+              ]
+            }
+          },
+          {
+            "atcocode": "3890D031002",
+            "smscode": "stoagpwp",
+            "name": "Stoke-on-Trent College",
+            "stop_name": "Stoke-on-Trent College",
+            "bearing": "NE",
+            "indicator": "adj",
+            "locality": "Shelton, Stoke-on-Trent",
+            "location": {
+              "type": "Point",
+              "coordinates": [
+                -2.17915,
+                53.01457
+              ]
+            }
+          },
+          {
+            "atcocode": "3890D031102",
+            "smscode": "stoagtad",
+            "name": "Beresford Street",
+            "stop_name": "Beresford Street",
+            "bearing": "NE",
+            "indicator": "adj",
+            "locality": "Shelton, Stoke-on-Trent",
+            "location": {
+              "type": "Point",
+              "coordinates": [
+                -2.18053,
+                53.01187
+              ]
+            }
+          },
+          {
+            "atcocode": "3890D031202",
+            "smscode": "stoagtaj",
+            "name": "Film Theatre",
+            "stop_name": "Film Theatre",
+            "bearing": "NE",
+            "indicator": "opp",
+            "locality": "Shelton, Stoke-on-Trent",
+            "location": {
+              "type": "Point",
+              "coordinates": [
+                -2.18159,
+                53.00988
+              ]
+            }
+          },
+          {
+            "atcocode": "3890D031302",
+            "smscode": "stoagtap",
+            "name": "Hancock Street",
+            "stop_name": "Hancock Street",
+            "bearing": "N",
+            "indicator": "opp",
+            "locality": "Stoke-upon-Trent, Stoke-on-Trent",
+            "location": {
+              "type": "Point",
+              "coordinates": [
+                -2.17864,
+                53.00604
+              ]
+            }
+          },
+          {
+            "atcocode": "3890D032402",
+            "smscode": "stoagtpd",
+            "name": "stop Z",
+            "stop_name": "stop Z",
+            "bearing": "S",
+            "indicator": "adj",
+            "locality": "Stoke-upon-Trent, Stoke-on-Trent",
+            "location": {
+              "type": "Point",
+              "coordinates": [
+                -2.18858,
+                53.00676
+              ]
+            }
+          },
+          {
+            "atcocode": "3890D032602",
+            "smscode": "stoagtgp",
+            "name": "Tolkien Way",
+            "stop_name": "Tolkien Way",
+            "bearing": "E",
+            "indicator": "adj",
+            "locality": "Stoke-upon-Trent, Stoke-on-Trent",
+            "location": {
+              "type": "Point",
+              "coordinates": [
+                -2.19558,
+                53.00866
+              ]
+            }
+          },
+          {
+            "atcocode": "3890D032702",
+            "smscode": "stoagtgw",
+            "name": "Quarry Road",
+            "stop_name": "Quarry Road",
+            "bearing": "SE",
+            "indicator": "opp",
+            "locality": "Hartshill, Stoke-on-Trent",
+            "location": {
+              "type": "Point",
+              "coordinates": [
+                -2.19712,
+                53.00912
+              ]
+            }
+          },
+          {
+            "atcocode": "3890D032802",
+            "smscode": "stoagtjd",
+            "name": "Holy Trinity Church",
+            "stop_name": "Holy Trinity Church",
+            "bearing": "NE",
+            "indicator": "adj",
+            "locality": "Hartshill, Stoke-on-Trent",
+            "location": {
+              "type": "Point",
+              "coordinates": [
+                -2.20162,
+                53.00924
+              ]
+            }
+          },
+          {
+            "atcocode": "3890D032902",
+            "smscode": "stoagtjp",
+            "name": "Nelson Road",
+            "stop_name": "Nelson Road",
+            "bearing": "E",
+            "indicator": "adj",
+            "locality": "Hartshill, Stoke-on-Trent",
+            "location": {
+              "type": "Point",
+              "coordinates": [
+                -2.20473,
+                53.00901
+              ]
+            }
+          },
+          {
+            "atcocode": "3890D036901",
+            "smscode": "stoajagw",
+            "name": "Lytton Street",
+            "stop_name": "Lytton Street",
+            "bearing": "E",
+            "indicator": "adj",
+            "locality": "Stoke-upon-Trent, Stoke-on-Trent",
+            "location": {
+              "type": "Point",
+              "coordinates": [
+                -2.177,
+                53.00248
+              ]
+            }
+          },
+          {
+            "atcocode": "3890D046503",
+            "smscode": "stoajmjt",
+            "name": "Chapel",
+            "stop_name": "Chapel",
+            "bearing": "NW",
+            "indicator": "opp",
+            "locality": "Royal Stoke University Hospital, Stoke-on-Trent",
+            "location": {
+              "type": "Point",
+              "coordinates": [
+                -2.21617,
+                53.00422
+              ]
+            }
+          },
+          {
+            "atcocode": "3890D046504",
+            "smscode": "stoajmjw",
+            "name": "main entrance link",
+            "stop_name": "main entrance link",
+            "bearing": "NE",
+            "indicator": "opp",
+            "locality": "Royal Stoke University Hospital, Stoke-on-Trent",
+            "location": {
+              "type": "Point",
+              "coordinates": [
+                -2.21514,
+                53.00499
+              ]
+            }
+          },
+          {
+            "atcocode": "3890D102601",
+            "smscode": "stoampdm",
+            "name": "Hilton Road",
+            "stop_name": "Hilton Road",
+            "bearing": "N",
+            "indicator": "hail and r",
+            "locality": "Hartshill, Stoke-on-Trent",
+            "location": {
+              "type": "Point",
+              "coordinates": [
+                -2.2109,
+                53.0059
+              ]
+            }
+          },
+          {
+            "atcocode": "3890D102701",
+            "smscode": "stoampdt",
+            "name": "Albany Road",
+            "stop_name": "Albany Road",
+            "bearing": "N",
+            "indicator": "hail and r",
+            "locality": "Hartshill, Stoke-on-Trent",
+            "location": {
+              "type": "Point",
+              "coordinates": [
+                -2.21095,
+                53.00715
+              ]
+            }
+          },
+          {
+            "atcocode": "3890D102902",
+            "smscode": "stoampgm",
+            "name": "The Avenue",
+            "stop_name": "The Avenue",
+            "bearing": "E",
+            "indicator": "hail and r",
+            "locality": "Hartshill, Stoke-on-Trent",
+            "location": {
+              "type": "Point",
+              "coordinates": [
+                -2.20826,
+                53.00843
+              ]
+            }
+          }
+        ]
+      },
+      "journey_patterns": {
+        "member": [
+          {
+            "count": 29,
+            "stops": [
+              {
+                "atcocode": "3800C510108",
+                "timing_point": true
+              },
+              {
+                "atcocode": "3800C514402",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3800C598702",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D046503",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D046504",
+                "timing_point": true
+              },
+              {
+                "atcocode": "3890D102601",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D102701",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D102902",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D032902",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D032802",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D032702",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D032602",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D032402",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D001803",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D001605",
+                "timing_point": true
+              },
+              {
+                "atcocode": "3890D036901",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D031302",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D001502",
+                "timing_point": true
+              },
+              {
+                "atcocode": "3890D031202",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D031102",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D031002",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D030902",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D030802",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D000901",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D000100",
+                "timing_point": true
+              }
+            ]
+          },
+          {
+            "count": 141,
+            "stops": [
+              {
+                "atcocode": "3800C502703",
+                "timing_point": true
+              },
+              {
+                "atcocode": "3800C542502",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3800C542402",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3800C542302",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3800C542202",
+                "timing_point": true
+              },
+              {
+                "atcocode": "3800C502800",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3800C536701",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3800C590901",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3800C593401",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3800C591101",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3800C591202",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3800C511500",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3800C501601",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3800C591301",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3800C510108",
+                "timing_point": true
+              },
+              {
+                "atcocode": "3800C514402",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3800C598702",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D046503",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D046504",
+                "timing_point": true
+              },
+              {
+                "atcocode": "3890D032902",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D032802",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D032702",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D032602",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D032402",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D001803",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D001605",
+                "timing_point": true
+              },
+              {
+                "atcocode": "3890D036901",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D031302",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D001502",
+                "timing_point": true
+              },
+              {
+                "atcocode": "3890D031202",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D031102",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D031002",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D030902",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D030802",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D000901",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D000100",
+                "timing_point": true
+              }
+            ]
+          },
+          {
+            "count": 6,
+            "stops": [
+              {
+                "atcocode": "3800C502703",
+                "timing_point": true
+              },
+              {
+                "atcocode": "3800C542502",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3800C542402",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3800C542302",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3800C542202",
+                "timing_point": true
+              },
+              {
+                "atcocode": "3800C502800",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3800C536701",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3800C590901",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3800C593401",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3800C591101",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3800C591202",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3800C511500",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3800C501601",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3800C591301",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3800C510108",
+                "timing_point": true
+              }
+            ]
+          },
+          {
+            "count": 5,
+            "stops": [
+              {
+                "atcocode": "3800C510108",
+                "timing_point": true
+              },
+              {
+                "atcocode": "3800C514402",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3800C598702",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D046503",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D046504",
+                "timing_point": true
+              },
+              {
+                "atcocode": "3890D032902",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D032802",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D032702",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D032602",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D032402",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D001803",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D001605",
+                "timing_point": true
+              },
+              {
+                "atcocode": "3890D036901",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D031302",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D001502",
+                "timing_point": true
+              },
+              {
+                "atcocode": "3890D031202",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D031102",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D031002",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D030902",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D030802",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D000901",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D000100",
+                "timing_point": true
+              }
+            ]
+          },
+          {
+            "count": 105,
+            "stops": [
+              {
+                "atcocode": "3800C502703",
+                "timing_point": true
+              },
+              {
+                "atcocode": "3800C542502",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3800C542402",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3800C542302",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3800C542202",
+                "timing_point": true
+              },
+              {
+                "atcocode": "3800C502800",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3800C536701",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3800C590901",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3800C593401",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3800C591101",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3800C591202",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3800C511500",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3800C501601",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3800C591301",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3800C510108",
+                "timing_point": true
+              },
+              {
+                "atcocode": "3800C514402",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3800C598702",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D046503",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D046504",
+                "timing_point": true
+              },
+              {
+                "atcocode": "3890D102601",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D102701",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D102902",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D032902",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D032802",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D032702",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D032602",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D032402",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D001803",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D001605",
+                "timing_point": true
+              },
+              {
+                "atcocode": "3890D036901",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D031302",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D001502",
+                "timing_point": true
+              },
+              {
+                "atcocode": "3890D031202",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D031102",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D031002",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D030902",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D030802",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D000901",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D000100",
+                "timing_point": true
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "outbound",
+      "destination": {
+        "description": "Keele"
+      },
+      "stops": {
+        "member": [
+          {
+            "atcocode": "3800C501602",
+            "smscode": "stadpwgt",
+            "name": "Drayton Street",
+            "stop_name": "Drayton Street",
+            "bearing": "W",
+            "indicator": "adj",
+            "locality": "Poolfields, Newcastle Under Lyme",
+            "location": {
+              "type": "Point",
+              "coordinates": [
+                -2.2343,
+                53.00928
+              ]
+            }
+          },
+          {
+            "atcocode": "3800C502703",
+            "smscode": "stagtgmw",
+            "name": "Sneyd Arms PH",
+            "stop_name": "Sneyd Arms PH",
+            "bearing": "NW",
+            "indicator": "nr",
+            "locality": "Keele",
+            "location": {
+              "type": "Point",
+              "coordinates": [
+                -2.28723,
+                53.00366
+              ]
+            }
+          },
+          {
+            "atcocode": "3800C502801",
+            "smscode": "stadtawp",
+            "name": "Barnes Hall",
+            "stop_name": "Barnes Hall",
+            "bearing": "SW",
+            "indicator": "opp",
+            "locality": "Keele",
+            "location": {
+              "type": "Point",
+              "coordinates": [
+                -2.26902,
+                53.00513
+              ]
+            }
+          },
+          {
+            "atcocode": "3800C510112",
+            "smscode": "stadagtg",
+            "name": "Bus Station (Stand 12)",
+            "stop_name": "Bus Station",
+            "bearing": null,
+            "indicator": "Stand 12",
+            "locality": "Newcastle Town Centre, Newcastle Under Lyme",
+            "location": {
+              "type": "Point",
+              "coordinates": [
+                -2.22465,
+                53.01028
+              ]
+            }
+          },
+          {
+            "atcocode": "3800C510203",
+            "smscode": "stadtdgw",
+            "name": "Merrial Street (Stop C)",
+            "stop_name": "Merrial Street",
+            "bearing": "SW",
+            "indicator": "Stop C",
+            "locality": "Newcastle Town Centre, Newcastle Under Lyme",
+            "location": {
+              "type": "Point",
+              "coordinates": [
+                -2.22742,
+                53.01236
+              ]
+            }
+          },
+          {
+            "atcocode": "3800C511501",
+            "smscode": "stadtdmp",
+            "name": "St Mary's Drive",
+            "stop_name": "St Mary's Drive",
+            "bearing": "NW",
+            "indicator": "adj",
+            "locality": "Poolfields, Newcastle Under Lyme",
+            "location": {
+              "type": "Point",
+              "coordinates": [
+                -2.23839,
+                53.01044
+              ]
+            }
+          },
+          {
+            "atcocode": "3800C514401",
+            "smscode": "stadtgja",
+            "name": "Cherry Tree PH",
+            "stop_name": "Cherry Tree PH",
+            "bearing": "NW",
+            "indicator": "opp",
+            "locality": "Newcastle Under Lyme",
+            "location": {
+              "type": "Point",
+              "coordinates": [
+                -2.22288,
+                53.00738
+              ]
+            }
+          },
+          {
+            "atcocode": "3800C536701",
+            "smscode": "stagpwjd",
+            "name": "Home Farm Drive",
+            "stop_name": "Home Farm Drive",
+            "bearing": "W",
+            "indicator": "adj",
+            "locality": "Keele",
+            "location": {
+              "type": "Point",
+              "coordinates": [
+                -2.26468,
+                53.00532
+              ]
+            }
+          },
+          {
+            "atcocode": "3800C542201",
+            "smscode": "stadwdpa",
+            "name": "Darwin Building",
+            "stop_name": "Darwin Building",
+            "bearing": "SE",
+            "indicator": "adj",
+            "locality": "Keele",
+            "location": {
+              "type": "Point",
+              "coordinates": [
+                -2.27061,
+                53.0029
+              ]
+            }
+          },
+          {
+            "atcocode": "3800C542301",
+            "smscode": "stadwdpg",
+            "name": "Horwood Hall",
+            "stop_name": "Horwood Hall",
+            "bearing": "SW",
+            "indicator": "adj",
+            "locality": "Keele",
+            "location": {
+              "type": "Point",
+              "coordinates": [
+                -2.27014,
+                53.00112
+              ]
+            }
+          },
+          {
+            "atcocode": "3800C542401",
+            "smscode": "stadwdpm",
+            "name": "Lindsay Hall",
+            "stop_name": "Lindsay Hall",
+            "bearing": "NW",
+            "indicator": "adj",
+            "locality": "Keele",
+            "location": {
+              "type": "Point",
+              "coordinates": [
+                -2.2763,
+                53.00158
+              ]
+            }
+          },
+          {
+            "atcocode": "3800C542501",
+            "smscode": "stagtjaw",
+            "name": "Holly Cross Hall",
+            "stop_name": "Holly Cross Hall",
+            "bearing": "W",
+            "indicator": "adj",
+            "locality": "Keele",
+            "location": {
+              "type": "Point",
+              "coordinates": [
+                -2.27995,
+                53.00206
+              ]
+            }
+          },
+          {
+            "atcocode": "3800C590902",
+            "smscode": "stadwgad",
+            "name": "Gallowstree Lane",
+            "stop_name": "Gallowstree Lane",
+            "bearing": "W",
+            "indicator": "adj",
+            "locality": "Thistleberry, Newcastle Under Lyme",
+            "location": {
+              "type": "Point",
+              "coordinates": [
+                -2.25064,
+                53.00701
+              ]
+            }
+          },
+          {
+            "atcocode": "3800C591102",
+            "smscode": "stadwgaj",
+            "name": "House No. 220",
+            "stop_name": "House No. 220",
+            "bearing": "SW",
+            "indicator": "opp",
+            "locality": "Poolfields, Newcastle Under Lyme",
+            "location": {
+              "type": "Point",
+              "coordinates": [
+                -2.24368,
+                53.0099
+              ]
+            }
+          },
+          {
+            "atcocode": "3800C591201",
+            "smscode": "stadwgam",
+            "name": "Rotterdam Road",
+            "stop_name": "Rotterdam Road",
+            "bearing": "S",
+            "indicator": "opp",
+            "locality": "Poolfields, Newcastle Under Lyme",
+            "location": {
+              "type": "Point",
+              "coordinates": [
+                -2.24299,
+                53.01104
+              ]
+            }
+          },
+          {
+            "atcocode": "3800C591302",
+            "smscode": "stadwgaw",
+            "name": "Queen Elizabeth Park",
+            "stop_name": "Queen Elizabeth Park",
+            "bearing": "S",
+            "indicator": "opp",
+            "locality": "Newcastle Town Centre, Newcastle Under Lyme",
+            "location": {
+              "type": "Point",
+              "coordinates": [
+                -2.23085,
+                53.00944
+              ]
+            }
+          },
+          {
+            "atcocode": "3800C593402",
+            "smscode": "stadwgtg",
+            "name": "Wain Avenue",
+            "stop_name": "Wain Avenue",
+            "bearing": "S",
+            "indicator": "adj",
+            "locality": "Poolfields, Newcastle Under Lyme",
+            "location": {
+              "type": "Point",
+              "coordinates": [
+                -2.24473,
+                53.0087
+              ]
+            }
+          },
+          {
+            "atcocode": "3800C598701",
+            "smscode": "stadwjwp",
+            "name": "The Avenue",
+            "stop_name": "The Avenue",
+            "bearing": "NW",
+            "indicator": "opp",
+            "locality": "Newcastle Under Lyme",
+            "location": {
+              "type": "Point",
+              "coordinates": [
+                -2.21933,
+                53.00452
+              ]
+            }
+          },
+          {
+            "atcocode": "3890D000105",
+            "smscode": "stoaptgm",
+            "name": "Bus Station (stand D)",
+            "stop_name": "Bus Station",
+            "bearing": null,
+            "indicator": "stand D",
+            "locality": "Hanley, Stoke-on-Trent",
+            "location": {
+              "type": "Point",
+              "coordinates": [
+                -2.17446,
+                53.02247
+              ]
+            }
+          },
+          {
+            "atcocode": "3890D000122",
+            "smscode": "stoadamj",
+            "name": "Bus Station (stand V)",
+            "stop_name": "Bus Station",
+            "bearing": null,
+            "indicator": "stand V",
+            "locality": "Hanley, Stoke-on-Trent",
+            "location": {
+              "type": "Point",
+              "coordinates": [
+                -2.17496,
+                53.02193
+              ]
+            }
+          },
+          {
+            "atcocode": "3890D001501",
+            "smscode": "stoadjdj",
+            "name": "Stoke-on-Trent Railway Station",
+            "stop_name": "Stoke-on-Trent Railway Station",
+            "bearing": "SE",
+            "indicator": "opp",
+            "locality": "Stoke-upon-Trent, Stoke-on-Trent",
+            "location": {
+              "type": "Point",
+              "coordinates": [
+                -2.18097,
+                53.00852
+              ]
+            }
+          },
+          {
+            "atcocode": "3890D001601",
+            "smscode": "stoadjdp",
+            "name": "stop Q",
+            "stop_name": "stop Q",
+            "bearing": "NW",
+            "indicator": "adj",
+            "locality": "Stoke-upon-Trent, Stoke-on-Trent",
+            "location": {
+              "type": "Point",
+              "coordinates": [
+                -2.18355,
+                53.00342
+              ]
+            }
+          },
+          {
+            "atcocode": "3890D001802",
+            "smscode": "stoadgaw",
+            "name": "stop K",
+            "stop_name": "stop K",
+            "bearing": "NW",
+            "indicator": "adj",
+            "locality": "Stoke-upon-Trent, Stoke-on-Trent",
+            "location": {
+              "type": "Point",
+              "coordinates": [
+                -2.18761,
+                53.0056
+              ]
+            }
+          },
+          {
+            "atcocode": "3890D030801",
+            "smscode": "stoagpgd",
+            "name": "Harding Road",
+            "stop_name": "Harding Road",
+            "bearing": "SW",
+            "indicator": "adj",
+            "locality": "Hanley, Stoke-on-Trent",
+            "location": {
+              "type": "Point",
+              "coordinates": [
+                -2.17651,
+                53.01846
+              ]
+            }
+          },
+          {
+            "atcocode": "3890D030901",
+            "smscode": "stoagpgm",
+            "name": "Wellesley Street",
+            "stop_name": "Wellesley Street",
+            "bearing": "S",
+            "indicator": "opp",
+            "locality": "Shelton, Stoke-on-Trent",
+            "location": {
+              "type": "Point",
+              "coordinates": [
+                -2.17852,
+                53.0169
+              ]
+            }
+          },
+          {
+            "atcocode": "3890D031001",
+            "smscode": "stoagpwj",
+            "name": "Stoke-on-Trent College",
+            "stop_name": "Stoke-on-Trent College",
+            "bearing": "SW",
+            "indicator": "opp",
+            "locality": "Shelton, Stoke-on-Trent",
+            "location": {
+              "type": "Point",
+              "coordinates": [
+                -2.1794,
+                53.0138
+              ]
+            }
+          },
+          {
+            "atcocode": "3890D031101",
+            "smscode": "stoagpwt",
+            "name": "Seaford Street",
+            "stop_name": "Seaford Street",
+            "bearing": "SW",
+            "indicator": "adj",
+            "locality": "Shelton, Stoke-on-Trent",
+            "location": {
+              "type": "Point",
+              "coordinates": [
+                -2.18042,
+                53.01179
+              ]
+            }
+          },
+          {
+            "atcocode": "3890D031201",
+            "smscode": "stoagtag",
+            "name": "Film Theatre",
+            "stop_name": "Film Theatre",
+            "bearing": "SW",
+            "indicator": "adj",
+            "locality": "Shelton, Stoke-on-Trent",
+            "location": {
+              "type": "Point",
+              "coordinates": [
+                -2.18135,
+                53.00994
+              ]
+            }
+          },
+          {
+            "atcocode": "3890D031301",
+            "smscode": "stoagtam",
+            "name": "Seven Arches",
+            "stop_name": "Seven Arches",
+            "bearing": "SE",
+            "indicator": "adj",
+            "locality": "Stoke-upon-Trent, Stoke-on-Trent",
+            "location": {
+              "type": "Point",
+              "coordinates": [
+                -2.17732,
+                53.00472
+              ]
+            }
+          },
+          {
+            "atcocode": "3890D032401",
+            "smscode": "stoagtpg",
+            "name": "St Andrew's Square",
+            "stop_name": "St Andrew's Square",
+            "bearing": "N",
+            "indicator": "adj",
+            "locality": "Stoke-upon-Trent, Stoke-on-Trent",
+            "location": {
+              "type": "Point",
+              "coordinates": [
+                -2.18878,
+                53.00658
+              ]
+            }
+          },
+          {
+            "atcocode": "3890D032501",
+            "smscode": "stoagtpj",
+            "name": "Higson Avenue",
+            "stop_name": "Higson Avenue",
+            "bearing": "NW",
+            "indicator": "adj",
+            "locality": "Stoke-upon-Trent, Stoke-on-Trent",
+            "location": {
+              "type": "Point",
+              "coordinates": [
+                -2.18966,
+                53.00782
+              ]
+            }
+          },
+          {
+            "atcocode": "3890D032601",
+            "smscode": "stoagtpm",
+            "name": "Richmond Street",
+            "stop_name": "Richmond Street",
+            "bearing": "NW",
+            "indicator": "adj",
+            "locality": "Stoke-upon-Trent, Stoke-on-Trent",
+            "location": {
+              "type": "Point",
+              "coordinates": [
+                -2.19419,
+                53.00836
+              ]
+            }
+          },
+          {
+            "atcocode": "3890D032701",
+            "smscode": "stoagtgt",
+            "name": "Quarry Road",
+            "stop_name": "Quarry Road",
+            "bearing": "NW",
+            "indicator": "adj",
+            "locality": "Hartshill, Stoke-on-Trent",
+            "location": {
+              "type": "Point",
+              "coordinates": [
+                -2.19667,
+                53.00884
+              ]
+            }
+          },
+          {
+            "atcocode": "3890D032801",
+            "smscode": "stoagtja",
+            "name": "Holy Trinity Church",
+            "stop_name": "Holy Trinity Church",
+            "bearing": "W",
+            "indicator": "opp",
+            "locality": "Hartshill, Stoke-on-Trent",
+            "location": {
+              "type": "Point",
+              "coordinates": [
+                -2.20253,
+                53.009
+              ]
+            }
+          },
+          {
+            "atcocode": "3890D032901",
+            "smscode": "stoagtjm",
+            "name": "Nelson Road",
+            "stop_name": "Nelson Road",
+            "bearing": "W",
+            "indicator": "opp",
+            "locality": "Hartshill, Stoke-on-Trent",
+            "location": {
+              "type": "Point",
+              "coordinates": [
+                -2.20567,
+                53.00886
+              ]
+            }
+          },
+          {
+            "atcocode": "3890D036902",
+            "smscode": "stoajaja",
+            "name": "Lytton Street",
+            "stop_name": "Lytton Street",
+            "bearing": "W",
+            "indicator": "opp",
+            "locality": "Stoke-upon-Trent, Stoke-on-Trent",
+            "location": {
+              "type": "Point",
+              "coordinates": [
+                -2.17734,
+                53.00239
+              ]
+            }
+          },
+          {
+            "atcocode": "3890D046502",
+            "smscode": "stoajmjp",
+            "name": "Chapel",
+            "stop_name": "Chapel",
+            "bearing": "SE",
+            "indicator": "adj",
+            "locality": "Royal Stoke University Hospital, Stoke-on-Trent",
+            "location": {
+              "type": "Point",
+              "coordinates": [
+                -2.21584,
+                53.00395
+              ]
+            }
+          },
+          {
+            "atcocode": "3890D046505",
+            "smscode": "stoaptwj",
+            "name": "main entrance link",
+            "stop_name": "main entrance link",
+            "bearing": "SW",
+            "indicator": "adj",
+            "locality": "Royal Stoke University Hospital, Stoke-on-Trent",
+            "location": {
+              "type": "Point",
+              "coordinates": [
+                -2.21449,
+                53.00532
+              ]
+            }
+          },
+          {
+            "atcocode": "3890D102602",
+            "smscode": "stoampdp",
+            "name": "Hilton Road",
+            "stop_name": "Hilton Road",
+            "bearing": "S",
+            "indicator": "hail and r",
+            "locality": "Hartshill, Stoke-on-Trent",
+            "location": {
+              "type": "Point",
+              "coordinates": [
+                -2.2108,
+                53.00593
+              ]
+            }
+          },
+          {
+            "atcocode": "3890D102702",
+            "smscode": "stoampdw",
+            "name": "Albany Road",
+            "stop_name": "Albany Road",
+            "bearing": "S",
+            "indicator": "hail and r",
+            "locality": "Hartshill, Stoke-on-Trent",
+            "location": {
+              "type": "Point",
+              "coordinates": [
+                -2.21091,
+                53.00714
+              ]
+            }
+          },
+          {
+            "atcocode": "3890D102901",
+            "smscode": "stoampgj",
+            "name": "The Avenue",
+            "stop_name": "The Avenue",
+            "bearing": "W",
+            "indicator": "hail and r",
+            "locality": "Hartshill, Stoke-on-Trent",
+            "location": {
+              "type": "Point",
+              "coordinates": [
+                -2.20823,
+                53.00841
+              ]
+            }
+          }
+        ]
+      },
+      "journey_patterns": {
+        "member": [
+          {
+            "count": 23,
+            "stops": [
+              {
+                "atcocode": "3890D000122",
+                "timing_point": true
+              },
+              {
+                "atcocode": "3890D030801",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D030901",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D031001",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D031101",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D031201",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D001501",
+                "timing_point": true
+              },
+              {
+                "atcocode": "3890D031301",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D036902",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D001601",
+                "timing_point": true
+              },
+              {
+                "atcocode": "3890D001802",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D032401",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D032501",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D032601",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D032701",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D032801",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D032901",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D102901",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D102702",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D102602",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D046505",
+                "timing_point": true
+              },
+              {
+                "atcocode": "3890D046502",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3800C598701",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3800C514401",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3800C510112",
+                "timing_point": true
+              }
+            ]
+          },
+          {
+            "count": 142,
+            "stops": [
+              {
+                "atcocode": "3890D000122",
+                "timing_point": true
+              },
+              {
+                "atcocode": "3890D030801",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D030901",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D031001",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D031101",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D031201",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D001501",
+                "timing_point": true
+              },
+              {
+                "atcocode": "3890D031301",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D036902",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D001601",
+                "timing_point": true
+              },
+              {
+                "atcocode": "3890D001802",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D032401",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D032501",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D032601",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D032701",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D032801",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D032901",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D046505",
+                "timing_point": true
+              },
+              {
+                "atcocode": "3890D046502",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3800C598701",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3800C514401",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3800C510112",
+                "timing_point": true
+              },
+              {
+                "atcocode": "3800C510203",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3800C591302",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3800C501602",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3800C511501",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3800C591201",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3800C591102",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3800C593402",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3800C590902",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3800C536701",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3800C502801",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3800C542201",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3800C542301",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3800C542401",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3800C542501",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3800C502703",
+                "timing_point": true
+              }
+            ]
+          },
+          {
+            "count": 12,
+            "stops": [
+              {
+                "atcocode": "3890D000105",
+                "timing_point": true
+              },
+              {
+                "atcocode": "3890D030801",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D030901",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D031001",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D031101",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D031201",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D001501",
+                "timing_point": true
+              },
+              {
+                "atcocode": "3890D031301",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D036902",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D001601",
+                "timing_point": true
+              },
+              {
+                "atcocode": "3890D001802",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D032401",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D032501",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D032601",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D032701",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D032801",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D032901",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D102901",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D102702",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D102602",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D046505",
+                "timing_point": true
+              },
+              {
+                "atcocode": "3890D046502",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3800C598701",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3800C514401",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3800C510112",
+                "timing_point": true
+              },
+              {
+                "atcocode": "3800C510203",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3800C591302",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3800C501602",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3800C511501",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3800C591201",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3800C591102",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3800C593402",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3800C590902",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3800C536701",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3800C502801",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3800C542201",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3800C542301",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3800C542401",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3800C542501",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3800C502703",
+                "timing_point": true
+              }
+            ]
+          },
+          {
+            "count": 97,
+            "stops": [
+              {
+                "atcocode": "3890D000122",
+                "timing_point": true
+              },
+              {
+                "atcocode": "3890D030801",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D030901",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D031001",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D031101",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D031201",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D001501",
+                "timing_point": true
+              },
+              {
+                "atcocode": "3890D031301",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D036902",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D001601",
+                "timing_point": true
+              },
+              {
+                "atcocode": "3890D001802",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D032401",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D032501",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D032601",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D032701",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D032801",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D032901",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D102901",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D102702",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D102602",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3890D046505",
+                "timing_point": true
+              },
+              {
+                "atcocode": "3890D046502",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3800C598701",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3800C514401",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3800C510112",
+                "timing_point": true
+              },
+              {
+                "atcocode": "3800C510203",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3800C591302",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3800C501602",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3800C511501",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3800C591201",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3800C591102",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3800C593402",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3800C590902",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3800C536701",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3800C502801",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3800C542201",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3800C542301",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3800C542401",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3800C542501",
+                "timing_point": false
+              },
+              {
+                "atcocode": "3800C502703",
+                "timing_point": true
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "centroid": {
+    "type": "Point",
+    "coordinates": [
+      -2.2309206,
+      53.012016
+    ]
+  }
+}

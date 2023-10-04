@@ -21,7 +21,7 @@
         "source": "ATOC",
         "category": "XX",
         "service_timetable": {
-          "id": "https://transportapi.com/v3/uk/train/service/train_uid:C83943/2021-12-08/timetable.json?app_id=f26c9613&app_key=2020-05-15-dave-bypass-key"
+          "id": "https://transportapi.com/v3/uk/train/service/train_uid:C83943/2021-12-08/timetable.json?app_id=<app_id>&app_key=<app_key>"
         }
       },
       {
@@ -39,7 +39,7 @@
         "source": "ATOC",
         "category": "XX",
         "service_timetable": {
-          "id": "https://transportapi.com/v3/uk/train/service/train_uid:C83947/2021-12-08/timetable.json?app_id=f26c9613&app_key=2020-05-15-dave-bypass-key"
+          "id": "https://transportapi.com/v3/uk/train/service/train_uid:C83947/2021-12-08/timetable.json?app_id=<app_id>&app_key=<app_key>"
         }
       },
       {
@@ -57,7 +57,7 @@
         "source": "ATOC",
         "category": "XX",
         "service_timetable": {
-          "id": "https://transportapi.com/v3/uk/train/service/train_uid:L06297/2021-12-08/timetable.json?app_id=f26c9613&app_key=2020-05-15-dave-bypass-key"
+          "id": "https://transportapi.com/v3/uk/train/service/train_uid:L06297/2021-12-08/timetable.json?app_id=<app_id>&app_key=<app_key>"
         }
       },
       {
@@ -75,7 +75,7 @@
         "source": "ATOC",
         "category": "XX",
         "service_timetable": {
-          "id": "https://transportapi.com/v3/uk/train/service/train_uid:L06489/2021-12-08/timetable.json?app_id=f26c9613&app_key=2020-05-15-dave-bypass-key"
+          "id": "https://transportapi.com/v3/uk/train/service/train_uid:L06489/2021-12-08/timetable.json?app_id=<app_id>&app_key=<app_key>"
         }
       },
       {
@@ -93,7 +93,7 @@
         "source": "ATOC",
         "category": "OO",
         "service_timetable": {
-          "id": "https://transportapi.com/v3/uk/train/service/train_uid:G80431/2021-12-08/timetable.json?app_id=f26c9613&app_key=2020-05-15-dave-bypass-key"
+          "id": "https://transportapi.com/v3/uk/train/service/train_uid:G80431/2021-12-08/timetable.json?app_id=<app_id>&app_key=<app_key>"
         }
       },
       {
@@ -111,7 +111,7 @@
         "source": "ATOC",
         "category": "OO",
         "service_timetable": {
-          "id": "https://transportapi.com/v3/uk/train/service/train_uid:G56229/2021-12-08/timetable.json?app_id=f26c9613&app_key=2020-05-15-dave-bypass-key"
+          "id": "https://transportapi.com/v3/uk/train/service/train_uid:G56229/2021-12-08/timetable.json?app_id=<app_id>&app_key=<app_key>"
         }
       },
       {
@@ -129,7 +129,7 @@
         "source": "ATOC",
         "category": "XX",
         "service_timetable": {
-          "id": "https://transportapi.com/v3/uk/train/service/train_uid:L06478/2021-12-08/timetable.json?app_id=f26c9613&app_key=2020-05-15-dave-bypass-key"
+          "id": "https://transportapi.com/v3/uk/train/service/train_uid:L06478/2021-12-08/timetable.json?app_id=<app_id>&app_key=<app_key>"
         }
       },
       {
@@ -147,7 +147,7 @@
         "source": "ATOC",
         "category": "XX",
         "service_timetable": {
-          "id": "https://transportapi.com/v3/uk/train/service/train_uid:L06277/2021-12-08/timetable.json?app_id=f26c9613&app_key=2020-05-15-dave-bypass-key"
+          "id": "https://transportapi.com/v3/uk/train/service/train_uid:L06277/2021-12-08/timetable.json?app_id=<app_id>&app_key=<app_key>"
         }
       },
       {
@@ -165,7 +165,7 @@
         "source": "ATOC",
         "category": "XX",
         "service_timetable": {
-          "id": "https://transportapi.com/v3/uk/train/service/train_uid:G55283/2021-12-08/timetable.json?app_id=f26c9613&app_key=2020-05-15-dave-bypass-key"
+          "id": "https://transportapi.com/v3/uk/train/service/train_uid:G55283/2021-12-08/timetable.json?app_id=<app_id>&app_key=<app_key>"
         }
       },
       {
@@ -183,7 +183,7 @@
         "source": "ATOC",
         "category": "XX",
         "service_timetable": {
-          "id": "https://transportapi.com/v3/uk/train/service/train_uid:C83949/2021-12-08/timetable.json?app_id=f26c9613&app_key=2020-05-15-dave-bypass-key"
+          "id": "https://transportapi.com/v3/uk/train/service/train_uid:C83949/2021-12-08/timetable.json?app_id=<app_id>&app_key=<app_key>"
         }
       },
       {
@@ -201,7 +201,7 @@
         "source": "ATOC",
         "category": "XX",
         "service_timetable": {
-          "id": "https://transportapi.com/v3/uk/train/service/train_uid:L06299/2021-12-08/timetable.json?app_id=f26c9613&app_key=2020-05-15-dave-bypass-key"
+          "id": "https://transportapi.com/v3/uk/train/service/train_uid:L06299/2021-12-08/timetable.json?app_id=<app_id>&app_key=<app_key>"
         }
       },
       {
@@ -219,7 +219,7 @@
         "source": "ATOC",
         "category": "XX",
         "service_timetable": {
-          "id": "https://transportapi.com/v3/uk/train/service/train_uid:L06497/2021-12-08/timetable.json?app_id=f26c9613&app_key=2020-05-15-dave-bypass-key"
+          "id": "https://transportapi.com/v3/uk/train/service/train_uid:L06497/2021-12-08/timetable.json?app_id=<app_id>&app_key=<app_key>"
         }
       },
       {
@@ -237,7 +237,7 @@
         "source": "ATOC",
         "category": "OO",
         "service_timetable": {
-          "id": "https://transportapi.com/v3/uk/train/service/train_uid:G82110/2021-12-08/timetable.json?app_id=f26c9613&app_key=2020-05-15-dave-bypass-key"
+          "id": "https://transportapi.com/v3/uk/train/service/train_uid:G82110/2021-12-08/timetable.json?app_id=<app_id>&app_key=<app_key>"
         }
       },
       {
@@ -255,7 +255,7 @@
         "source": "ATOC",
         "category": "OO",
         "service_timetable": {
-          "id": "https://transportapi.com/v3/uk/train/service/train_uid:G82045/2021-12-08/timetable.json?app_id=f26c9613&app_key=2020-05-15-dave-bypass-key"
+          "id": "https://transportapi.com/v3/uk/train/service/train_uid:G82045/2021-12-08/timetable.json?app_id=<app_id>&app_key=<app_key>"
         }
       },
       {
@@ -273,7 +273,7 @@
         "source": "ATOC",
         "category": "XX",
         "service_timetable": {
-          "id": "https://transportapi.com/v3/uk/train/service/train_uid:L06486/2021-12-08/timetable.json?app_id=f26c9613&app_key=2020-05-15-dave-bypass-key"
+          "id": "https://transportapi.com/v3/uk/train/service/train_uid:L06486/2021-12-08/timetable.json?app_id=<app_id>&app_key=<app_key>"
         }
       },
       {
@@ -291,7 +291,7 @@
         "source": "ATOC",
         "category": "XX",
         "service_timetable": {
-          "id": "https://transportapi.com/v3/uk/train/service/train_uid:L06279/2021-12-08/timetable.json?app_id=f26c9613&app_key=2020-05-15-dave-bypass-key"
+          "id": "https://transportapi.com/v3/uk/train/service/train_uid:L06279/2021-12-08/timetable.json?app_id=<app_id>&app_key=<app_key>"
         }
       }
     ]
