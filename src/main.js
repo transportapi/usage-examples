@@ -63,8 +63,7 @@ const products = [
     id: 'tapi-rail-performance',
     label: 'TAPI Rail Performance',
     logo: 'static/logo-tapi-rail-performance.svg',
-    page: 'rail-information',
-    comingSoon: true
+    page: 'rail-performance'
   },
   {
     id: 'tapi-places',
@@ -255,6 +254,21 @@ const examples = [
     render: {
       width: 700,
       height: 400
+    }
+  },
+  {
+    title: 'Journey for a delay-repay app',
+    description: 'Given a vague journey description, ID target journey from a list of candidates, then compare actual times to aimed.',
+    directory: 'train-delay-repay',
+    endpoint: {
+      path: 'train/station_actual_journeys/{station}.json',
+      docsUrl: `${DOCS_URL}#get-/v3/uk/train/station_actual_journeys/-station-.json`
+    },
+    experimental: false,
+    product_ids: ['tapi-rail-performance'],
+    render: {
+      width: 980,
+      height: 450
     }
   }
 ]
