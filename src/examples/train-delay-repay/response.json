@@ -1,0 +1,303 @@
+{
+  "id": "https://transportapi.com/v3/uk/train/station_actual_journeys/crs:MAN.json?app_id=<app_id>\u0026app_key=<app_key>\u0026datetime=2023-12-08T10%3A44%3A00.000Z\u0026expected=true\u0026from_offset=-P0000-00-01T00%3A14%3A00\u0026to_offset=-P0000-00-01T00%3A00%3A00\u0026type=departure%2Carrival",
+  "member": [
+    {
+      "service": {
+        "id": "https://transportapi.com/v3/uk/train/actual_journeys/202312068056248.json?app_id=<app_id>\u0026app_key=<app_key>\u0026datetime=2023-12-08T10%3A44%3A00.000Z\u0026expected=true",
+        "rid": "202312068056248",
+        "train_uid": "P56248",
+        "headcode": "2K84",
+        "retail_service_identifier": null,
+        "toc": {
+          "atoc_code": "NT",
+          "name": "Northern"
+        },
+        "train_status": "P",
+        "origin_name": "Manchester Piccadilly",
+        "destination_name": "Alderley Edge",
+        "date": "2023-12-06",
+        "category": "00",
+        "mode": "train",
+        "cancellation": {
+          "code": null,
+          "reason": null,
+          "cancelled": false
+        },
+        "running_late": null,
+        "coaches": null
+      },
+      "stop_type": "OR",
+      "cancelled": false,
+      "platform": "5",
+      "reverse_formation": false,
+      "route_change_delay": null,
+      "aimed": {
+        "arrival": null,
+        "departure": {
+          "date": "2023-12-06",
+          "time": "10:38"
+        },
+        "pass": null
+      },
+      "actual": {
+        "arrival": null,
+        "departure": {
+          "date": "2023-12-06",
+          "time": "10:37"
+        },
+        "pass": null
+      },
+      "expected": {
+        "arrival": null,
+        "departure": {
+          "date": "2023-12-06",
+          "time": "10:38"
+        },
+        "pass": null
+      }
+    },
+    {
+      "service": {
+        "id": "https://transportapi.com/v3/uk/train/actual_journeys/202312078055290.json?app_id=<app_id>\u0026app_key=<app_key>\u0026datetime=2023-12-08T10%3A44%3A00.000Z\u0026expected=true",
+        "rid": "202312078055290",
+        "train_uid": "P55290",
+        "headcode": "1Y58",
+        "retail_service_identifier": null,
+        "toc": {
+          "atoc_code": "NT",
+          "name": "Northern"
+        },
+        "train_status": "P",
+        "origin_name": "Blackpool North",
+        "destination_name": "Manchester Airport",
+        "date": "2023-12-07",
+        "category": "XX",
+        "mode": "train",
+        "cancellation": {
+          "code": null,
+          "reason": null,
+          "cancelled": false
+        },
+        "running_late": {
+          "code": 920,
+          "reason": "This train has been delayed by a member of train crew being unavailable"
+        },
+        "coaches": null
+      },
+      "stop_type": "IP",
+      "cancelled": false,
+      "platform": "13",
+      "reverse_formation": false,
+      "route_change_delay": null,
+      "aimed": {
+        "arrival": {
+          "date": "2023-12-07",
+          "time": "10:15"
+        },
+        "departure": {
+          "date": "2023-12-07",
+          "time": "10:18"
+        },
+        "pass": null
+      },
+      "actual": {
+        "arrival": {
+          "date": "2023-12-07",
+          "time": "10:33"
+        },
+        "departure": {
+          "date": "2023-12-07",
+          "time": "10:34"
+        },
+        "pass": null
+      },
+      "expected": {
+        "arrival": {
+          "date": "2023-12-07",
+          "time": "10:33"
+        },
+        "departure": {
+          "date": "2023-12-07",
+          "time": "10:35"
+        },
+        "pass": null
+      }
+    },
+    {
+      "service": {
+        "id": "https://transportapi.com/v3/uk/train/actual_journeys/202312077167384.json?app_id=<app_id>\u0026app_key=<app_key>\u0026datetime=2023-12-08T10%3A44%3A00.000Z\u0026expected=true",
+        "rid": "202312077167384",
+        "train_uid": "G67384",
+        "headcode": "1S46",
+        "retail_service_identifier": null,
+        "toc": {
+          "atoc_code": "TP",
+          "name": "TransPennine Express"
+        },
+        "train_status": "P",
+        "origin_name": "Manchester Airport",
+        "destination_name": "Glasgow Central",
+        "date": "2023-12-07",
+        "category": "XX",
+        "mode": "train",
+        "cancellation": {
+          "code": 501,
+          "reason": "This train has been cancelled because of a broken down train",
+          "cancelled": false
+        },
+        "running_late": {
+          "code": 573,
+          "reason": "This train has been delayed by a fault on a train in front of this one"
+        },
+        "coaches": null
+      },
+      "stop_type": "IP",
+      "cancelled": false,
+      "platform": "14",
+      "reverse_formation": false,
+      "route_change_delay": null,
+      "aimed": {
+        "arrival": {
+          "date": "2023-12-07",
+          "time": "10:19"
+        },
+        "departure": {
+          "date": "2023-12-07",
+          "time": "10:21"
+        },
+        "pass": null
+      },
+      "actual": {
+        "arrival": {
+          "date": "2023-12-07",
+          "time": "10:30"
+        },
+        "departure": {
+          "date": "2023-12-07",
+          "time": "10:33"
+        },
+        "pass": null
+      },
+      "expected": {
+        "arrival": {
+          "date": "2023-12-07",
+          "time": "10:29"
+        },
+        "departure": {
+          "date": "2023-12-07",
+          "time": "10:33"
+        },
+        "pass": null
+      }
+    },
+    {
+      "service": {
+        "id": "https://transportapi.com/v3/uk/train/actual_journeys/202312078055228.json?app_id=<app_id>\u0026app_key=<app_key>\u0026datetime=2023-12-08T10%3A44%3A00.000Z\u0026expected=true",
+        "rid": "202312078055228",
+        "train_uid": "P55228",
+        "headcode": "1N60",
+        "retail_service_identifier": null,
+        "toc": {
+          "atoc_code": "NT",
+          "name": "Northern"
+        },
+        "train_status": "P",
+        "origin_name": "Manchester Airport",
+        "destination_name": "Blackpool North",
+        "date": "2023-12-07",
+        "category": "XX",
+        "mode": "train",
+        "cancellation": {
+          "code": 918,
+          "reason": "This train has been cancelled because of a short-notice change to the timetable",
+          "cancelled": false
+        },
+        "running_late": null,
+        "coaches": null
+      },
+      "stop_type": "IP",
+      "cancelled": true,
+      "platform": "14",
+      "reverse_formation": false,
+      "route_change_delay": null,
+      "aimed": {
+        "arrival": {
+          "date": "2023-12-07",
+          "time": "10:31"
+        },
+        "departure": {
+          "date": "2023-12-07",
+          "time": "10:33"
+        },
+        "pass": null
+      },
+      "actual": null,
+      "expected": null
+    },
+    {
+      "service": {
+        "id": "https://transportapi.com/v3/uk/train/actual_journeys/202312078057836.json?app_id=<app_id>\u0026app_key=<app_key>\u0026datetime=2023-12-08T10%3A44%3A00.000Z\u0026expected=true",
+        "rid": "202312078057836",
+        "train_uid": "P57836",
+        "headcode": "2S75",
+        "retail_service_identifier": null,
+        "toc": {
+          "atoc_code": "NT",
+          "name": "Northern"
+        },
+        "train_status": "P",
+        "origin_name": "Sheffield",
+        "destination_name": "Manchester Piccadilly",
+        "date": "2023-12-07",
+        "category": "00",
+        "mode": "train",
+        "cancellation": {
+          "code": null,
+          "reason": null,
+          "cancelled": false
+        },
+        "running_late": null,
+        "coaches": null
+      },
+      "stop_type": "DT",
+      "cancelled": false,
+      "platform": "4",
+      "reverse_formation": false,
+      "route_change_delay": null,
+      "aimed": {
+        "arrival": {
+          "date": "2023-12-07",
+          "time": "10:32"
+        },
+        "departure": null,
+        "pass": null
+      },
+      "actual": {
+        "arrival": {
+          "date": "2023-12-07",
+          "time": "10:35"
+        },
+        "departure": null,
+        "pass": null
+      },
+      "expected": {
+        "arrival": {
+          "date": "2023-12-07",
+          "time": "10:35"
+        },
+        "departure": null,
+        "pass": null
+      }
+    }
+  ],
+  "view": {
+    "id": "https://transportapi.com/v3/uk/train/station_actual_journeys/crs:MAN.json?app_id=<app_id>\u0026app_key=<app_key>\u0026datetime=2023-12-08T10%3A44%3A00.000Z\u0026expected=true\u0026from_offset=-P0000-00-01T00%3A14%3A00\u0026limit=50\u0026page=1\u0026to_offset=-P0000-00-01T00%3A00%3A00\u0026type=departure%2Carrival",
+    "page": 1,
+    "page_size": 50
+  },
+  "request_time": "2023-12-08T10:48:30+00:00",
+  "datetime": "2023-12-08T10:44:00+00:00",
+  "station_name": "Manchester Piccadilly",
+  "station_code": "MAN",
+  "tiploc_code": "MNCRPIC"
+}

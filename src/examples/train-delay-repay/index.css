@@ -1,0 +1,10 @@
+.table-row {
+    vertical-align: middle;
+    horizontal-align: middle;
+    text-align: center;
+    padding: 0 15px;
+}
+
+.table-header {
+    white-space: nowrap;
+}
