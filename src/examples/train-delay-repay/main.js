@@ -5,8 +5,7 @@ import $ from 'jquery'
 const appId = ''
 const appKey = ''
 
-const focalStation = 'LDS'
-const calledAt = 'SHF'
+const station = 'crs:MAN'
 const dateTime = encodeURIComponent('2023-12-07T19:00:00+01:00')
 // 15minute buffer either side
 const fromOffset = '-PT00:15:00'
@@ -14,8 +13,9 @@ const toOffset = 'PT00:15:00'
 
 const url = (appId === '' || appKey === '')
   ? 'response.json'
-  : 'https://transportapi.com/v3/uk/train/station_actual_journeys/crs:MAN.json?' +
-    `app_id=${appId}&app_key=${appKey}&expected=true&type=departure,arrival&datetime=${dateTime}&from_offset=${fromOffset}&to_offset=${toOffset}&limit=50&page=1`
+  : `https://transportapi.com/v3/uk/train/station_actual_journeys/${station}.json?` +
+    `app_id=${appId}&app_key=${appKey}&expected=true&type=departure,arrival&datetime=${dateTime}&` +
+    `from_offset=${fromOffset}&to_offset=${toOffset}&limit=50&page=1`
 
 $.getJSON(url, data => {
   const rows = data.member.map(journey => {
