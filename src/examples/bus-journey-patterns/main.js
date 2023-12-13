@@ -37,5 +37,6 @@ function tableRowHtml (atcocodeToStopName, journeyPatterns, rowIndex) {
 }
 
 function tableCellHtml (atcocodeToStopName, journeyPattern, rowIndex) {
-  return `<td><b>${atcocodeToStopName[journeyPattern.stops[rowIndex]?.atcocode] || ''}</b> ${journeyPattern.stops[rowIndex]?.atcocode || ''}</td>`
+  const atcocode = journeyPattern.stops[rowIndex] && journeyPattern.stops[rowIndex].atcocode
+  return `<td><b>${atcocodeToStopName[atcocode] || ''}</b> ${atcocode || ''}</td>`
 }
