@@ -40,13 +40,6 @@ const products = [
     page: 'bus-information'
   },
   {
-    id: 'tapi-bus-fares',
-    label: 'TAPI Bus Fares',
-    logo: 'static/logo-tapi-bus-fares.svg',
-    page: 'bus-fares',
-    comingSoon: true
-  },
-  {
     id: 'tapi-bus-performance',
     label: 'TAPI Bus Performance',
     logo: 'static/logo-tapi-bus-performance.svg',
